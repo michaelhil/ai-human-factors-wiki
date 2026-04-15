@@ -13,6 +13,8 @@ related:
   - "[[sycophancy]]"
   - "[[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]]"
   - "[[summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them]]"
+  - "[[summary-Zhao_2021_calibrate-before-use-improving-few-shot-performance-of-language-models]]"
+  - "[[summary-Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation]]"
 tags:
   - prompt-sensitivity
   - reliability

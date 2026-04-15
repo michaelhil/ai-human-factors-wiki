@@ -46,6 +46,9 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them]]<br>
   Few-shot example ordering swings accuracy from random to SOTA; not transferable across models
 
+- [[summary-Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation]]<br>
+  Single-prompt benchmarking is unreliable; model rankings change with paraphrased instructions across 6.5M evaluations
+
 ## Context Windows
 - [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]]<br>
   Models favour information at start and end of context; middle content is degraded
@@ -55,6 +58,8 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Calibration and Confidence
 - [[summary-Guo_2017_on-calibration-of-modern-neural-networks]]<br>
   Modern networks are systematically overconfident; temperature scaling (one parameter) reduces ECE from 12.67% to 0.96%
+- [[summary-Zhao_2021_calibrate-before-use-improving-few-shot-performance-of-language-models]]<br>
+  Few-shot accuracy swings from chance to SOTA on prompt ordering alone; contextual calibration corrects systematic majority-label, recency, and common-token biases
 - [[summary-Kadavath_2022_language-models-mostly-know-what-they-know]]<br>
   Larger models show partial self-knowledge; RLHF distorts but doesn't destroy calibration
 - [[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores]]<br>

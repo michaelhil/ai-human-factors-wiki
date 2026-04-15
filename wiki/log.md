@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation.pdf
+- Created: summary-Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation.md
+- Updated: prompt-sensitivity.md (added summary links for Zhao and Mizrahi), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Zhao_2021_calibrate-before-use-improving-few-shot-performance-of-language-models.pdf
+- Created: summary-Zhao_2021_calibrate-before-use-improving-few-shot-performance-of-language-models.md
+- Updated: calibration-and-confidence.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Guo_2017_on-calibration-of-modern-neural-networks.pdf
 - Created: summary-Guo_2017_on-calibration-of-modern-neural-networks.md
 - Updated: calibration-and-confidence.md (added summary link), summaries/index.md
