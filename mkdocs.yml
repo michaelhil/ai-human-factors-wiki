@@ -95,6 +95,9 @@ nav:
   - Human-AI Interaction:
     - human-ai-interaction/index.md
     - Situation Awareness in Human-AI Teams: human-ai-interaction/situation-awareness-in-human-ai-teams.md
+    - Automation Bias: human-ai-interaction/automation-bias.md
+    - Trust Calibration: human-ai-interaction/trust-calibration.md
+    - Skill Degradation: human-ai-interaction/skill-degradation.md
   - Design Patterns:
     - design-patterns/index.md
     - RAG: design-patterns/retrieval-augmented-generation.md
@@ -104,6 +107,9 @@ nav:
     - Delivery Modes: design-patterns/delivery-modes.md
   - Evaluation & Testing:
     - evaluation-and-testing/index.md
+    - HRA Methods for AI: evaluation-and-testing/hra-methods-for-ai.md
+    - AI-Specific Performance Shaping Factors: evaluation-and-testing/ai-specific-performance-shaping-factors.md
+    - Capability Gradient: evaluation-and-testing/capability-gradient.md
   - Domain Applications:
     - domain-applications/index.md
   - Reference:

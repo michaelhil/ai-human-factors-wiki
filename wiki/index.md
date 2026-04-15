@@ -45,9 +45,14 @@ This wiki provides a comprehensive technical reference on AI systems — large l
 
 ## Human-AI Interaction
 - [[situation-awareness-in-human-ai-teams]] — Situation awareness theory applied to human-AI teaming contexts
+- [[automation-bias]] — Over-reliance on automated systems and degraded independent judgment
+- [[trust-calibration]] — Matching human trust levels to actual AI system reliability
+- [[skill-degradation]] — Erosion of human competencies through over-reliance on AI assistance
 
 ## Evaluation and Testing
-*Pages to be added during ingestion.*
+- [[hra-methods-for-ai]] — Adapting human reliability analysis methods to AI-inclusive sociotechnical systems
+- [[ai-specific-performance-shaping-factors]] — Factors that shape human performance when working with AI systems
+- [[capability-gradient]] — Assessing AI capability across task types, complexity levels, and operational conditions
 
 ## Domain Applications
 *Pages to be added during ingestion.*
