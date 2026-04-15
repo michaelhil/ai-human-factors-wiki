@@ -18,9 +18,9 @@ updated: 2026-04-15
 
 ## A
 
-**Agent** — An LLM embedded in a perceive-reason-act loop with tool access and real-world effect capability. See [[agent-architectures]].
+**Agent** — An LLM embedded in a perceive-reason-act loop with tool access and real-world effect capability. See [[multi-agent-taxonomy]].
 
-**Alignment** — The process of shaping LLM behaviour to follow instructions, be helpful, and avoid harmful outputs. See [[post-training-alignment]].
+**Alignment** — The process of shaping LLM behaviour to follow instructions, be helpful, and avoid harmful outputs. See [[training-and-alignment]].
 
 **Automation Bias** — The tendency for operators to over-rely on automated recommendations without independent verification. See [[automation-bias]].
 
@@ -54,7 +54,7 @@ updated: 2026-04-15
 
 **RAG (Retrieval-Augmented Generation)** — An architecture that retrieves documents from an external knowledge base and inserts them into context before generation. See [[retrieval-augmented-generation]].
 
-**ReAct** — A prompting pattern where the agent alternates between reasoning ("thought"), taking actions ("action"), and incorporating results ("observation"). See [[react-pattern]].
+**ReAct** — A prompting pattern where the agent alternates between reasoning ("thought"), taking actions ("action"), and incorporating results ("observation"). See [[perceive-reason-act-loop]].
 
 ## S
 
