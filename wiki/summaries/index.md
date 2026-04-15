@@ -15,6 +15,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Hallucination
 - [[summary-huang-2023-hallucination]] — Huang et al. (2024) — Survey on Hallucination in LLMs
 
+## Context Windows
+- [[summary-liu-2024-lost-in-middle]] — Liu et al. (2024) — Lost in the Middle: How Language Models Use Long Contexts
+
 ## Calibration and Confidence
 - [[summary-kadavath-2022]] — Kadavath et al. (2022) — Language Models (Mostly) Know What They Know
 

@@ -10,6 +10,7 @@ related:
   - "[[context-management-risks]]"
   - "[[memory-architectures]]"
   - "[[retrieval-augmented-generation]]"
+  - "[[summary-liu-2024-lost-in-middle]]"
 tags:
   - context-window
   - attention
@@ -37,9 +38,15 @@ In practice, the usable capacity is less than the raw size. A typical agent invo
 
 ## The Lost-in-the-Middle Effect
 
-LLMs do not use information uniformly across the context window. Liu et al. (2024) demonstrated that models tend to underuse information placed in the middle of long contexts, preferring information near the beginning and the end. This means the ordering of information within the context matters for accuracy, not just whether the information is present.
+LLMs do not use information uniformly across the context window. Liu et al. (2024) demonstrated a distinctive **U-shaped performance curve**: models perform best when relevant information is at the very beginning (primacy bias) or end (recency bias) of the context, and significantly degrade when it is in the middle.
 
-For safety-critical applications, this has a direct design implication: the most important information should be placed at the beginning or end of the context, not buried in the middle of retrieved documents or conversation history.
+**Quantitative impact:** On multi-document question answering with 20 retrieved documents, accuracy drops by **over 20 percentage points** when the answer document moves from the edges to the middle of the context. Most strikingly, performance with the answer in the middle of 20-30 documents can drop **below closed-book performance** — providing the model with documents containing the answer produces worse results than giving it no documents at all, if the answer is in the middle.
+
+This effect is confirmed even on simple synthetic retrieval tasks (matching UUID key-value pairs), ruling out comprehension as the cause — it is a **positional attention bias** inherent to the decoder-only architecture (see [[llm-architecture]]). Encoder-decoder models show more robustness within their training-time context window, but current frontier LLMs are all decoder-only.
+
+Extended context models do not help: when inputs fit in both standard and extended windows, performance is nearly identical. Larger windows provide more capacity but do not improve the model's ability to use information at any position.
+
+For safety-critical applications, this has direct design implications: the most important information should be placed at the beginning or end of the context, document ordering in [[retrieval-augmented-generation]] is a design parameter, and over-retrieval can push relevant information into the low-attention middle zone.
 
 ## Context Rot
 
