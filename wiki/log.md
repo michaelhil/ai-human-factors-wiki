@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.pdf
+- Created: summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.md
+- Updated: prompt-sensitivity.md (enriched ordering section with non-transferability finding), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection.pdf
+- Created: summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection.md
+- Updated: hallucination.md (enriched consistency checking with SelfCheckGPT specifics), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Ji_2023_survey-of-hallucination-in-natural-language-generation.pdf
 - Created: summary-Ji_2023_survey-of-hallucination-in-natural-language-generation.md
 - Updated: hallucination.md (added intrinsic/extrinsic taxonomy, summary link), summaries/index.md

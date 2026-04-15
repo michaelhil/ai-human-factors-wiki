@@ -12,6 +12,7 @@ related:
   - "[[llm-architecture]]"
   - "[[sycophancy]]"
   - "[[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]]"
+  - "[[summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them]]"
 tags:
   - prompt-sensitivity
   - reliability
@@ -38,9 +39,9 @@ The most systematic study of prompt formatting sensitivity tested semantically e
 - **Model comparison rankings reverse**: when comparing two models using different prompt formats, the "better" model reverses with probability 14% — a single-format benchmark can systematically misidentify which model is better.
 - **API models also affected**: GPT-3.5 shows a median spread of 6.4 points across 53 tasks, with maximum spread of 87.6 points.
 
-### Example Ordering (Lu et al., 2022)
+### Example Ordering ([[summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them|Lu et al., 2022]])
 
-The ordering of few-shot examples in a prompt can swing accuracy from near-random to near-state-of-the-art. Simply reordering the examples — without changing their content — changes performance dramatically.
+The ordering of few-shot examples in a prompt can swing accuracy from near-random to near-state-of-the-art. Simply reordering the examples — without changing their content — changes performance dramatically. Critically, **good orderings are not transferable across models** — a permutation achieving 88.7% accuracy on one model size may drop to 51.6% on another. Cross-model correlation of ordering performance is essentially random, meaning prompt engineering validated on one model provides no guarantee on another. Scaling does not solve the problem: variance persists from GPT-2 (0.1B) through GPT-3 (175B), and even adding more few-shot examples fails to eliminate ordering sensitivity.
 
 ### Few-Shot Biases (Zhao et al., 2021)
 

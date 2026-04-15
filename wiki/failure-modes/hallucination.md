@@ -16,6 +16,7 @@ related:
   - "[[llm-architecture]]"
   - "[[summary-Huang_2023_survey-on-hallucination-in-large-language-models]]"
   - "[[summary-Ji_2023_survey-of-hallucination-in-natural-language-generation]]"
+  - "[[summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection]]"
 tags:
   - hallucination
   - reliability
@@ -96,7 +97,7 @@ The trajectory matters: hallucination rates decrease with model scale and improv
 
 **[[knowledge-graphs]]** can block assertions that contradict verified domain knowledge. A guardrail check verifies whether the model's output is consistent with the knowledge graph before the output reaches the user.
 
-**Consistency checking** across multiple generations (Manakul et al., 2023) can flag unreliable outputs. If the model gives different answers to the same question across multiple runs, the inconsistent answers are less likely to be reliable.
+**Consistency checking** across multiple generations can flag unreliable outputs. [[summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection|SelfCheckGPT (Manakul et al., 2023)]] demonstrated that sampling multiple stochastic responses and measuring their agreement provides a strong hallucination signal: factual claims produce consistent samples, while hallucinated claims produce divergent ones. This zero-resource approach requires no external database and outperformed grey-box methods (token probabilities) on passage-level factuality ranking — achieving 78.32 Pearson correlation with human judgments. The method converts [[non-determinism-and-reproducibility]] from a liability into a detection feature.
 
 **Structured output constraints** restrict the space of possible outputs (JSON schemas, typed fields), eliminating some formatting-level fabrication. But a model can produce a perfectly valid JSON object containing entirely fabricated values — the structure is correct while the content is not.
 

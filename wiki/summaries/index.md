@@ -16,10 +16,12 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Hallucination and Knowledge Boundaries
 - [[summary-Huang_2023_survey-on-hallucination-in-large-language-models]] — Survey on Hallucination in LLMs
 - [[summary-Ji_2023_survey-of-hallucination-in-natural-language-generation]] — Survey of Hallucination in Natural Language Generation
+- [[summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection]] — SelfCheckGPT: Zero-Resource Hallucination Detection
 - [[summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge]] — LLMs Struggle to Learn Long-Tail Knowledge
 
 ## Prompt Sensitivity
 - [[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]] — Quantifying LLM Sensitivity to Spurious Features in Prompt Design
+- [[summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them]] — Fantastically Ordered Prompts: Few-Shot Prompt Order Sensitivity
 
 ## Context Windows
 - [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]] — Lost in the Middle
