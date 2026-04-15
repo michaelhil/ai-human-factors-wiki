@@ -12,7 +12,7 @@ related:
   - "[[hallucination]]"
   - "[[model-context-protocol]]"
   - "[[llm-architecture]]"
-  - "[[summary-patil-2023]]"
+  - "[[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]]"
 tags:
   - tool-calling
   - function-calling

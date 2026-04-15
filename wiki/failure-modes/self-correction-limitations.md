@@ -10,7 +10,7 @@ related:
   - "[[calibration-and-confidence]]"
   - "[[training-and-alignment]]"
   - "[[degradation-characteristics]]"
-  - "[[summary-huang-2023-self-correct]]"
+  - "[[summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet]]"
 tags:
   - self-correction
   - failure-mode

@@ -9,7 +9,7 @@ related:
   - "[[calibration-and-confidence]]"
   - "[[automation-bias]]"
   - "[[hallucination]]"
-  - "[[summary-sharma-2024]]"
+  - "[[summary-Sharma_2024_towards-understanding-sycophancy-in-language-models]]"
 tags:
   - sycophancy
   - reliability

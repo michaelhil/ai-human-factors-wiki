@@ -12,7 +12,7 @@ related:
   - "[[training-and-alignment]]"
   - "[[sycophancy]]"
   - "[[automation-bias]]"
-  - "[[summary-kadavath-2022]]"
+  - "[[summary-Kadavath_2022_language-models-mostly-know-what-they-know]]"
 tags:
   - calibration
   - confidence

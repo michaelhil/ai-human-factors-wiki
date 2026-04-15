@@ -70,9 +70,9 @@ updated: YYYY-MM-DD
 
 ## Naming Conventions
 
-- Kebab-case filenames: `llm-architecture.md`, `epistemic-independence.md`
-- Summaries: `summary-<short-name>.md` (e.g., `summary-vaswani-2017.md`)
-- No spaces, no underscores
+- Kebab-case filenames for content pages: `llm-architecture.md`, `epistemic-independence.md`
+- Summaries: `summary-<SourceFilename-without-extension>.md` — the summary filename must exactly match the source filename in `raw/references/` with `summary-` prepended. Example: source `raw/references/Vaswani_2017_attention-is-all-you-need.pdf` → summary `wiki/summaries/summary-Vaswani_2017_attention-is-all-you-need.md`. This creates a 1:1 mechanical mapping between sources and summaries with zero ambiguity.
+- No spaces in filenames. Underscores are used in summary filenames to match source naming convention.
 
 ## Interlinking
 

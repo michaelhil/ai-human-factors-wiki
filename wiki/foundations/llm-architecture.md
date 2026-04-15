@@ -10,8 +10,8 @@ related:
   - "[[inference-and-generation]]"
   - "[[hallucination]]"
   - "[[tool-calling]]"
-  - "[[summary-vaswani-2017]]"
-  - "[[summary-phuong-2022]]"
+  - "[[summary-Vaswani_2017_attention-is-all-you-need]]"
+  - "[[summary-Phuong_2022_formal-algorithms-for-transformers]]"
 tags:
   - transformer
   - architecture

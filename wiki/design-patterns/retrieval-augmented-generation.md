@@ -11,8 +11,8 @@ related:
   - "[[hallucination]]"
   - "[[context-windows]]"
   - "[[llm-architecture]]"
-  - "[[summary-lewis-2020]]"
-  - "[[summary-barnett-2024]]"
+  - "[[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]]"
+  - "[[summary-Barnett_2024_seven-failure-points-in-rag-systems]]"
 tags:
   - rag
   - retrieval

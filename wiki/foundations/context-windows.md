@@ -10,7 +10,7 @@ related:
   - "[[context-management-risks]]"
   - "[[memory-architectures]]"
   - "[[retrieval-augmented-generation]]"
-  - "[[summary-liu-2024-lost-in-middle]]"
+  - "[[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]]"
 tags:
   - context-window
   - attention

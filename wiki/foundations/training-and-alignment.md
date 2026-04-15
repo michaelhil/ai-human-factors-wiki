@@ -10,7 +10,7 @@ related:
   - "[[calibration-and-confidence]]"
   - "[[sycophancy]]"
   - "[[inference-and-generation]]"
-  - "[[summary-bai-2022]]"
+  - "[[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback]]"
 tags:
   - training
   - alignment

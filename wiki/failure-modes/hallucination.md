@@ -14,7 +14,7 @@ related:
   - "[[knowledge-graphs]]"
   - "[[automation-bias]]"
   - "[[llm-architecture]]"
-  - "[[summary-huang-2023-hallucination]]"
+  - "[[summary-Huang_2023_survey-on-hallucination-in-large-language-models]]"
 tags:
   - hallucination
   - reliability

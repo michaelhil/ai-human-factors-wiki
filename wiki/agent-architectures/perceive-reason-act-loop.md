@@ -9,7 +9,7 @@ related:
   - "[[tool-calling]]"
   - "[[memory-architectures]]"
   - "[[context-windows]]"
-  - "[[summary-yao-2023]]"
+  - "[[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models]]"
 tags:
   - agent
   - react
