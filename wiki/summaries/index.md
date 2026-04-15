@@ -59,6 +59,8 @@ One summary per source document. Each summary captures the key arguments, findin
   DFSDT tree-search reasoning enables backtracking on tool errors; 16K+ real APIs; open-source model matches ChatGPT on tool use
 - [[summary-Patil_2025_berkeley-function-calling-leaderboard]]<br>
   De facto standard benchmark; models excel at simple calls but memory management (~12%) and multi-turn agentic tasks remain weak
+- [[summary-Zhuang_2024_toolqa]]<br>
+  Best tool-augmented LLMs reach only 43% on easy and 8% on hard questions requiring genuine (non-memorised) tool use
 
 ## Multi-Agent Surveys
 - [[summary-Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges]]<br>
@@ -95,6 +97,12 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Situation Awareness
 - [[summary-Gao_2023_agent-teaming-situation-awareness-atsa]]<br>
   ATSA framework extends situation awareness theory to human-AI agent teams
+
+## Theory of Mind
+- [[summary-Kosinski_2024_evaluating-large-language-models-in-theory-of-mind-tasks]]<br>
+  GPT-4 solves 75% of false-belief tasks (matching 6-year-olds); ToM-like behaviour emerges with scale but remains brittle under perturbation
+- [[summary-Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks]]<br>
+  Trivial commonsense variations (transparent bags, illiterate protagonists) break GPT-3.5's ToM performance completely — pattern matching, not reasoning
 
 ## Agent Surveys
 - [[summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey]]<br>

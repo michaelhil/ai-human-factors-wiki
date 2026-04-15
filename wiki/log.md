@@ -1,5 +1,23 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks.pdf
+- Created: summary-Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks.md
+- Updated: human-ai-interaction/theory-of-mind-in-llms.md (integrated Ullman counterevidence, added Danaides problem, anthropomorphism risk), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Kosinski_2024_evaluating-large-language-models-in-theory-of-mind-tasks.pdf
+- Created: summary-Kosinski_2024_evaluating-large-language-models-in-theory-of-mind-tasks.md, human-ai-interaction/theory-of-mind-in-llms.md
+- Updated: index.md, summaries/index.md, glossary.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Zhuang_2024_toolqa.pdf
+- Created: summary-Zhuang_2024_toolqa.md
+- Updated: tool-calling.md (expanded ToolQA findings with error type detail), summaries/index.md (added entry)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Patil_2025_berkeley-function-calling-leaderboard.pdf
 - Created: summary-Patil_2025_berkeley-function-calling-leaderboard.md
 - Updated: tool-calling.md (added BFCL summary link), summaries/index.md (added entry + fixed br tags for line breaks)

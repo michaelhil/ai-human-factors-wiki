@@ -15,6 +15,7 @@ related:
   - "[[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]]"
   - "[[summary-Qin_2024_toolllm-facilitating-large-language-models-to-master-real-world-apis]]"
   - "[[summary-Patil_2025_berkeley-function-calling-leaderboard]]"
+  - "[[summary-Zhuang_2024_toolqa]]"
 tags:
   - tool-calling
   - function-calling
@@ -67,7 +68,7 @@ Hallucination types include inventing nonexistent API endpoints, fabricating rep
 
 The Berkeley Function Calling Leaderboard V4 (Patil et al., 2025) showed substantial improvement by 2025: approximately 70% on holistic agentic evaluation for frontier models — but persistent 30–40% failure rates on multi-turn agentic tasks requiring dynamic decision-making.
 
-Zhuang et al. (2023) found only 40–50% accuracy on hard questions requiring multi-step tool use. The trajectory shows improvement on simple calls but persistent vulnerability on complex, multi-step, or safety-critical tasks.
+[[summary-Zhuang_2024_toolqa|Zhuang et al. (2024)]] constructed a benchmark (ToolQA) where questions can only be answered through genuine tool use — not memorisation. Standard LLMs achieved roughly 5% success, confirming the questions require real tool use. The best tool-augmented method (ReAct with GPT-3.5) reached 43% on easy single-tool questions but only 8.2% on hard multi-tool questions. The dominant error type was argument errors (44–49% of failures): models selected the correct tool but generated wrong parameter values. A secondary finding was data source confusion — models queried the wrong reference corpus for the question type. The trajectory across benchmarks shows improvement on simple calls but persistent vulnerability on complex, multi-step, or safety-critical tasks.
 
 ## Retrieval Interaction
 

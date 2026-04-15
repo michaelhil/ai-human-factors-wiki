@@ -48,6 +48,7 @@ This wiki provides a comprehensive technical reference on AI systems — large l
 - [[automation-bias]] — Over-reliance on automated systems and degraded independent judgment
 - [[trust-calibration]] — Matching human trust levels to actual AI system reliability
 - [[skill-degradation]] — Erosion of human competencies through over-reliance on AI assistance
+- [[theory-of-mind-in-llms]] — Whether LLMs model others' mental states, and implications for trust and manipulation
 
 ## Evaluation and Testing
 - [[hra-methods-for-ai]] — Adapting human reliability analysis methods to AI-inclusive sociotechnical systems

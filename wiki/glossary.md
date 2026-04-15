@@ -72,6 +72,8 @@ updated: 2026-04-15
 
 **Token** — A sub-word unit (typically 3-5 characters) that LLMs process. Text is segmented into tokens by a tokeniser before processing. See [[llm-architecture]].
 
+**Theory of Mind (ToM)** — The ability to attribute mental states (beliefs, intentions, desires) to others, including recognising that others may hold false beliefs. LLMs show emergent ToM-like behaviour that correlates with scale but remains brittle. See [[theory-of-mind-in-llms]].
+
 **Tool Calling** — The mechanism by which an LLM invokes external functions or APIs; probabilistic and subject to hallucinated parameters. See [[tool-calling]].
 
 ## V
