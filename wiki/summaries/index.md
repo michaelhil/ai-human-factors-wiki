@@ -97,6 +97,8 @@ One summary per source document. Each summary captures the key arguments, findin
   Brain-Perception-Action framework; cooperative vs adversarial interaction; four agent properties (autonomy, reactivity, pro-activeness, social ability)
 - [[summary-Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling]]
   Vertical vs horizontal multi-agent taxonomy; designated leaders cut coordination overhead ~10%; five cross-cutting design principles
+- [[summary-Zhai_2025_agent-evolver-towards-efficient-self-evolving-agent-system]]
+  Self-evolved 14B agent outperforms 235B base models; curiosity-driven task generation and structured experience memory enable autonomous improvement
 
 ## Agent Frameworks and Cognitive Architectures
 - [[summary-Sumers_2024_cognitive-architectures-for-language-agents]]

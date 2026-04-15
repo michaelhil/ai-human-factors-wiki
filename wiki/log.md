@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Zhai_2025_agent-evolver-towards-efficient-self-evolving-agent-system.pdf
+- Created: summary-Zhai_2025_agent-evolver-towards-efficient-self-evolving-agent-system.md
+- Updated: summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling.pdf
 - Created: summary-Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling.md
 - Updated: summaries/index.md
