@@ -6,6 +6,7 @@ sources:
   - raw/references/Riedl_2025_emergent-coordination-in-multi-agent-language-models.pdf
   - raw/references/Gao_2025_single-agent-or-multi-agent-systems-why-not-both.pdf
   - raw/references/Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society.pdf
+  - raw/references/Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems.pdf
 related:
   - "[[multi-agent-taxonomy]]"
   - "[[context-windows]]"
@@ -16,6 +17,7 @@ related:
   - "[[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society]]"
   - "[[summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models]]"
   - "[[summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both]]"
+  - "[[summary-Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems]]"
 tags:
   - multi-agent
   - coordination

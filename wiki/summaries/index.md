@@ -106,6 +106,8 @@ One summary per source document. Each summary captures the key arguments, findin
   MAST taxonomy: 14 failure modes across specification, inter-agent, and task verification
 - [[summary-Hammond_2025_multi-agent-risks-from-advanced-ai]]<br>
   Emergent risks from multi-agent interaction: herding, collusion, racing, destabilisation
+- [[summary-Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems]]<br>
+  Six governed MAS failure modes; validity-centred risk analysis with progressive staged testing
 
 ## Multi-Agent Evaluation
 - [[summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate]]<br>

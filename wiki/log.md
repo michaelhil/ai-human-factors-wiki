@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems.pdf
+- Created: summary-Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems.md
+- Updated: multi-agent-coordination-failures.md (added source and related link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Shaib_2025_measuring-ai-slop-in-text.pdf
 - Created: summary-Shaib_2025_measuring-ai-slop-in-text.md
 - Updated: output-vacuity.md (added measurement taxonomy and detection findings), summaries/index.md
