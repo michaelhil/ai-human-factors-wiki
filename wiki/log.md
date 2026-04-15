@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Kadavath_2022_language-models-mostly-know-what-they-know.pdf
+- Created: summaries/summary-kadavath-2022.md
+- Updated: failure-modes/calibration-and-confidence.md (added RLHF temperature rescaling finding, "I don't know" bias, P(True)/P(IK) methods)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Huang_2023_large-language-models-cannot-self-correct-reasoning-yet.pdf
 - Created: summaries/summary-huang-2023-self-correct.md
 - Updated: failure-modes/self-correction-limitations.md (added quantitative degradation data, explanation of why prior claims were misleading)

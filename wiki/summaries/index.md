@@ -15,6 +15,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Hallucination
 - [[summary-huang-2023-hallucination]] — Huang et al. (2024) — Survey on Hallucination in LLMs
 
+## Calibration and Confidence
+- [[summary-kadavath-2022]] — Kadavath et al. (2022) — Language Models (Mostly) Know What They Know
+
 ## Agent Architectures and Reasoning
 - [[summary-yao-2023]] — Yao et al. (2023) — ReAct: Synergizing Reasoning and Acting
 
