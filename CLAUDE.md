@@ -80,6 +80,7 @@ updated: YYYY-MM-DD
 - Cross-reference liberally — every page should link to related concepts
 - The glossary links to full articles; articles link back where appropriate
 - **Inline citations should link to summary pages** where one exists. Use piped wikilink format: `[[summary-Author_Year_title|Author et al. (Year)]]`. Link on first mention per page; subsequent mentions can be plain text.
+- **Summaries index entries** use the format: `- [[summary-Author_Year_title]] — Short Title`. Do NOT repeat the author/year after the wikilink — it is already in the filename.
 
 ## Operations
 
