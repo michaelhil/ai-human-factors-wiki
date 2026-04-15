@@ -1,12 +1,14 @@
 ---
 title: "Degradation Characteristics"
 type: safety
-sources: []
+sources:
+  - raw/references/NRC_2024_ML24241A252.pdf
 related:
   - "[[hallucination]]"
   - "[[context-windows]]"
   - "[[calibration-and-confidence]]"
   - "[[non-determinism-and-reproducibility]]"
+  - "[[nuclear-ai-regulatory-considerations]]"
 tags:
   - degradation
   - silent-failure
@@ -50,6 +52,8 @@ Several conditions increase the likelihood of degradation:
 - **Novel conditions**: situations underrepresented in training data push the model toward the edges of its competence
 - **Multiple information sources**: conflicting or ambiguous inputs from tools, retrieved documents, and conversation history
 - **Context compression**: when older context is summarised, the summarisation may hallucinate or lose temporal ordering
+- **Data drift**: operational data diverges from training data over time — the distribution of inputs in production shifts away from what the model was trained on. In safety-critical domains, regulatory bodies identify data drift as a trigger for corrective maintenance ([[summary-NRC_2024_ML24241A252|CNSC/ONR/NRC, 2024]])
+- **Model drift**: the model ceases to faithfully represent the underlying phenomena being modelled, even if the input data remains similar. Retraining to correct drift introduces its own risks (overfitting, new biases), creating a tension between maintaining currency and maintaining stability
 
 ## Detection Strategies
 
@@ -75,4 +79,6 @@ Similar patterns exist in other domains: autopilot mode confusion in aviation (w
 
 3. **Session length is a risk factor.** Longer sessions increase context pressure and the probability of all three degradation modes. Periodic session resets with fresh context may be safer than continuous long-running sessions.
 
-4. **Cross-domain examples.** In aviation, a navigation advisory that silently degrades from "optimised routing" to "plausible-looking but suboptimal routing" over a long flight. In medical monitoring, a patient assessment system that gradually shifts from condition-specific analysis to generic observations as the clinical picture becomes complex. In oil and gas, a drilling advisory that silently stops discriminating between normal and abnormal conditions during a long well-control operation.
+4. **V&V limitations compound degradation risk.** No current method can quantify the failure probability of an AI component ([[summary-NRC_2024_ML24241A252|CNSC/ONR/NRC, 2024]]). Because previous performance confirmation can quickly become obsolete through data drift or retraining, safety assurance must derive from system architecture (output bounding, monitoring, modularisation) rather than component-level reliability claims.
+
+5. **Cross-domain examples.** In aviation, a navigation advisory that silently degrades from "optimised routing" to "plausible-looking but suboptimal routing" over a long flight. In medical monitoring, a patient assessment system that gradually shifts from condition-specific analysis to generic observations as the clinical picture becomes complex. In oil and gas, a drilling advisory that silently stops discriminating between normal and abnormal conditions during a long well-control operation.

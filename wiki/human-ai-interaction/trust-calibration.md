@@ -1,13 +1,16 @@
 ---
 title: "Trust Calibration"
 type: interaction
-sources: []
+sources:
+  - raw/references/NRC_2024_ML24241A252.pdf
 related:
   - "[[automation-bias]]"
   - "[[calibration-and-confidence]]"
   - "[[skill-degradation]]"
   - "[[situation-awareness-in-human-ai-teams]]"
   - "[[hallucination]]"
+  - "[[nuclear-ai-regulatory-considerations]]"
+  - "[[opacity-and-explainability]]"
 tags:
   - trust
   - calibration
@@ -66,3 +69,18 @@ Effective approaches vary timing, severity, and subtlety of AI errors so operato
 2. **Cross-domain examples.** In aviation, pilots develop trust profiles for specific autopilot modes based on experience. In medical settings, clinicians learn which AI diagnostic suggestions to trust and which to question — but this learning requires experience with errors that may carry patient risk. In oil and gas, drillers calibrate trust in automated well monitoring through operational experience.
 
 3. **Trust calibration is a training function, not just a design function.** System design provides the signals (provenance, limitations, disagreement); training develops the operator's ability to use those signals appropriately.
+
+## Trust Calibration in the Nuclear Context
+
+The nuclear domain presents a uniquely challenging trust environment. Traditional nuclear I&C systems are designed for verifiability: operators can memorise logic circuits, confirm expected behaviour through channel checks, and use alternate instruments to cross-check readings. AI systems fundamentally disrupt this verification model because their reasoning process is opaque ([[summary-NRC_2024_ML24241A252|CNSC/ONR/NRC, 2024]]).
+
+The trilateral nuclear regulatory paper (CNSC/ONR/NRC, 2024) identifies specific factors for establishing appropriate trust between humans and AI in nuclear settings:
+
+- The level of system knowledge required of the human operator
+- How humans monitor AI capability performance
+- How the AI capability self-monitors and reports its state
+- How the need for human intervention is identified — by the human, the AI, or both
+- How control handover between AI and human is accomplished
+- If a human intervenes, when and how control is returned to the AI
+
+The paper also highlights a distinctive concern: as AI capabilities evolve while in service, previously calibrated trust may become invalid. Features indicating AI uncertainty and alarms for questionable AI performance may be needed — design elements rarely required for traditional deterministic systems. This connects trust calibration directly to the evolving-system challenge described in [[degradation-characteristics]].

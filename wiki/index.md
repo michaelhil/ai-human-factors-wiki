@@ -56,7 +56,7 @@ This wiki provides a comprehensive technical reference on AI systems — large l
 - [[capability-gradient]] — Assessing AI capability across task types, complexity levels, and operational conditions
 
 ## Domain Applications
-*Pages to be added during ingestion.*
+- [[nuclear-ai-regulatory-considerations]] — Trilateral regulatory principles for AI in nuclear applications
 
 ---
 

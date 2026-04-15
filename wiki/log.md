@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested NRC_2024_ML24290A059.pdf
+- Created: summary-NRC_2024_ML24290A059.md
+- Updated: domain-applications/nuclear-ai-regulatory-considerations.md (merged AIRGA gap analysis, regulatory conflicts, standards gap), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested NRC_2024_ML24241A252.pdf
+- Created: summary-NRC_2024_ML24241A252.md, domain-applications/nuclear-ai-regulatory-considerations.md
+- Updated: degradation-characteristics.md (data drift, model drift, V&V limitations), trust-calibration.md (nuclear trust context), domain-applications/index.md, index.md, summaries/index.md, mkdocs.yml
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems.pdf
 - Created: summary-Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems.md
 - Updated: multi-agent-coordination-failures.md (added source and related link), summaries/index.md

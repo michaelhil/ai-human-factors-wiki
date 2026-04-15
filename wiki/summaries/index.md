@@ -181,6 +181,12 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference]]<br>
   Up to 20x prompt compression with 1.5-point performance loss; perplexity-guided token removal reduces latency and may improve quality
 
+## Nuclear AI Regulation
+- [[summary-NRC_2024_ML24241A252]]<br>
+  First trilateral nuclear regulatory AI paper; four-region autonomy-consequence model for proportionate scrutiny of AI in nuclear applications
+- [[summary-NRC_2024_ML24290A059]]<br>
+  Systematic gap analysis of 517 NRC regulatory guides finds most regulations adequate for AI but guidance lacking on data quality, testing, and fail-safe design
+
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]]<br>
   Retrieve-then-generate architecture reduces hallucination by grounding in external documents

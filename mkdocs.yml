@@ -111,6 +111,7 @@ nav:
     - Capability Gradient: evaluation-and-testing/capability-gradient.md
   - Domain Applications:
     - domain-applications/index.md
+    - Nuclear AI Regulatory Considerations: domain-applications/nuclear-ai-regulatory-considerations.md
   - Summaries:
     - summaries/index.md
   - Glossary: glossary.md
