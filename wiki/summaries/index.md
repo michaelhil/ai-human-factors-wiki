@@ -5,6 +5,7 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Foundations & Architecture
 - [[summary-Vaswani_2017_attention-is-all-you-need]] — Self-attention replaces recurrence; the architecture behind all modern LLMs
 - [[summary-Phuong_2022_formal-algorithms-for-transformers]] — Pseudocode specification of transformer forward pass, tokenisation, and training
+- [[summary-Shanahan_2023_role-play-with-large-language-models]] — LLMs role-play characters from training data, not hold beliefs; anthropomorphism misleads safety analysis
 
 ## Self-Correction and Refinement
 - [[summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet]] — Intrinsic self-correction degrades performance; only external feedback helps

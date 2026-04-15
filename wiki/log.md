@@ -6,6 +6,18 @@
 - Private source: no
 - Guidance: none
 
+## 2026-04-15 — Ingested Shanahan_2023_role-play-with-large-language-models.pdf
+- Created: summary-Shanahan_2023_role-play-with-large-language-models.md
+- Updated: opacity-and-explainability.md (added source and summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.pdf
+- Created: summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.md
+- Updated: prompt-sensitivity.md (enriched ordering section with non-transferability finding), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection.pdf
 - Created: summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection.md
 - Updated: hallucination.md (enriched consistency checking with SelfCheckGPT specifics), summaries/index.md

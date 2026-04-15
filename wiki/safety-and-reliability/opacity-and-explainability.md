@@ -3,11 +3,13 @@ title: "Opacity and Explainability"
 type: safety
 sources:
   - raw/references/Phuong_2022_formal-algorithms-for-transformers.pdf
+  - raw/references/Shanahan_2023_role-play-with-large-language-models.pdf
 related:
   - "[[llm-architecture]]"
   - "[[deployment-local-vs-cloud]]"
   - "[[non-determinism-and-reproducibility]]"
   - "[[hallucination]]"
+  - "[[summary-Shanahan_2023_role-play-with-large-language-models]]"
 tags:
   - opacity
   - explainability
