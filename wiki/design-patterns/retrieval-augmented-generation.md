@@ -12,6 +12,7 @@ related:
   - "[[context-windows]]"
   - "[[llm-architecture]]"
   - "[[summary-lewis-2020]]"
+  - "[[summary-barnett-2024]]"
 tags:
   - rag
   - retrieval
@@ -70,6 +71,15 @@ Barnett et al. (2024) identified seven failure points in RAG systems:
 **Incomplete**: the model uses some but not all of the relevant retrieved information, producing a partial answer.
 
 Additionally, Liu et al. (2024) showed that models underuse information in the middle of long contexts, meaning the ordering of retrieved documents matters. Kandpal et al. (2023) demonstrated that LLMs struggle with long-tail knowledge — precisely the knowledge that RAG is supposed to provide.
+
+## Engineering Lessons
+
+Barnett et al. (2024) derived practical lessons from three deployed RAG systems (research review, education, biomedical Q&A with 15,000 documents):
+
+- **Metadata enrichment helps retrieval**: adding source filename and chunk number to retrieved context improved the reader's extraction accuracy
+- **Open-source embedding models can outperform** commercial options on small, domain-specific text — the choice of embedding model matters for domain coverage
+- **Continuous calibration is required**: RAG systems receive unknown inputs at runtime, and performance characteristics change with each new LLM release. Monitoring is an operational requirement, not a one-time setup
+- **RAG pipelines are suboptimal by construction**: assembled from independently optimised components (chunker, embedder, retriever, reranker, reader) rather than trained end-to-end
 
 ## The Over-Retrieval Problem
 

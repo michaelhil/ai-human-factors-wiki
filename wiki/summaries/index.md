@@ -20,3 +20,4 @@ One summary per source document. Each summary captures the key arguments, findin
 
 ## Retrieval and Knowledge Grounding
 - [[summary-lewis-2020]] — Lewis et al. (2020) — Retrieval-Augmented Generation
+- [[summary-barnett-2024]] — Barnett et al. (2024) — Seven Failure Points in RAG Systems

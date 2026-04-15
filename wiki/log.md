@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Barnett_2024_seven-failure-points-in-rag-systems.pdf
+- Created: summaries/summary-barnett-2024.md
+- Updated: design-patterns/retrieval-augmented-generation.md (added engineering lessons from 3 case studies)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Sharma_2024_towards-understanding-sycophancy-in-language-models.pdf
 - Created: summaries/summary-sharma-2024.md
 - Updated: failure-modes/sycophancy.md (replaced manifestations with 4 empirically demonstrated types with quantitative findings; added root cause analysis from preference data)
