@@ -85,6 +85,8 @@ updated: YYYY-MM-DD
 ## Operations
 
 ### INGEST
+**MANDATORY: Always use `/wiki-ingest` via the Skill tool.** Do not process sources by manually reading PDFs and writing summaries — even when you know the steps. One skill invocation per source, every time, no exceptions.
+
 1. Read source completely (read directly — do not delegate to sub-agents)
 2. Extract knowledge according to wiki structure and page types
 3. Write pages with full detail — check each page against quality rules IMMEDIATELY after writing
