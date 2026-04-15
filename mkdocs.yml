@@ -111,6 +111,6 @@ nav:
     - Capability Gradient: evaluation-and-testing/capability-gradient.md
   - Domain Applications:
     - domain-applications/index.md
-  - Reference:
-    - Glossary: glossary.md
-    - Summaries: summaries/index.md
+  - Summaries:
+    - summaries/index.md
+  - Glossary: glossary.md
