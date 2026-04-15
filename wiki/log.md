@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Cemri_2025_why-do-multi-agent-llm-systems-fail.pdf
+- Created: summaries/summary-Cemri_2025_why-do-multi-agent-llm-systems-fail.md
+- Updated: failure-modes/multi-agent-coordination-failures.md (added MAST taxonomy with 14 failure modes, 3 categories, empirical rates from 1642 traces, +9.4% design-fix finding)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms.pdf
 - Created: summaries/summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms.md
 - Updated: design-patterns/knowledge-graphs.md (added empirical effectiveness data, three-category taxonomy of KG-LLM integration, inference-time trend)

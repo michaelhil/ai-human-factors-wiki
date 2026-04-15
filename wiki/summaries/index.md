@@ -27,6 +27,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]] — Patil et al. (2023) — Gorilla: LLM Connected with Massive APIs
 
+## Multi-Agent Failure Taxonomy
+- [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]] — Cemri et al. (2025) — Why Do Multi-Agent LLM Systems Fail? (MAST)
+
 ## Epistemic Independence
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — Sreedhar & Chilton (2024) — Single vs Multi-Agent Strategic Reasoning
 

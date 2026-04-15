@@ -11,6 +11,7 @@ related:
   - "[[situation-awareness-in-human-ai-teams]]"
   - "[[delivery-modes]]"
   - "[[monoculture-collapse]]"
+  - "[[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]]"
 tags:
   - multi-agent
   - coordination
@@ -55,6 +56,21 @@ A heartbeat-triggered agent enters the room not in response to any message. Stan
 
 ### Infrastructure Failures
 The coordination infrastructure itself (delivery modes, threading, [[governance-gates]]) is software that can fail, producing system-level errors distinct from individual agent errors.
+
+## The MAST Taxonomy: Empirical Failure Rates
+
+Cemri et al. (2025) provide the first empirically grounded taxonomy from 1,642 annotated failure traces across 7 MAS frameworks. Failure rates range from **41% to 86.7%** across systems. The 14 failure modes cluster into three categories:
+
+**System Design Issues (44.2%)** — the largest category, representing failures from architectural choices rather than model limitations:
+- Step repetition (15.7%), unaware of termination conditions (12.4%), disobey task specification (11.8%), loss of conversation history (2.8%), disobey role specification (1.5%)
+
+**Inter-Agent Misalignment (32.5%)** — breakdowns in agent coordination:
+- Reasoning-action mismatch (13.2%), task derailment (7.4%), fail to ask for clarification (6.8%), conversation reset (2.2%), ignored other agent's input (1.9%), information withholding (0.85%)
+
+**Task Verification (23.5%)** — quality control failures:
+- Incorrect verification (9.1%), no or incomplete verification (8.2%), premature termination (6.2%)
+
+**Key insight:** 44.2% of failures are design issues fixable through better architecture — not model limitations. A simple workflow fix (ensuring the CEO agent had final authority) improved ChatDev's success rate by +9.4% with the same underlying model. This validates that [[multi-agent-taxonomy]] pattern selection determines system properties more than model capability.
 
 ## Coordination Failure Modes by Pattern
 
