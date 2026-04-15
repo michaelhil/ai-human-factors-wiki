@@ -12,4 +12,4 @@ Where and why LLMs, agents, and multi-agent systems fail — the failure modes t
 - [[context-management-risks]] — Summarisation hallucination, information loss, asymmetric compression
 
 ## Agent and Multi-Agent Failure Modes
-*Pages to be added during Report 2 ingestion.*
+- [[multi-agent-coordination-failures]] — Coordination breakdowns, cascading errors, and systemic failures in multi-agent systems

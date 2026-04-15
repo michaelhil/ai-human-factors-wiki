@@ -15,7 +15,8 @@ This wiki provides a comprehensive technical reference on AI systems — large l
 - [[model-context-protocol]] — MCP standard for model-agnostic tool connectivity
 
 ### Multi-Agent Patterns
-*Pages to be added during Report 2 ingestion.*
+- [[multi-agent-taxonomy]] — Taxonomies of multi-agent system types and configurations
+- [[multi-agent-roles]] — Roles and responsibilities within multi-agent architectures
 
 ## Failure Modes
 - [[hallucination]] — Fluent, confident, and wrong
@@ -25,20 +26,25 @@ This wiki provides a comprehensive technical reference on AI systems — large l
 - [[output-vacuity]] — Superficially competent but operationally empty (slop)
 - [[self-correction-limitations]] — Intrinsic correction fails; extrinsic correction works
 - [[context-management-risks]] — Summarisation hallucination, information loss
+- [[multi-agent-coordination-failures]] — Coordination breakdowns and cascading errors in multi-agent systems
 
 ## Safety and Reliability
 - [[non-determinism-and-reproducibility]] — Stochastic output and V&V challenges
 - [[degradation-characteristics]] — Gradual, catastrophic, and silent degradation
 - [[opacity-and-explainability]] — Double opacity and auditability barriers
 - [[deployment-local-vs-cloud]] — Local vs cloud, open-weight models, configuration control
+- [[epistemic-independence]] — Independence of reasoning and evidence in multi-agent systems
+- [[monoculture-collapse]] — Common-cause failure from shared model weights and training data
 
 ## Design Patterns
 - [[retrieval-augmented-generation]] — RAG architecture and failure modes
 - [[knowledge-graphs]] — Structured grounding and guardrails
 - [[hybrid-decision-pipeline]] — Decision-type spectrum and layered architecture
+- [[governance-gates]] — Human-in-the-loop checkpoints and approval gates in AI pipelines
+- [[delivery-modes]] — Modes of AI output delivery and their implications for human oversight
 
 ## Human-AI Interaction
-*Pages to be added during ingestion.*
+- [[situation-awareness-in-human-ai-teams]] — Situation awareness theory applied to human-AI teaming contexts
 
 ## Evaluation and Testing
 *Pages to be added during ingestion.*

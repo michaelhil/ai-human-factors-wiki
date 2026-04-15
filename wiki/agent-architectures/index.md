@@ -9,7 +9,8 @@ How LLMs become agents, and how agents coordinate in single-agent and multi-agen
 - [[model-context-protocol]] — MCP standard for model-agnostic tool connectivity
 
 ## Multi-Agent Patterns
-*Pages to be added during Report 2 ingestion.*
+- [[multi-agent-taxonomy]] — Taxonomies of multi-agent system types and configurations
+- [[multi-agent-roles]] — Roles and responsibilities within multi-agent architectures
 
 ## Coordination and Communication
 *Pages to be added during Report 2 ingestion.*

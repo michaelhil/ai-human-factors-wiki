@@ -9,7 +9,8 @@ Risk properties of AI systems, independence requirements, common-cause failure, 
 - [[deployment-local-vs-cloud]] — Local vs cloud deployment, open-weight models, configuration management
 
 ## Independence and Common-Cause Failure
-*Pages to be added during Report 2 ingestion.*
+- [[epistemic-independence]] — Independence of reasoning and evidence in multi-agent systems
+- [[monoculture-collapse]] — Common-cause failure from shared model weights and training data
 
 ## Verification and Validation
 *Pages to be added during subsequent ingestion.*

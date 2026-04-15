@@ -72,6 +72,8 @@ nav:
     - Tool Calling: agent-architectures/tool-calling.md
     - Memory Architectures: agent-architectures/memory-architectures.md
     - Model Context Protocol: agent-architectures/model-context-protocol.md
+    - Multi-Agent Taxonomy: agent-architectures/multi-agent-taxonomy.md
+    - Multi-Agent Roles: agent-architectures/multi-agent-roles.md
   - Failure Modes:
     - failure-modes/index.md
     - Hallucination: failure-modes/hallucination.md
@@ -81,19 +83,25 @@ nav:
     - Output Vacuity: failure-modes/output-vacuity.md
     - Self-Correction Limitations: failure-modes/self-correction-limitations.md
     - Context Management Risks: failure-modes/context-management-risks.md
+    - Multi-Agent Coordination Failures: failure-modes/multi-agent-coordination-failures.md
   - Safety & Reliability:
     - safety-and-reliability/index.md
     - Non-Determinism: safety-and-reliability/non-determinism-and-reproducibility.md
     - Degradation Characteristics: safety-and-reliability/degradation-characteristics.md
     - Opacity and Explainability: safety-and-reliability/opacity-and-explainability.md
     - "Deployment: Local vs Cloud": safety-and-reliability/deployment-local-vs-cloud.md
+    - Epistemic Independence: safety-and-reliability/epistemic-independence.md
+    - Monoculture Collapse: safety-and-reliability/monoculture-collapse.md
   - Human-AI Interaction:
     - human-ai-interaction/index.md
+    - Situation Awareness in Human-AI Teams: human-ai-interaction/situation-awareness-in-human-ai-teams.md
   - Design Patterns:
     - design-patterns/index.md
     - RAG: design-patterns/retrieval-augmented-generation.md
     - Knowledge Graphs: design-patterns/knowledge-graphs.md
     - Hybrid Decision Pipeline: design-patterns/hybrid-decision-pipeline.md
+    - Governance Gates: design-patterns/governance-gates.md
+    - Delivery Modes: design-patterns/delivery-modes.md
   - Evaluation & Testing:
     - evaluation-and-testing/index.md
   - Domain Applications:

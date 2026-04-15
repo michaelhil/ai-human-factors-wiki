@@ -11,4 +11,5 @@ Architectural patterns for safe, effective AI advisory systems — interface des
 *Pages to be added during ingestion.*
 
 ## Control and Governance
-*Pages to be added during ingestion.*
+- [[governance-gates]] — Human-in-the-loop checkpoints and approval gates in AI pipelines
+- [[delivery-modes]] — Modes of AI output delivery and their implications for human oversight
