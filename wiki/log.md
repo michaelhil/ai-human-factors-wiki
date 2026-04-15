@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms.pdf
+- Created: summaries/summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms.md
+- Updated: design-patterns/knowledge-graphs.md (added empirical effectiveness data, three-category taxonomy of KG-LLM integration, inference-time trend)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms.pdf
 - Created: summaries/summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms.md
 - Updated: safety-and-reliability/epistemic-independence.md (added Ultimatum Game quantitative data: 87.5% vs 50%, error-type breakdown, personality consistency results)

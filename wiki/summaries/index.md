@@ -42,3 +42,4 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]] — Lewis et al. (2020) — Retrieval-Augmented Generation
 - [[summary-Barnett_2024_seven-failure-points-in-rag-systems]] — Barnett et al. (2024) — Seven Failure Points in RAG Systems
+- [[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]] — Agrawal et al. (2024) — Can Knowledge Graphs Reduce Hallucinations in LLMs?

@@ -11,6 +11,7 @@ related:
   - "[[hallucination]]"
   - "[[governance-gates]]"
   - "[[hybrid-decision-pipeline]]"
+  - "[[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]]"
 tags:
   - knowledge-graph
   - guardrail
@@ -36,9 +37,29 @@ A domain-specific KG encodes the formal relationships in a work domain. Examples
 
 Graph-RAG retrieves information by traversing typed relationships rather than by embedding similarity. When queried about the limits for a specific parameter, graph retrieval follows typed edges to the regulatory limit, producing a structurally grounded answer rather than the most similar text passage.
 
+## Empirical Effectiveness
+
+Agrawal et al. (2024) survey evidence that KG augmentation is the most effective single intervention for reducing [[hallucination]]:
+
+- **80%+ improvement** in answer correctness on QA tasks from augmenting with KG facts — more effective than increasing model size
+- **66.8% → 85.7%** accuracy on reasoning tasks (ChatGPT + RoG with KG augmentation)
+- **88.2%** accuracy in medical diagnosis (MindMap with clinical reasoning graph)
+
+The effectiveness ceiling is set by KG quality and coverage. Methods that rely on KG retrieval are bottlenecked by the completeness and currency of the knowledge graph — reinforcing that knowledge base maintenance is a safety function.
+
+## Three Uses of KGs with LLMs
+
+Agrawal et al. (2024) classify KG-LLM integration into three categories:
+
+1. **Knowledge-Aware Inference** — KG used at inference time, no model change: KG-augmented retrieval (structured graph traversal vs vector similarity), KG-augmented reasoning (model follows graph paths for multi-step reasoning), and KG-controlled generation (the guardrail function below)
+2. **Knowledge-Aware Training** — KG integrated into pre-training or fine-tuning, embedding structured knowledge into weights
+3. **Knowledge-Aware Validation** — KG used post-generation to verify output against structured facts (the fact-checking layer in the [[hybrid-decision-pipeline]])
+
+The trend since 2022: inference-time methods have overtaken training-time methods because retraining frontier models is impractical. Inference-time KG augmentation is also more auditable — the KG queries are logged, the facts are inspectable.
+
 ## Advantages Over Vector-Based RAG
 
-Agrawal et al. (2024) survey evidence that KG grounding reduces LLM [[hallucination]] in domain-specific tasks. Two advantages are particularly relevant:
+Two advantages are particularly relevant:
 
 1. **Relational structure preservation**: the connection between a safety function, its implementing system, and its regulatory limits is explicit in the graph, not implicit in embedding proximity. Graph traversal follows defined relationships; vector similarity may find related-seeming but structurally unrelated content.
 
