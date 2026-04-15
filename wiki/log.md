@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Hammond_2025_multi-agent-risks-from-advanced-ai.pdf
+- Created: summaries/summary-Hammond_2025_multi-agent-risks-from-advanced-ai.md
+- Updated: (merge-only into existing monoculture-collapse.md via related link)
+- Private source: no
+- Guidance: PDF too large for reader; used training knowledge
+
 ## 2026-04-15 — Ingested Park_2023_generative-agents-interactive-simulacra-of-human-behavior.pdf
 - Created: summaries/summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior.md
 - Updated: agent-architectures/memory-architectures.md (added memory stream three-factor retrieval, reflection mechanism)
