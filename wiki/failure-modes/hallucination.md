@@ -15,6 +15,7 @@ related:
   - "[[automation-bias]]"
   - "[[llm-architecture]]"
   - "[[summary-Huang_2023_survey-on-hallucination-in-large-language-models]]"
+  - "[[summary-Ji_2023_survey-of-hallucination-in-natural-language-generation]]"
 tags:
   - hallucination
   - reliability
@@ -48,6 +49,15 @@ The output is unfaithful to the user's instructions or provided context:
 - **Logical inconsistency**: internal contradictions within the output's own reasoning chain (e.g., calculating a value correctly in one step, then using a different value in the next)
 
 The distinction matters for safety-critical applications: factuality hallucination creates *wrong information* that could mislead decisions, while faithfulness hallucination means the system *ignores its own context or instructions* — a different failure mode requiring different detection strategies.
+
+### Intrinsic vs Extrinsic Hallucination
+
+An orthogonal taxonomy from [[summary-Ji_2023_survey-of-hallucination-in-natural-language-generation|Ji et al. (2023)]] distinguishes hallucination by its relationship to source material:
+
+- **Intrinsic hallucination**: the output **contradicts** the source content — always erroneous and detectable by comparison with the source
+- **Extrinsic hallucination**: the output **cannot be verified** from the source — it may draw on valid world knowledge or may be fabricated, but is unverifiable from the given context
+
+This distinction is important because different applications have different hallucination tolerances. Advisory systems in safety-critical domains require strict source faithfulness (low tolerance for both types), while conversational interfaces may tolerate extrinsic hallucination that enriches responses with relevant background knowledge. The hallucination tolerance should be an explicit design parameter, not an implicit system property.
 
 ## Causes: A Three-Source Framework
 

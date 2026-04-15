@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Ji_2023_survey-of-hallucination-in-natural-language-generation.pdf
+- Created: summary-Ji_2023_survey-of-hallucination-in-natural-language-generation.md
+- Updated: hallucination.md (added intrinsic/extrinsic taxonomy, summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation.pdf
+- Created: summary-Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation.md
+- Updated: calibration-and-confidence.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores.pdf
 - Created: summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores.md
 - Updated: calibration-and-confidence.md (enriched confidence elicitation methods with verbalized confidence findings), summaries/index.md

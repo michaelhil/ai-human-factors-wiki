@@ -15,6 +15,7 @@ One summary per source document. Each summary captures the key arguments, findin
 
 ## Hallucination and Knowledge Boundaries
 - [[summary-Huang_2023_survey-on-hallucination-in-large-language-models]] — Survey on Hallucination in LLMs
+- [[summary-Ji_2023_survey-of-hallucination-in-natural-language-generation]] — Survey of Hallucination in Natural Language Generation
 - [[summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge]] — LLMs Struggle to Learn Long-Tail Knowledge
 
 ## Prompt Sensitivity
@@ -27,6 +28,7 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Calibration and Confidence
 - [[summary-Kadavath_2022_language-models-mostly-know-what-they-know]] — Language Models (Mostly) Know What They Know
 - [[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores]] — Just Ask for Calibration
+- [[summary-Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation]] — Can LLMs Express Their Uncertainty?
 
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]] — Gorilla: LLM Connected with Massive APIs
