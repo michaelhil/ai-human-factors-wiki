@@ -68,4 +68,5 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]] — Retrieve-then-generate architecture reduces hallucination by grounding in external documents
 - [[summary-Barnett_2024_seven-failure-points-in-rag-systems]] — RAG can fail at each stage: chunking, embedding, retrieval, reranking, generation, and more
+- [[summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization]] — GraphRAG: graph + community summaries enable corpus-wide sensemaking that vector RAG cannot
 - [[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]] — Structured KG constraints reduce entity and relation hallucination in grounded generation

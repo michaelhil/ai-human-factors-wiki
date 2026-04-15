@@ -12,6 +12,7 @@ related:
   - "[[governance-gates]]"
   - "[[hybrid-decision-pipeline]]"
   - "[[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]]"
+  - "[[summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization]]"
 tags:
   - knowledge-graph
   - guardrail

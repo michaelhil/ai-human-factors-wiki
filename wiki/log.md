@@ -6,6 +6,12 @@
 - Private source: no
 - Guidance: none
 
+## 2026-04-15 — Ingested Edge_2024_from-local-to-global-graph-rag-query-focused-summarization.pdf
+- Created: summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization.md
+- Updated: knowledge-graphs.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate.pdf
 - Created: summary-Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate.md
 - Updated: epistemic-independence.md (added summary link), summaries/index.md
