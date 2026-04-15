@@ -14,6 +14,8 @@ related:
   - "[[monoculture-collapse]]"
   - "[[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]]"
   - "[[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society]]"
+  - "[[summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models]]"
+  - "[[summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both]]"
 tags:
   - multi-agent
   - coordination
@@ -67,6 +69,10 @@ A heartbeat-triggered agent enters the room not in response to any message. Stan
 
 These conversational failures are distinct from the coordination failures above: they arise not from concurrent operation or context limitations, but from the inability of language model agents to maintain stable conversational protocols over extended exchanges. They are most prevalent in Pattern 4 (Role-Based Crew) and Pattern 5 (Group Chat) architectures where agents coordinate through free-form dialogue.
 
+### Coordination Paralysis in Reasoning Models
+
+[[summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models|Riedl (2025)]] documents a failure mode specific to reasoning models (observed in QWEN3): when prompted to reason about other agents' likely actions (theory of mind) under noisy group feedback, agents enter infinite chain-of-thought loops attempting to reconcile their local strategy with uncertain information about group dynamics. The reasoning process itself becomes a trap — the more the agent reasons about coordination, the less able it is to act. This "paralysis under coordination ambiguity" is distinct from the conversational protocol failures above; it arises from the depth of reasoning rather than from conversational dynamics.
+
 ### Infrastructure Failures
 The coordination infrastructure itself (delivery modes, threading, [[governance-gates]]) is software that can fail, producing system-level errors distinct from individual agent errors.
 
@@ -84,6 +90,16 @@ The coordination infrastructure itself (delivery modes, threading, [[governance-
 - Incorrect verification (9.1%), no or incomplete verification (8.2%), premature termination (6.2%)
 
 **Key insight:** 44.2% of failures are design issues fixable through better architecture — not model limitations. A simple workflow fix (ensuring the CEO agent had final authority) improved ChatDev's success rate by +9.4% with the same underlying model. This validates that [[multi-agent-taxonomy]] pattern selection determines system properties more than model capability.
+
+## Dependency Graph Defects
+
+[[summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both|Gao et al. (2025)]] model multi-agent execution as a directed dependency graph and identify three structural defect categories that explain why MAS can underperform single-agent systems:
+
+- **Node-level defect:** Performance is bottlenecked by the critical agent handling the hardest subtask. Task decomposition across multiple agents does not help if the core difficulty exceeds any single LLM's capability. ~80% of test cases are ties (both MAS and SAS succeed or both fail), confirming this is the dominant factor.
+- **Edge-level defect:** Downstream agents are overwhelmed by upstream inputs. In high-in-degree nodes of the execution graph, excessive information from multiple sources causes overthinking and incorrect outputs — analogous to the flooding failure mode above, but at the individual agent level rather than the human operator level.
+- **Path-level defect:** Errors propagate through chains of agent interactions. When intermediate outputs are summarised or filtered, crucial context is lost irreversibly. Unlike single-agent systems where the full history remains in context, MAS information loss cascades downstream.
+
+These defects are structural: they arise from the graph topology of multi-agent coordination, not from model capability. They explain the empirical finding that MAS advantage over single-agent diminishes from 10–16% to 0.8–3% as frontier LLMs improve, while MAS costs remain 4–220x higher.
 
 ## Coordination Failure Modes by Pattern
 

@@ -39,12 +39,18 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Multi-Agent Surveys
 - [[summary-Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges]] — Four-dimensional taxonomy (environment, profiling, communication, capability) across 30+ LLM-MA systems
 
+## Multi-Agent vs Single-Agent
+- [[summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both]] — MAS advantage shrinks to 0.8–3% with frontier LLMs; hybrid routing/cascade paradigms optimise the accuracy-cost tradeoff
+
 ## Multi-Agent Failure and Risk
 - [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]] — MAST taxonomy: 14 failure modes across specification, inter-agent, and task verification
 - [[summary-Hammond_2025_multi-agent-risks-from-advanced-ai]] — Emergent risks from multi-agent interaction: herding, collusion, racing, destabilisation
 
 ## Multi-Agent Evaluation
 - [[summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate]] — Diverse role prompts are essential; same-prompt debate equals single-agent; optimal count is 3–4 agents
+
+## Emergent Coordination
+- [[summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models]] — Information-theoretic framework shows ToM prompting transforms agent aggregates into genuine collectives; both differentiation and integration required
 
 ## Epistemic Independence and Multi-Agent Debate
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — LLM agents converge to uniform strategies; multi-agent diversity is illusory

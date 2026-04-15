@@ -88,6 +88,10 @@ Subsequent work clarified the limits of same-model debate:
 
 Studies on LLM theory of mind (Kosinski, 2024; Ullman, 2023) show that the ability to track another entity's belief state separately from one's own is fragile, degrading under minor perturbations.
 
+### Measuring Emergent Collective Properties (Riedl, 2025)
+
+[[summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models|Riedl (2025)]] provides the first information-theoretic framework for measuring whether multi-agent LLM systems exhibit genuine emergent properties. Using partial information decomposition and time-delayed mutual information, the framework distinguishes three levels: (1) no emergence (mere aggregation), (2) identity-linked differentiation without integration (agents specialise but don't complement each other), and (3) true collective coordination (differentiated roles with goal-directed complementarity). Only the third level — achieved by combining distinct personas with explicit theory-of-mind reasoning — produces synergy that amplifies redundancy to improve performance. Both differentiation and integration are required; either alone is insufficient. This provides the measurement tools to verify whether a multi-agent system's independence claims are genuine or illusory.
+
 **Empirical limitation.** No published study has compared single-agent simulation and concurrent operation on safety-critical monitoring tasks with operational data. The architectural argument is strong; empirical confirmation of its magnitude in safety-critical domains is pending.
 
 ## Independence as a Continuum

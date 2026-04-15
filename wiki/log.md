@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Gao_2025_single-agent-or-multi-agent-systems-why-not-both.pdf
+- Created: summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both.md
+- Updated: multi-agent-coordination-failures.md (added dependency graph defects taxonomy), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Riedl_2025_emergent-coordination-in-multi-agent-language-models.pdf
+- Created: summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models.md
+- Updated: multi-agent-coordination-failures.md (added coordination paralysis failure mode), epistemic-independence.md (added emergence measurement framework), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration.pdf
 - Created: summary-Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration.md
 - Updated: multi-agent-roles.md (added empirical role validation principle), summaries/index.md
