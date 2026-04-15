@@ -26,6 +26,7 @@ One summary per source document. Each summary captures the key arguments, findin
 
 ## Calibration and Confidence
 - [[summary-Kadavath_2022_language-models-mostly-know-what-they-know]] — Language Models (Mostly) Know What They Know
+- [[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores]] — Just Ask for Calibration
 
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]] — Gorilla: LLM Connected with Massive APIs
@@ -41,7 +42,8 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Situation Awareness
 - [[summary-Gao_2023_agent-teaming-situation-awareness-atsa]] — Agent Teaming Situation Awareness (ATSA)
 
-## Multi-Agent Frameworks
+## Agent Frameworks and Cognitive Architectures
+- [[summary-Sumers_2024_cognitive-architectures-for-language-agents]] — Cognitive Architectures for Language Agents (CoALA)
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — AutoGen: Multi-Agent Conversation Framework
 
 ## Prompting and Reasoning

@@ -30,6 +30,8 @@ updated: 2026-04-15
 
 **Chain-of-Thought (CoT) Prompting** — A prompting technique where few-shot exemplars include intermediate reasoning steps, enabling LLMs to decompose multi-step problems into sequential natural language reasoning. An emergent ability requiring models of ~100B+ parameters. See [[inference-and-generation]].
 
+**CoALA (Cognitive Architectures for Language Agents)** — A conceptual framework organising language agents along three dimensions: memory (working, episodic, semantic, procedural), action space (internal vs external), and decision-making procedure. See [[perceive-reason-act-loop]] and [[memory-architectures]].
+
 **Context Window** — The fixed-size token buffer that bounds what an LLM can process in a single inference pass. See [[context-windows]].
 
 ## E

@@ -11,6 +11,7 @@ related:
   - "[[context-management-risks]]"
   - "[[retrieval-augmented-generation]]"
   - "[[summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior]]"
+  - "[[summary-Sumers_2024_cognitive-architectures-for-language-agents]]"
 tags:
   - memory
   - architecture

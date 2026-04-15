@@ -10,6 +10,7 @@ related:
   - "[[memory-architectures]]"
   - "[[context-windows]]"
   - "[[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models]]"
+  - "[[summary-Sumers_2024_cognitive-architectures-for-language-agents]]"
 tags:
   - agent
   - react

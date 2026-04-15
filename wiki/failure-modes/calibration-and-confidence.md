@@ -13,6 +13,7 @@ related:
   - "[[sycophancy]]"
   - "[[automation-bias]]"
   - "[[summary-Kadavath_2022_language-models-mostly-know-what-they-know]]"
+  - "[[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores]]"
 tags:
   - calibration
   - confidence
@@ -46,11 +47,13 @@ This is a direct consequence of the [[training-and-alignment]] process: RLHF opt
 
 ## Methods for Eliciting Confidence
 
-Xiong et al. (2024) evaluated methods for extracting confidence from LLMs:
+There are three broad approaches to extracting confidence from LLMs, with important trade-offs:
 
-- **Verbalised confidence** (the model stating "I am 85% confident") — often overconfident. The model's verbal self-assessment is a generated output subject to the same biases as any other output.
-- **Consistency-based estimation** (run the same query multiple times and measure agreement) — better calibrated but expensive, requiring multiple inference passes.
-- **Logit-based probability** (accessing the model's internal probability distribution over tokens) — better calibrated than verbal self-assessment, but requires access to model internals that may not be available through standard APIs.
+- **Logit-based probability** (accessing the model's internal probability distribution over tokens) — historically considered the gold standard, but [[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores|Tian et al. (2023)]] showed that RLHF-tuned models have systematically overconfident log probabilities. Many API-based deployments do not expose log probabilities at all.
+- **Verbalised confidence** (the model stating a numerical or linguistic confidence) — counterintuitively, Tian et al. (2023) found this often produces **better-calibrated** estimates than raw log probabilities for RLHF models, reducing expected calibration error by up to 50%. Specific strategies matter: generating multiple candidate answers before assigning probabilities, or prompting the model to consider alternative answers (inspired by "considering the opposite" from debiasing research), both improve calibration. Chain-of-thought reasoning, however, does not consistently improve calibration — reasoning accuracy and calibration appear to be partially independent capabilities.
+- **Consistency-based estimation** (run the same query multiple times and measure agreement) — better calibrated but expensive, requiring multiple inference passes. Xiong et al. (2024) found this approach generally outperforms single-pass verbalised confidence but at significant computational cost.
+
+Calibration quality varies substantially across models: GPT-4 produces significantly better-calibrated verbalized confidence than GPT-3.5-turbo or open-source alternatives. This means that calibration itself is a capability dimension that must be evaluated per-model and per-deployment.
 
 ## Design Implications
 

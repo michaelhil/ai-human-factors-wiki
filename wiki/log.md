@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores.pdf
+- Created: summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores.md
+- Updated: calibration-and-confidence.md (enriched confidence elicitation methods with verbalized confidence findings), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Sumers_2024_cognitive-architectures-for-language-agents.pdf
+- Created: summary-Sumers_2024_cognitive-architectures-for-language-agents.md
+- Updated: perceive-reason-act-loop.md (added summary link), memory-architectures.md (added summary link), glossary.md (added CoALA entry), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Madaan_2023_self-refine-iterative-refinement-with-self-feedback.pdf
 - Created: summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback.md
 - Updated: self-correction-limitations.md (added nuanced treatment of Self-Refine, quality vs correctness distinction), summaries/index.md
