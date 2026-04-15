@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Huang_2023_large-language-models-cannot-self-correct-reasoning-yet.pdf
+- Created: summaries/summary-huang-2023-self-correct.md
+- Updated: failure-modes/self-correction-limitations.md (added quantitative degradation data, explanation of why prior claims were misleading)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Barnett_2024_seven-failure-points-in-rag-systems.pdf
 - Created: summaries/summary-barnett-2024.md
 - Updated: design-patterns/retrieval-augmented-generation.md (added engineering lessons from 3 case studies)

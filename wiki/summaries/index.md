@@ -6,6 +6,9 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-vaswani-2017]] — Vaswani et al. (2017) — Attention Is All You Need
 - [[summary-phuong-2022]] — Phuong & Hutter (2022) — Formal Algorithms for Transformers
 
+## Self-Correction
+- [[summary-huang-2023-self-correct]] — Huang et al. (2024) — LLMs Cannot Self-Correct Reasoning Yet
+
 ## Sycophancy
 - [[summary-sharma-2024]] — Sharma et al. (2024) — Towards Understanding Sycophancy in Language Models
 

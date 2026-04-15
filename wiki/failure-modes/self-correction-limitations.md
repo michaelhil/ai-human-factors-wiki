@@ -10,6 +10,7 @@ related:
   - "[[calibration-and-confidence]]"
   - "[[training-and-alignment]]"
   - "[[degradation-characteristics]]"
+  - "[[summary-huang-2023-self-correct]]"
 tags:
   - self-correction
   - failure-mode
@@ -32,6 +33,20 @@ Huang et al. (2023) found that **intrinsic self-correction** — a single model 
 The finding is precise: **extrinsic correction works.** When the model receives external information — the result of executing its code, output from a tool call, data from a sensor, verification against a [[knowledge-graphs]] — that provides evidence about correctness, the model can effectively use this feedback to improve its output.
 
 **Intrinsic correction does not work.** When the model is simply asked to reconsider its own output without any new information, the critiquing model shares all the training biases that produced the original output and cannot reliably identify errors arising from its own systematic miscalibration.
+
+## Quantitative Evidence: Self-Correction Degrades Performance
+
+Huang et al. (2024) provide the definitive empirical demonstration across multiple models and benchmarks:
+
+| Model | Benchmark | Standard | After Self-Correction | Change |
+|---|---|---|---|---|
+| GPT-3.5 | GSM8K (math) | **75.9%** | 74.7% | -1.2% |
+| GPT-4 | GSM8K (math) | **95.5%** | 89.0% | -6.5% |
+| Llama-2 | GSM8K (math) | **62.0%** | 36.5% | -25.5% |
+
+In every case, the initial response outperformed the "corrected" version. Analysis of answer changes showed the model was **more likely to flip correct answers to incorrect** (8.8%) than to fix incorrect ones (7.0%). Self-correction is net-destructive.
+
+**Why prior claims of self-correction were misleading:** Reflexion and RCI used oracle labels (ground-truth answers) to stop the correction loop — the improvement came from knowing the answer, not from self-correction. Multi-agent debate used multiple model calls but was compared to single-call baselines unfairly. Self-Refine's improvement came from more informative feedback prompts, not from the correction process itself.
 
 ## Where Improvement Is Real
 
