@@ -7,6 +7,9 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Phuong_2022_formal-algorithms-for-transformers]] — Pseudocode specification of transformer forward pass, tokenisation, and training
 - [[summary-Shanahan_2023_role-play-with-large-language-models]] — LLMs role-play characters from training data, not hold beliefs; anthropomorphism misleads safety analysis
 
+## Self-Correction, Refinement, and Self-Reflection
+- [[summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach]] — Dialectical self-opposition partially overcomes self-correction failure through structural constraint, but single-model limits persist
+
 ## Self-Correction and Refinement
 - [[summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet]] — Intrinsic self-correction degrades performance; only external feedback helps
 - [[summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback]] — Iterative self-feedback improves generation quality but not reasoning correctness

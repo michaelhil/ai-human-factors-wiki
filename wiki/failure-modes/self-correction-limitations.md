@@ -5,8 +5,10 @@ sources:
   - raw/references/Huang_2023_large-language-models-cannot-self-correct-reasoning-yet.pdf
   - raw/references/Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning.pdf
   - raw/references/Madaan_2023_self-refine-iterative-refinement-with-self-feedback.pdf
+  - raw/references/Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach.pdf
 related:
   - "[[hallucination]]"
+  - "[[summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach]]"
   - "[[calibration-and-confidence]]"
   - "[[training-and-alignment]]"
   - "[[degradation-characteristics]]"
@@ -55,6 +57,8 @@ In every case, the initial response outperformed the "corrected" version. Analys
 The improvements documented in systems like [[summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning|Reflexion (Shinn et al., 2023)]] operate in the **extrinsic regime**: the agent receives external feedback signals (environment rewards, test results) and uses them to guide improvement across trials via episodic memory.
 
 [[summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback|Self-Refine (Madaan et al., 2023)]] occupies a middle ground: the same model generates structured feedback on its own output using a dedicated feedback prompt, then refines based on that feedback. This works well for **quality improvement** tasks (code efficiency, dialogue engagement, text style — 5-40% improvement) but shows near-zero gains on **reasoning correctness** (math reasoning: +0.2% with GPT-4). The distinction is important: structured self-feedback can identify concrete surface-level issues but shares the same reasoning biases that produced the original errors.
+
+[[summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach|Abdali et al. (2025)]] demonstrate a **dialectical self-reflection** approach where a single model iteratively generates a proposition, an opposition (structured critique from an explicitly different perspective), and a unified synthesis. This outperforms standard prompting on mathematical and symbolic reasoning. The key mechanism is that the opposition prompt provides **structural extrinsic constraint** — forcing the model to generate critiques from a different perspective rather than naively reviewing its own output. However, the opposition enters repetitive loops after several iterations, and the unified idea always maintains self-consistency rather than allowing one perspective to prevail, confirming that single-model dialectic remains bounded by shared-weight limitations (see [[epistemic-independence]]).
 
 This distinction is critical for system design. Self-correction works when:
 - Tool results provide ground truth (code execution, database queries, sensor readings)

@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach.pdf
+- Created: summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach.md
+- Updated: self-correction-limitations.md (added dialectical self-reflection as structured extrinsic correction), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Gao_2025_single-agent-or-multi-agent-systems-why-not-both.pdf
 - Created: summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both.md
 - Updated: multi-agent-coordination-failures.md (added dependency graph defects taxonomy), summaries/index.md
