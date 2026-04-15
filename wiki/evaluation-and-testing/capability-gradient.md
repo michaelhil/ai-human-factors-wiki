@@ -1,7 +1,8 @@
 ---
 title: "The Capability Gradient for AI Testing"
 type: evaluation
-sources: []
+sources:
+  - raw/references/Zhou_2025_labsafety-bench-benchmarking-llms-on-safety-issues-in-scientific-labs.pdf
 related:
   - "[[hra-methods-for-ai]]"
   - "[[deployment-local-vs-cloud]]"
@@ -73,3 +74,5 @@ The gradient assumes a domain professional specifying what to build (requirement
 2. **Domain-agnostic structure.** The gradient applies to any safety-critical domain: replace the reactor scenario with a drilling scenario (oil and gas), a flight management scenario (aviation), or a clinical scenario (medical), and the same eight levels apply with domain-specific content.
 
 3. **Evidence compounds across levels.** Level 7 human-AI interaction studies are more informative when conducted on a system that has been systematically evaluated through Levels 0–6, because the lower-level evidence contextualises the human factors findings.
+
+4. **Scale does not guarantee domain safety.** Empirical evidence from laboratory safety benchmarking shows that larger, newer, or reasoning-enhanced models do not reliably outperform smaller ones on domain-specific safety tasks ([[summary-Zhou_2025_labsafety-bench-benchmarking-llms-on-safety-issues-in-scientific-labs|Zhou et al., 2025]]). The smaller GPT-4o-mini outperformed both GPT-4o and o3-mini on hazard identification. Furthermore, high accuracy on structured knowledge recall (MCQs) does not predict performance on applied safety reasoning (open-ended hazard assessment). This disconnection underscores why the capability gradient must include domain-specific safety evaluation levels, not just general capability benchmarks.

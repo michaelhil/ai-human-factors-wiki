@@ -17,6 +17,8 @@ One summary per source document. Each summary captures the key arguments, findin
   4-bit quantised finetuning matches 16-bit performance; enables 65B models on a single GPU
 - [[summary-Frantar_2023_gptq-accurate-post-training-quantization]]<br>
   Second-order post-training quantization to 3–4 bits with negligible accuracy loss; 175B model fits one GPU
+- [[summary-Yang_2024_dawn-of-large-multimodal-models]]<br>
+  Qualitative GPT-4V capabilities catalogue; multimodal agent patterns (plugins, chains, self-reflection) and domain-specific hallucinations in medical imaging
 
 ## Self-Correction, Refinement, and Self-Reflection
 - [[summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach]]<br>
@@ -100,6 +102,10 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Multi-Agent vs Single-Agent
 - [[summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both]]<br>
   MAS advantage shrinks to 0.8–3% with frontier LLMs; hybrid routing/cascade paradigms optimise the accuracy-cost tradeoff
+
+## Domain-Specific Safety Evaluation
+- [[summary-Zhou_2025_labsafety-bench-benchmarking-llms-on-safety-issues-in-scientific-labs]]<br>
+  No LLM exceeds 70% on lab hazard identification; model scale, RAG, and CoT often hurt rather than help domain safety performance
 
 ## Safety, Security, and Catastrophic Risk
 - [[summary-Toward_2026_reliable-safe-secure-llms-scientific-applications]]<br>

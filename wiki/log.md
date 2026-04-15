@@ -1,5 +1,18 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Yang_2024_dawn-of-large-multimodal-models.pdf
+- Created: summary-Yang_2024_dawn-of-large-multimodal-models.md
+- Updated: summaries/index.md
+- Private source: no
+- Guidance: none
+- Notes: 156-page capabilities showcase of GPT-4V (Microsoft). Limited HF/safety relevance — brief summary linking to existing architecture, delivery-modes, hallucination, and agent pages. No new concept pages created. Final reference (78/78, with Dokas_2025 corrupted/skipped).
+
+## 2026-04-15 — Ingested Zhou_2025_labsafety-bench-benchmarking-llms-on-safety-issues-in-scientific-labs.pdf
+- Created: summary-Zhou_2025_labsafety-bench-benchmarking-llms-on-safety-issues-in-scientific-labs.md
+- Updated: evaluation-and-testing/capability-gradient.md (scale doesn't guarantee domain safety), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Toward_2026_reliable-safe-secure-llms-scientific-applications.pdf
 - Created: summary-Toward_2026_reliable-safe-secure-llms-scientific-applications.md
 - Updated: summaries/index.md
