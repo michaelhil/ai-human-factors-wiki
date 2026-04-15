@@ -73,3 +73,26 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 
 ### Updated:
 - summaries/index.md — populated with all 20 summary entries grouped by topic
+
+## 2026-04-15 — Removed ad-hoc summaries, switched to /wiki-ingest skill
+- Removed 40 summary pages created without proper ingestion process
+- Fixed 3 dead wikilinks in glossary
+- Audited all 33 content pages: no orphans, no missing source paths, build clean
+
+## 2026-04-15 — Ingested Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks.pdf
+- Created: summaries/summary-lewis-2020.md
+- Updated: design-patterns/retrieval-augmented-generation.md (added RAG-Sequence/Token distinction, index hot-swapping, factuality evidence)
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Phuong_2022_formal-algorithms-for-transformers.pdf
+- Created: summaries/summary-phuong-2022.md
+- Updated: foundations/llm-architecture.md (added decoder-only architecture section, causal mask explanation)
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Vaswani_2017_attention-is-all-you-need.pdf
+- Created: summaries/summary-vaswani-2017.md
+- Updated: foundations/llm-architecture.md (added multi-head attention, positional encoding, quadratic complexity, encoder-decoder structure detail)
+- Private source: no
+- Guidance: none

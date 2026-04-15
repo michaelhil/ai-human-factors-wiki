@@ -11,6 +11,7 @@ related:
   - "[[hallucination]]"
   - "[[context-windows]]"
   - "[[llm-architecture]]"
+  - "[[summary-lewis-2020]]"
 tags:
   - rag
   - retrieval
@@ -33,7 +34,22 @@ Retrieval-Augmented Generation (RAG) is the primary mechanism for grounding LLM 
 3. **Retrieval**: The most semantically similar document chunks are retrieved
 4. **Generation**: Retrieved chunks are inserted into the model's context, and the model generates its response with this grounding material available
 
-RAG improves factual accuracy by providing the model with relevant, potentially up-to-date information that may not be in its training data. The knowledge base can be updated without retraining the model — add new documents and they become available at the next query.
+RAG improves factual accuracy by providing the model with relevant, potentially up-to-date information that may not be in its training data. Human evaluators in the original RAG study (Lewis et al., 2020) found RAG generations more factual than parametric-only generation in 42.7% of comparisons, versus only 7.1% the other way — strong evidence that retrieval grounding produces more factual output on average.
+
+## Two RAG Formulations
+
+The original RAG paper (Lewis et al., 2020) defined two variants:
+
+- **RAG-Sequence**: the same retrieved document conditions the entire output sequence. Appropriate when the answer draws from a single coherent source.
+- **RAG-Token**: different retrieved documents can condition different output tokens. Appropriate when the answer must synthesise information from multiple sources.
+
+In practice, most production RAG systems use a simpler approach: retrieve top-K chunks, concatenate them into context, and generate. The formal RAG-Sequence/Token distinction matters primarily for understanding why different RAG implementations perform differently on different task types.
+
+## Index Hot-Swapping
+
+A key property of RAG for safety-critical applications: the document index can be replaced at test time without retraining the model. Lewis et al. (2020) demonstrated this by swapping Wikipedia indices from different years — the model's factual knowledge updated accordingly, with 70% accuracy on 2016 world leaders using the 2016 index and 68% for 2018 leaders using the 2018 index.
+
+This is the fundamental advantage over fine-tuning (see [[training-and-alignment]]): knowledge currency can be maintained through a document management process rather than requiring opaque weight modifications. For regulated domains, this means knowledge updates follow the same change control process as any other document revision — a far more auditable path than fine-tuning.
 
 ## Documented Failure Modes
 
