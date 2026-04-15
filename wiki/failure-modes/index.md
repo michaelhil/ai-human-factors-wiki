@@ -6,7 +6,10 @@ Where and why LLMs, agents, and multi-agent systems fail — the failure modes t
 - [[hallucination]] — Fluent, confident, and wrong: types, causes, and mitigation
 - [[calibration-and-confidence]] — When expressed confidence does not match actual accuracy
 - [[sycophancy]] — The tendency to agree with the user rather than provide independent analysis
+- [[prompt-sensitivity]] — Minor input changes producing major output variation
 - [[output-vacuity]] — Superficially competent but operationally empty output (slop)
+- [[self-correction-limitations]] — Intrinsic vs extrinsic correction and the false assurance problem
+- [[context-management-risks]] — Summarisation hallucination, information loss, asymmetric compression
 
 ## Agent and Multi-Agent Failure Modes
-*Pages to be added during ingestion.*
+*Pages to be added during Report 2 ingestion.*

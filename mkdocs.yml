@@ -65,25 +65,35 @@ nav:
     - LLM Architecture: foundations/llm-architecture.md
     - Context Windows: foundations/context-windows.md
     - Training and Alignment: foundations/training-and-alignment.md
+    - Inference and Generation: foundations/inference-and-generation.md
   - Agent Architectures:
     - agent-architectures/index.md
+    - Perceive-Reason-Act Loop: agent-architectures/perceive-reason-act-loop.md
     - Tool Calling: agent-architectures/tool-calling.md
+    - Memory Architectures: agent-architectures/memory-architectures.md
+    - Model Context Protocol: agent-architectures/model-context-protocol.md
   - Failure Modes:
     - failure-modes/index.md
     - Hallucination: failure-modes/hallucination.md
     - Calibration and Confidence: failure-modes/calibration-and-confidence.md
     - Sycophancy: failure-modes/sycophancy.md
+    - Prompt Sensitivity: failure-modes/prompt-sensitivity.md
     - Output Vacuity: failure-modes/output-vacuity.md
+    - Self-Correction Limitations: failure-modes/self-correction-limitations.md
+    - Context Management Risks: failure-modes/context-management-risks.md
   - Safety & Reliability:
     - safety-and-reliability/index.md
     - Non-Determinism: safety-and-reliability/non-determinism-and-reproducibility.md
     - Degradation Characteristics: safety-and-reliability/degradation-characteristics.md
+    - Opacity and Explainability: safety-and-reliability/opacity-and-explainability.md
+    - "Deployment: Local vs Cloud": safety-and-reliability/deployment-local-vs-cloud.md
   - Human-AI Interaction:
     - human-ai-interaction/index.md
   - Design Patterns:
     - design-patterns/index.md
     - RAG: design-patterns/retrieval-augmented-generation.md
     - Knowledge Graphs: design-patterns/knowledge-graphs.md
+    - Hybrid Decision Pipeline: design-patterns/hybrid-decision-pipeline.md
   - Evaluation & Testing:
     - evaluation-and-testing/index.md
   - Domain Applications:
