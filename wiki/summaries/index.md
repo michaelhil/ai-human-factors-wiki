@@ -36,6 +36,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]] — Fine-tuned model for API calling; demonstrates hallucinated parameter problem
 
+## Multi-Agent Surveys
+- [[summary-Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges]] — Four-dimensional taxonomy (environment, profiling, communication, capability) across 30+ LLM-MA systems
+
 ## Multi-Agent Failure and Risk
 - [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]] — MAST taxonomy: 14 failure modes across specification, inter-agent, and task verification
 - [[summary-Hammond_2025_multi-agent-risks-from-advanced-ai]] — Emergent risks from multi-agent interaction: herding, collusion, racing, destabilisation
@@ -60,10 +63,11 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning]] — Verbal self-reflection stored as episodic memory enables trial-and-error learning without weight updates
 - [[summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior]] — Memory streams with recency/importance/relevance retrieval produce emergent social behaviour
 
-## Training and Scaling
+## Training, Scaling, and Evaluation
 - [[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback]] — AI-generated critiques replace human labellers for alignment; scalable but embeds designer values
 - [[summary-McKenzie_2023_inverse-scaling-when-bigger-isnt-better]] — Larger models perform worse on some tasks; scale amplifies training biases, not just capabilities
 - [[summary-Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data]] — Recursive training on AI-generated data causes progressive tail loss; mathematically inevitable
+- [[summary-Perez_2023_discovering-language-model-behaviors-with-model-written-evaluations]] — RLHF amplifies sycophancy and self-preservation; LMs can auto-generate safety evaluations
 
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]] — Retrieve-then-generate architecture reduces hallucination by grounding in external documents

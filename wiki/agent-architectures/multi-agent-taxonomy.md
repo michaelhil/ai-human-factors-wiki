@@ -14,6 +14,7 @@ related:
   - "[[multi-agent-coordination-failures]]"
   - "[[multi-agent-roles]]"
   - "[[llm-architecture]]"
+  - "[[summary-Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges]]"
 tags:
   - multi-agent
   - taxonomy

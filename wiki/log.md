@@ -6,6 +6,18 @@
 - Private source: no
 - Guidance: none
 
+## 2026-04-15 — Ingested Perez_2023_discovering-language-model-behaviors-with-model-written-evaluations.pdf
+- Created: summary-Perez_2023_discovering-language-model-behaviors-with-model-written-evaluations.md
+- Updated: summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges.pdf
+- Created: summary-Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges.md
+- Updated: multi-agent-taxonomy.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Edge_2024_from-local-to-global-graph-rag-query-focused-summarization.pdf
 - Created: summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization.md
 - Updated: knowledge-graphs.md (added summary link), summaries/index.md
