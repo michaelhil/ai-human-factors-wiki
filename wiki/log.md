@@ -6,6 +6,12 @@
 - Private source: no
 - Guidance: none
 
+## 2026-04-15 — Ingested Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data.pdf
+- Created: summary-Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data.md
+- Updated: monoculture-collapse.md (added model collapse mechanism and source), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Shanahan_2023_role-play-with-large-language-models.pdf
 - Created: summary-Shanahan_2023_role-play-with-large-language-models.md
 - Updated: opacity-and-explainability.md (added source and summary link), summaries/index.md

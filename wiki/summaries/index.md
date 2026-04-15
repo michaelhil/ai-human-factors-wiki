@@ -60,6 +60,7 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Training and Scaling
 - [[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback]] — AI-generated critiques replace human labellers for alignment; scalable but embeds designer values
 - [[summary-McKenzie_2023_inverse-scaling-when-bigger-isnt-better]] — Larger models perform worse on some tasks; scale amplifies training biases, not just capabilities
+- [[summary-Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data]] — Recursive training on AI-generated data causes progressive tail loss; mathematically inevitable
 
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]] — Retrieve-then-generate architecture reduces hallucination by grounding in external documents
