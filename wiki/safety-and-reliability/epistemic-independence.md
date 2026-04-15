@@ -14,6 +14,7 @@ related:
   - "[[self-correction-limitations]]"
   - "[[training-and-alignment]]"
   - "[[sycophancy]]"
+  - "[[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]]"
 tags:
   - epistemic-independence
   - safety
@@ -51,7 +52,22 @@ Two properties of [[llm-architecture]] constrain what single-agent simulation ac
 
 ## Empirical Evidence
 
-Sreedhar and Chilton (2024) tested single LLMs against separate multi-agent instances on the Ultimatum Game. Separate instances achieved 88% accuracy in simulating personality-differentiated reasoning; single-model simulation achieved 50% (chance). The single model could execute individual strategies but failed to maintain consistent, differentiated strategies across simulated agents.
+### The Ultimatum Game Experiment (Sreedhar & Chilton, 2024)
+
+The most direct controlled comparison: single GPT-4 instances simulating both players vs separate GPT-4 instances (one per player) on a five-round Ultimatum Game with personality-differentiated players (greedy and fair).
+
+| Structure | Human-Consistent Simulations |
+|---|---|
+| **Multi-agent (GPT-4)** | **87.5%** |
+| Multi-agent (GPT-3.5) | 82.5% |
+| Single-LLM (GPT-4) | 50.0% |
+| Single-LLM (GPT-3.5) | 42.5% |
+
+The difference is statistically significant (χ² = 13.091, p < .001). The error analysis reveals the mechanism: in multi-agent systems, **100% of errors were strategy creation errors with zero gameplay mistakes** — once agents had separate contexts, they executed their strategies faithfully. In single-LLM systems, **25–39% of errors were gameplay execution failures** — the single model couldn't maintain separate player strategies because information leaked across the shared context. This directly confirms the unified attention problem: the proposer's strategy was visible during the receiver's reasoning.
+
+The hardest condition (Greedy-Greedy, requiring differentiated selfish strategies) showed the largest gap: multi-agent achieved 80% vs single-LLM only 10%. The value of architectural independence is greatest precisely when differentiated strategies matter most.
+
+### Theory of Mind and Debate Studies
 
 Studies on LLM theory of mind (Kosinski, 2024; Ullman, 2023) show that the ability to track another entity's belief state separately from one's own is fragile, degrading under minor perturbations.
 

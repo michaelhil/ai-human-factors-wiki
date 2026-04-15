@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms.pdf
+- Created: summaries/summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms.md
+- Updated: safety-and-reliability/epistemic-independence.md (added Ultimatum Game quantitative data: 87.5% vs 50%, error-type breakdown, personality consistency results)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation.pdf
 - Created: summaries/summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation.md
 - Updated: agent-architectures/multi-agent-roles.md (added grounding agent and safeguard agent roles with AutoGen empirical data)

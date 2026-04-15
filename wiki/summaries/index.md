@@ -27,6 +27,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]] — Patil et al. (2023) — Gorilla: LLM Connected with Massive APIs
 
+## Epistemic Independence
+- [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — Sreedhar & Chilton (2024) — Single vs Multi-Agent Strategic Reasoning
+
 ## Multi-Agent Frameworks
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Wu et al. (2024) — AutoGen: Multi-Agent Conversation Framework
 
