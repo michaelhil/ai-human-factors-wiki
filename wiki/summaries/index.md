@@ -44,6 +44,7 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — LLM agents converge to uniform strategies; multi-agent diversity is illusory
 - [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]] — Multi-agent debate improves factuality but gains plateau; shared biases limit independence
 - [[summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate]] — Debate success bounded by strongest reasoner; model diversity beats structural parameters
+- [[summary-Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate]] — Debate can actively harm accuracy; weak agents contaminate strong ones through social pressure
 
 ## Situation Awareness
 - [[summary-Gao_2023_agent-teaming-situation-awareness-atsa]] — ATSA framework extends situation awareness theory to human-AI agent teams

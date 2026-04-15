@@ -17,6 +17,7 @@ related:
   - "[[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]]"
   - "[[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]]"
   - "[[summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate]]"
+  - "[[summary-Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate]]"
 tags:
   - epistemic-independence
   - safety
