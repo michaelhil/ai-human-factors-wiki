@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms.pdf
+- Created: summary-Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms.md
+- Updated: hallucination.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques.pdf
+- Created: summary-Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques.md
+- Updated: hallucination.md (expanded mitigation section with full taxonomy from survey), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks.pdf
 - Created: summary-Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks.md
 - Updated: human-ai-interaction/theory-of-mind-in-llms.md (integrated Ullman counterevidence, added Danaides problem, anthropomorphism risk), summaries/index.md

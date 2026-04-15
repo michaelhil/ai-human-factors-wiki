@@ -17,6 +17,10 @@ related:
   - "[[summary-Huang_2023_survey-on-hallucination-in-large-language-models]]"
   - "[[summary-Ji_2023_survey-of-hallucination-in-natural-language-generation]]"
   - "[[summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection]]"
+  - "[[summary-Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques]]"
+  - "[[summary-Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms]]"
+  - "[[self-correction-limitations]]"
+  - "[[inference-and-generation]]"
 tags:
   - hallucination
   - reliability
@@ -93,15 +97,35 @@ The trajectory matters: hallucination rates decrease with model scale and improv
 
 ## Mitigation Approaches
 
-**[[retrieval-augmented-generation]]** reduces hallucination by grounding generation in retrieved documents. The model generates responses with relevant source material in its context, reducing reliance on parametric memory alone.
+[[summary-Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques|Tonmoy et al. (2024)]] survey over thirty-two mitigation techniques and organise them into a taxonomy with two main branches: prompt engineering (no model modification) and model development (modifying weights or decoding).
 
-**[[knowledge-graphs]]** can block assertions that contradict verified domain knowledge. A guardrail check verifies whether the model's output is consistent with the knowledge graph before the output reaches the user.
+### Prompt Engineering Approaches
+
+**[[retrieval-augmented-generation]]** is the most extensively developed family. Techniques operate at different points in the generation pipeline: before generation (retrieving knowledge upfront), during generation (validating low-confidence outputs in real time), after generation (fact-checking and post-editing with retrieved evidence), and end-to-end (integrated retriever-generator architectures). RAG reduces hallucination by grounding generation in retrieved documents, but inherits retriever limitations — wrong or irrelevant retrieved content can introduce new errors.
+
+**Self-refinement through feedback and reasoning** has the model evaluate and correct its own outputs. Approaches include decomposing reliability into facets (generalizability, social biases, calibration, factuality), detecting self-contradictions, and iterative knowledge acquisition. A critical limitation is that [[self-correction-limitations|intrinsic self-correction without external feedback tends to degrade rather than improve performance]] — the model cannot reliably detect its own hallucinations without external grounding.
+
+**Prompt tuning** uses automatically retrieved prompts or synthetic training tasks to reduce hallucination in specific task types (e.g., summarisation).
+
+### Model Development Approaches
+
+**New decoding strategies** intervene during token generation. Context-Aware Decoding (CAD) amplifies the difference between output distributions with and without context, making the model more faithful to provided information. Decoding by Contrasting Layers (DoLa) contrasts logit differences between later and earlier transformer layers to surface factual knowledge localised in specific layers. Inference-Time Intervention (ITI) shifts attention head activations toward truthfulness during inference. These approaches require no external knowledge or fine-tuning but add computational cost.
+
+**[[knowledge-graphs]]** ground generation in structured knowledge. A guardrail check verifies whether the model's output is consistent with the knowledge graph before the output reaches the user.
+
+**Faithfulness-based loss functions** modify the training objective to penalise hallucination directly, using information-theoretic approaches or weighted losses across multiple evaluation dimensions.
+
+**Supervised fine-tuning** trains models on curated factual data. R-Tuning teaches models to refuse unknown questions rather than fabricate answers. HAR (Hallucination Augmented Recitations) creates counterfactual datasets to enhance source attribution. Fine-tuning for factuality uses Direct Preference Optimisation to align outputs with verified facts.
+
+### Detection Without Mitigation
 
 **Consistency checking** across multiple generations can flag unreliable outputs. [[summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection|SelfCheckGPT (Manakul et al., 2023)]] demonstrated that sampling multiple stochastic responses and measuring their agreement provides a strong hallucination signal: factual claims produce consistent samples, while hallucinated claims produce divergent ones. This zero-resource approach requires no external database and outperformed grey-box methods (token probabilities) on passage-level factuality ranking — achieving 78.32 Pearson correlation with human judgments. The method converts [[non-determinism-and-reproducibility]] from a liability into a detection feature.
 
 **Structured output constraints** restrict the space of possible outputs (JSON schemas, typed fields), eliminating some formatting-level fabrication. But a model can produce a perfectly valid JSON object containing entirely fabricated values — the structure is correct while the content is not.
 
-None of these eliminates hallucination. Each reduces its frequency and provides partial detection capability.
+### The Defence-in-Depth Principle
+
+No single technique eliminates hallucination. The survey demonstrates that effective mitigation combines multiple approaches at different stages of the pipeline — retrieval grounding, self-verification, decoding constraints, and output validation. Each layer catches failures that others miss. Many techniques also trade hallucination reduction for increased latency, creating tension with time-critical operational contexts where response speed matters.
 
 ## Relevance to Safety-Critical Systems
 

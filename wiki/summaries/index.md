@@ -32,6 +32,14 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge]]<br>
   Accuracy tracks training data frequency; rare knowledge is systematically unreliable
 
+## Hallucination Surveys
+- [[summary-Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms]]<br>
+  Three-type taxonomy (input/context/fact-conflicting); hallucination snowballing via RLHF; lifecycle-stage source analysis
+
+## Hallucination Mitigation
+- [[summary-Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques]]<br>
+  Taxonomy of 32+ mitigation techniques across RAG, self-refinement, decoding strategies, KGs, and fine-tuning; no single approach eliminates hallucination
+
 ## Prompt Sensitivity
 - [[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]]<br>
   Format changes (delimiters, casing, spacing) cause up to 76-point accuracy swings
