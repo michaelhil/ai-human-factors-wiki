@@ -1,6 +1,6 @@
 site_name: "AI for Human Factors and Safety"
 site_description: "A technical primer on AI systems for Human Factors and Safety specialists"
-site_url: ""
+site_url: "https://michaelhil.github.io/ai-human-factors-wiki/"
 docs_dir: wiki
 theme:
   name: material
