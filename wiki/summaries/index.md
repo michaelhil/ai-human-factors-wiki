@@ -15,6 +15,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Hallucination
 - [[summary-Huang_2023_survey-on-hallucination-in-large-language-models]] — Huang et al. (2024) — Survey on Hallucination in LLMs
 
+## Prompt Sensitivity
+- [[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]] — Sclar et al. (2024) — Quantifying LLM Sensitivity to Spurious Features in Prompt Design
+
 ## Context Windows
 - [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]] — Liu et al. (2024) — Lost in the Middle: How Language Models Use Long Contexts
 

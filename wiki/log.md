@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design.pdf
+- Created: summaries/summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design.md
+- Updated: failure-modes/prompt-sensitivity.md (added structured evidence sections with Sclar quantitative data, atomic changes, model comparison reversal, API model data)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Patil_2023_gorilla-llm-connected-with-massive-apis.pdf
 - Created: summaries/summary-patil-2023.md
 - Updated: agent-architectures/tool-calling.md (added per-model hallucination rate table, RLHF finding, retrieval interaction section)

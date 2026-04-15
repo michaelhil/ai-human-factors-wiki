@@ -11,6 +11,7 @@ related:
   - "[[calibration-and-confidence]]"
   - "[[llm-architecture]]"
   - "[[sycophancy]]"
+  - "[[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]]"
 tags:
   - prompt-sensitivity
   - reliability
@@ -27,11 +28,23 @@ Small changes in how a question is asked produce large changes in the answer. Th
 
 ## The Evidence
 
-Sclar et al. (2024) demonstrated that minor formatting changes — spacing, capitalisation, delimiter choice — can cause accuracy to vary by **up to 76 percentage points** on the same task. The content is semantically identical; only the surface formatting differs.
+### Format Sensitivity (Sclar et al., 2024)
 
-Lu et al. (2022) showed that the ordering of few-shot examples in a prompt can swing accuracy from near-random to near-state-of-the-art. Simply reordering the examples — without changing their content — changes performance dramatically.
+The most systematic study of prompt formatting sensitivity tested semantically equivalent prompt formats across 53 tasks with multiple models. Key findings:
 
-Zhao et al. (2021) documented three systematic biases in few-shot settings:
+- **Performance spread up to 76 accuracy points** from formatting changes alone (LLaMA-2-7B). The median spread across tasks is 7.5 points with just 10 sampled formats.
+- **Atomic changes have large effects**: changing a single formatting element (separator `:` vs ` - `, casing, spacing) causes ≥5 point accuracy changes in **24% of cases**.
+- **Scale does not eliminate sensitivity**: the spread persists across model sizes (7B to 70B), few-shot settings (0 to 5), and instruction tuning. Larger models reduce but do not eliminate the effect.
+- **Model comparison rankings reverse**: when comparing two models using different prompt formats, the "better" model reverses with probability 14% — a single-format benchmark can systematically misidentify which model is better.
+- **API models also affected**: GPT-3.5 shows a median spread of 6.4 points across 53 tasks, with maximum spread of 87.6 points.
+
+### Example Ordering (Lu et al., 2022)
+
+The ordering of few-shot examples in a prompt can swing accuracy from near-random to near-state-of-the-art. Simply reordering the examples — without changing their content — changes performance dramatically.
+
+### Few-Shot Biases (Zhao et al., 2021)
+
+Three systematic biases in few-shot settings:
 - **Majority label bias**: the model favours labels that appear more frequently in the examples
 - **Recency bias**: the model favours labels from examples near the end of the prompt
 - **Common token bias**: the model favours tokens that are generally more common in its training data
