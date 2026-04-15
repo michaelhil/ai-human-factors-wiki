@@ -84,7 +84,14 @@ For verification and validation, fine-tuning is harder to audit than RAG. Each f
 
 The model's training corpus determines its "common sense" about the world. If the corpus underrepresents a class of events (rare failure modes, unusual configurations, low-frequency transients), the model will systematically underweight those events in its reasoning. This is not correctable by prompting — it is embedded in the model's parameters.
 
-Every invocation of the same model shares the same distributional biases. McKenzie et al. (2023) documented "inverse scaling" tasks where larger LLMs perform worse, demonstrating that training biases are not simply a matter of insufficient scale.
+Every invocation of the same model shares the same distributional biases. McKenzie et al. (2023) documented "inverse scaling" — tasks where **larger LLMs perform worse** — across 11 tasks identified through a public contest spanning models from 10^18 to 10^23 training FLOPs. They identified four causes:
+
+1. **Strong Prior**: larger models rely more on memorised training patterns, ignoring in-context instructions when they conflict (e.g., refusing to repeat a sentence with an intentional misspelling because the training prior says to write correctly)
+2. **Unwanted Imitation**: larger models better imitate flawed reasoning patterns in training data (e.g., affirming the consequent instead of correctly applying modus tollens)
+3. **Distractor Task**: larger models latch onto easy surface patterns, missing the harder real task
+4. **Spurious Few-Shot**: larger models pick up misleading surface correlations in examples more aggressively
+
+The implication: **scaling amplifies training biases rather than resolving them.** Making the model bigger does not fix biases embedded in the training distribution — it can make them worse. Some tasks show U-shaped scaling (performance decreases then recovers) or inverted-U scaling (improves then degrades), meaning trends observed with smaller models may not predict large-model behaviour.
 
 ## Relevance to Safety-Critical Systems
 

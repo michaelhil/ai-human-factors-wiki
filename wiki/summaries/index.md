@@ -41,8 +41,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Agent Architectures and Reasoning
 - [[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models]] — Yao et al. (2023) — ReAct: Synergizing Reasoning and Acting
 
-## Training and Alignment
-- [[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback]] — Bai et al. (2022) — Constitutional AI: Harmlessness from AI Feedback
+## Training and Scaling
+- [[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback]] — Bai et al. (2022) — Constitutional AI
+- [[summary-McKenzie_2023_inverse-scaling-when-bigger-isnt-better]] — McKenzie et al. (2023) — Inverse Scaling: When Bigger Isn't Better
 
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]] — Lewis et al. (2020) — Retrieval-Augmented Generation

@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested McKenzie_2023_inverse-scaling-when-bigger-isnt-better.pdf
+- Created: summaries/summary-McKenzie_2023_inverse-scaling-when-bigger-isnt-better.md
+- Updated: foundations/training-and-alignment.md (expanded inverse scaling section with 4-cause taxonomy, U-shaped/inverted-U scaling)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Xiao_2024_efficient-streaming-language-models-with-attention-sinks.pdf
 - Created: summaries/summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks.md
 - Updated: foundations/context-windows.md (added quantitative attention sink data: 955x perplexity spike, 4-token restoration, StreamingLLM 4M+ tokens, positional-not-semantic explanation)
