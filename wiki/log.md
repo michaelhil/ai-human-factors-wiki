@@ -1,5 +1,23 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models.pdf
+- Created: summary-Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models.md
+- Updated: inference-and-generation.md (expanded quantisation section), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Liu_2023_scissorhands-kv-cache-compression.pdf
+- Created: summary-Liu_2023_scissorhands-kv-cache-compression.md
+- Updated: inference-and-generation.md (added KV cache compression content), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Kwon_2023_paged-attention-for-llm-serving.pdf
+- Created: summary-Kwon_2023_paged-attention-for-llm-serving.md
+- Updated: inference-and-generation.md (expanded KV-cache section with detailed findings), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference.pdf
 - Created: summary-Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference.md
 - Updated: inference-and-generation.md (added source), summaries/index.md

@@ -9,6 +9,12 @@ One summary per source document. Each summary captures the key arguments, findin
   Pseudocode specification of transformer forward pass, tokenisation, and training
 - [[summary-Shanahan_2023_role-play-with-large-language-models]]<br>
   LLMs role-play characters from training data, not hold beliefs; anthropomorphism misleads safety analysis
+- [[summary-Kwon_2023_paged-attention-for-llm-serving]]<br>
+  OS-inspired paged KV cache management achieves 96% memory utilisation and 2–4x serving throughput
+- [[summary-Liu_2023_scissorhands-kv-cache-compression]]<br>
+  Pivotal tokens persist across generation steps; evicting the rest compresses KV cache 5x without accuracy loss
+- [[summary-Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models]]<br>
+  4-bit quantised finetuning matches 16-bit performance; enables 65B models on a single GPU
 
 ## Self-Correction, Refinement, and Self-Reflection
 - [[summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach]]<br>
