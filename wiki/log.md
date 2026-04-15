@@ -1,5 +1,25 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Madaan_2023_self-refine-iterative-refinement-with-self-feedback.pdf
+- Created: summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback.md
+- Updated: self-correction-limitations.md (added nuanced treatment of Self-Refine, quality vs correctness distinction), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning.pdf
+- Created: summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning.md
+- Updated: memory-architectures.md (added Reflexion episodic memory pattern), self-correction-limitations.md (added summary link), glossary.md (added Reflexion entry), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models.pdf
+- Created: summary-Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models.md
+- Updated: inference-and-generation.md (added Chain-of-Thought Prompting section, linked to Reasoning Models)
+- Updated: glossary.md (added Chain-of-Thought entry)
+- Updated: summaries/index.md (renamed section to "Prompting and Reasoning", added entry)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Wiki Initialised and First Ingestion
 
 ### Initialisation

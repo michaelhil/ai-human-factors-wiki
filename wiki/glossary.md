@@ -28,6 +28,8 @@ updated: 2026-04-15
 
 **Calibration** — The degree to which an LLM's expressed confidence matches its actual accuracy. See [[calibration-and-confidence]].
 
+**Chain-of-Thought (CoT) Prompting** — A prompting technique where few-shot exemplars include intermediate reasoning steps, enabling LLMs to decompose multi-step problems into sequential natural language reasoning. An emergent ability requiring models of ~100B+ parameters. See [[inference-and-generation]].
+
 **Context Window** — The fixed-size token buffer that bounds what an LLM can process in a single inference pass. See [[context-windows]].
 
 ## E
@@ -55,6 +57,8 @@ updated: 2026-04-15
 **RAG (Retrieval-Augmented Generation)** — An architecture that retrieves documents from an external knowledge base and inserts them into context before generation. See [[retrieval-augmented-generation]].
 
 **ReAct** — A prompting pattern where the agent alternates between reasoning ("thought"), taking actions ("action"), and incorporating results ("observation"). See [[perceive-reason-act-loop]].
+
+**Reflexion** — A verbal reinforcement learning framework where agents store natural language self-reflections after failures in episodic memory, enabling trial-and-error learning without weight updates. See [[self-correction-limitations]] and [[memory-architectures]].
 
 ## S
 

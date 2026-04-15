@@ -11,6 +11,8 @@ related:
   - "[[training-and-alignment]]"
   - "[[degradation-characteristics]]"
   - "[[summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet]]"
+  - "[[summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning]]"
+  - "[[summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback]]"
 tags:
   - self-correction
   - failure-mode
@@ -50,7 +52,9 @@ In every case, the initial response outperformed the "corrected" version. Analys
 
 ## Where Improvement Is Real
 
-The improvements documented in systems like Reflexion (Shinn et al., 2023) and Self-Refine (Madaan et al., 2023) operate in the **extrinsic regime**: the model runs its code, sees whether tests pass, and revises based on test results. The model responds to grounded external results — not to its own second-guessing.
+The improvements documented in systems like [[summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning|Reflexion (Shinn et al., 2023)]] operate in the **extrinsic regime**: the agent receives external feedback signals (environment rewards, test results) and uses them to guide improvement across trials via episodic memory.
+
+[[summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback|Self-Refine (Madaan et al., 2023)]] occupies a middle ground: the same model generates structured feedback on its own output using a dedicated feedback prompt, then refines based on that feedback. This works well for **quality improvement** tasks (code efficiency, dialogue engagement, text style — 5-40% improvement) but shows near-zero gains on **reasoning correctness** (math reasoning: +0.2% with GPT-4). The distinction is important: structured self-feedback can identify concrete surface-level issues but shares the same reasoning biases that produced the original errors.
 
 This distinction is critical for system design. Self-correction works when:
 - Tool results provide ground truth (code execution, database queries, sensor readings)

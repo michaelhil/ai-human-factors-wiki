@@ -4,6 +4,7 @@ type: architecture
 sources:
   - raw/references/Sumers_2024_cognitive-architectures-for-language-agents.pdf
   - raw/references/Park_2023_generative-agents-interactive-simulacra-of-human-behavior.pdf
+  - raw/references/Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning.pdf
 related:
   - "[[context-windows]]"
   - "[[perceive-reason-act-loop]]"
@@ -40,6 +41,8 @@ The most influential episodic memory design is the **memory stream** from [[summ
 3. **Relevance**: cosine similarity between current situation and memory embeddings
 
 This multi-factor approach outperforms pure semantic search (which misses temporal context) or pure recency (which misses important old memories). The architecture also introduces **reflection** — periodic synthesis of memories into higher-level abstractions ("what have I learned?") that are added back to the memory stream. Reflection is a form of structured memory compression that preserves meaning, offering an alternative to the lossy compression strategies in [[context-management-risks]].
+
+A distinct use of episodic memory appears in **Reflexion** ([[summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning|Shinn et al., 2023]]), where agents store verbal self-reflections after task failures. Rather than recording observations, the memory stores diagnostic summaries of what went wrong and what to try differently. This creates a trial-and-error learning loop without weight updates: the agent improves across attempts by consulting its accumulated failure analyses. The memory window is typically limited to the most recent 3 reflections to fit within context constraints. This pattern is effective for tasks with clear success/failure signals but struggles when failures do not yield actionable lessons (see [[self-correction-limitations]]).
 
 ### Semantic Memory
 Stores distilled factual knowledge: entities, relationships, domain-specific facts. This is the domain of vector stores and [[knowledge-graphs]]. Semantic memory provides knowledge that was not in the model's training data or that needs to be more current or more accurate than what training provides.

@@ -6,8 +6,9 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Vaswani_2017_attention-is-all-you-need]] — Attention Is All You Need
 - [[summary-Phuong_2022_formal-algorithms-for-transformers]] — Formal Algorithms for Transformers
 
-## Self-Correction
+## Self-Correction and Refinement
 - [[summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet]] — LLMs Cannot Self-Correct Reasoning Yet
+- [[summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback]] — Self-Refine: Iterative Refinement with Self-Feedback
 
 ## Sycophancy
 - [[summary-Sharma_2024_towards-understanding-sycophancy-in-language-models]] — Towards Understanding Sycophancy in Language Models
@@ -43,8 +44,10 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Multi-Agent Frameworks
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — AutoGen: Multi-Agent Conversation Framework
 
-## Agent Architectures and Reasoning
+## Prompting and Reasoning
+- [[summary-Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models]] — Chain-of-Thought Prompting Elicits Reasoning in LLMs
 - [[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models]] — ReAct: Synergizing Reasoning and Acting
+- [[summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning]] — Reflexion: Language Agents with Verbal Reinforcement Learning
 - [[summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior]] — Generative Agents: Interactive Simulacra of Human Behavior
 
 ## Training and Scaling

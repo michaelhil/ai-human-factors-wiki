@@ -6,6 +6,7 @@ sources:
   - raw/references/Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models.pdf
   - raw/references/Frantar_2023_gptq-accurate-post-training-quantization.pdf
   - raw/references/Kwon_2023_paged-attention-for-llm-serving.pdf
+  - raw/references/Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models.pdf
 related:
   - "[[llm-architecture]]"
   - "[[non-determinism-and-reproducibility]]"
@@ -46,13 +47,23 @@ For safety-critical applications, lower temperatures reduce output variability b
 
 **Top-p (nucleus) sampling** is a complementary control: instead of sampling from the full distribution, sample only from the smallest set of tokens whose cumulative probability exceeds a threshold p. This dynamically adjusts the candidate set — narrow when the model is confident, broader when it is uncertain.
 
+## Chain-of-Thought Prompting
+
+**Chain-of-thought (CoT) prompting** augments standard few-shot exemplars with intermediate reasoning steps, enabling LLMs to decompose multi-step problems into sequential natural language reasoning ([[summary-Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models|Wei et al., 2022]]). Rather than providing only input-output pairs as demonstrations, CoT exemplars show the reasoning trace that connects question to answer.
+
+CoT prompting is an **emergent ability** tied to model scale: it only produces performance gains in models with approximately 100 billion parameters or more. Smaller models generate illogical chains that actually degrade performance compared to standard prompting. This scale dependence is relevant to [[capability-gradient]] assessment — the same prompting strategy can produce radically different outcomes depending on model size, and benefits cannot be extrapolated downward from large-model results.
+
+The technique requires no model finetuning or architectural changes — it operates purely through prompt design. Ablation studies confirmed that the natural language decomposition is the key mechanism: outputting only equations, allocating equivalent computation without reasoning steps, or placing the reasoning after the answer all failed to replicate CoT's gains.
+
+**Limitations for safety-critical use.** Error analysis of CoT outputs revealed that roughly half of incorrect chains contained only minor errors (calculation mistakes, one missing step), while the other half had major semantic or coherence failures. A plausible-looking chain of thought is not a guarantee of correct reasoning. This directly connects to [[calibration-and-confidence]] — CoT traces can create a false sense of auditability if reviewers assume that a coherent-looking derivation is necessarily correct.
+
 ## Reasoning Models and Extended Thinking
 
-A class of models introduced from late 2024 onwards (OpenAI's o-series, Anthropic's Claude with extended thinking) generates explicit chains of reasoning before producing a final answer. Rather than going directly from input to output, these models first work through the problem step by step in a "thinking" phase.
+A class of models introduced from late 2024 onwards (OpenAI's o-series, Anthropic's Claude with extended thinking) builds on the chain-of-thought paradigm by internalising reasoning into the model's generation process. Rather than requiring CoT exemplars in the prompt, these models first work through the problem step by step in a "thinking" phase before producing a final answer.
 
 **Advantages**: measurably more accurate on complex analytical tasks (multi-step diagnosis, mathematical reasoning, procedural compliance checking). The reasoning chain supports auditability — reviewers can inspect where analysis went wrong.
 
-**Shifted failure modes**: a reasoning model can produce a confident wrong answer with a plausible-looking derivation, where the reasoning steps appear rigorous but contain a subtle error. These failures are harder to detect precisely because the surrounding analysis looks competent. The reasoning chain can also be long (thousands of tokens), consuming [[context-windows]] budget and adding latency.
+**Shifted failure modes**: a reasoning model can produce a confident wrong answer with a plausible-looking derivation, where the reasoning steps appear rigorous but contain a subtle error — the same pattern identified in CoT prompting research but now occurring without explicit prompting. These failures are harder to detect precisely because the surrounding analysis looks competent. The reasoning chain can also be long (thousands of tokens), consuming [[context-windows]] budget and adding latency.
 
 **Latency cost**: reasoning models take 10–60 seconds per query (versus 1–10 seconds for standard models), making them unsuitable for time-critical applications but valuable for analytical tasks where thoroughness matters more than speed.
 
