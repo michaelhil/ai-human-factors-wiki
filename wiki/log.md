@@ -1,5 +1,23 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration.pdf
+- Created: summary-Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration.md
+- Updated: multi-agent-roles.md (added empirical role validation principle), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate.pdf
+- Created: summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate.md
+- Updated: epistemic-independence.md (added role diversity evidence), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society.pdf
+- Created: summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society.md
+- Updated: multi-agent-coordination-failures.md (added conversational protocol failures section), multi-agent-roles.md (added task specifier role, inception prompting section), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.pdf
 - Created: summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.md
 - Updated: prompt-sensitivity.md (enriched ordering section with non-transferability finding), summaries/index.md

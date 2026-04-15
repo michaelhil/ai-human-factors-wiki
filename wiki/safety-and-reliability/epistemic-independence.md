@@ -6,6 +6,7 @@ sources:
   - raw/references/Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate.pdf
   - raw/references/Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate.pdf
   - raw/references/Du_2023_improving-factuality-and-reasoning-through-multiagent-debate.pdf
+  - raw/references/Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate.pdf
   - raw/references/Kosinski_2024_evaluating-large-language-models-in-theory-of-mind-tasks.pdf
   - raw/references/Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks.pdf
 related:
@@ -18,6 +19,7 @@ related:
   - "[[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]]"
   - "[[summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate]]"
   - "[[summary-Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate]]"
+  - "[[summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate]]"
 tags:
   - epistemic-independence
   - safety
@@ -77,6 +79,7 @@ The hardest condition (Greedy-Greedy, requiring differentiated selfish strategie
 The critical test: when ChatGPT and Bard (different models) debated together, performance improved further — joint debate solved 17/20 problems vs ChatGPT alone (14) or Bard alone (11). **Cross-model debate provides benefit beyond what same-model debate achieves**, supporting the case for model diversity.
 
 Subsequent work clarified the limits of same-model debate:
+- [[summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate|Chan et al. (2024)]] provided the clearest direct test: when all debate agents received the **same role prompt**, multi-agent evaluation performed no better than single-agent (53.8% vs 60% with diverse roles). The structure of debate adds no value without genuine perspective diversity. Performance also peaked at 3–4 agents and degraded beyond 2 discussion rounds, suggesting coordination overhead limits.
 - Wu et al. (2025) showed that same-model debate **suppresses independent reasoning** under majority pressure
 - Wynn et al. (2025) found that **model diversity is a necessary condition** for productive debate
 - [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate|Du et al. (2023)]] themselves noted that agents are "relatively agreeable" — likely from RLHF training (see [[sycophancy]]) — and that "stubborn" prompts produce better debates

@@ -10,6 +10,8 @@ sources:
 related:
   - "[[multi-agent-taxonomy]]"
   - "[[summary-Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework]]"
+  - "[[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society]]"
+  - "[[summary-Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration]]"
   - "[[epistemic-independence]]"
   - "[[situation-awareness-in-human-ai-teams]]"
   - "[[governance-gates]]"
@@ -57,6 +59,9 @@ Supplies domain knowledge or commonsense facts to prevent error loops. In AutoGe
 ### Safeguard Agent
 Checks outputs for safety, correctness, or policy compliance before execution. In AutoGen's OptiGuide coding application ([[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation|Wu et al., 2024]]), a safeguard agent that reviewed code before execution boosted unsafe-code detection F1 by 8-35%. This maps directly to the [[governance-gates]] concept — the safeguard agent is an automated governance gate that enforces checks before consequential actions proceed.
 
+### Task Specifier
+Converts a human's high-level idea into a concrete, agent-executable task description. [[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society|Li et al. (2023)]] introduced this role in the CAMEL framework: a human provides a preliminary idea (e.g., "develop a trading bot"), and the task specifier generates a detailed specification that the working agents can decompose into steps. This role bridges the gap between human intent and the structured prompts that agents require, removing the need for human prompt engineering expertise. In safety-critical contexts, the task specifier's output should itself be subject to human review via [[governance-gates]], since misspecification of the task propagates through all downstream agent activity.
+
 ### Memory Keeper
 Maintains episodic record; surfaces precedents; prevents re-derivation of previously established conclusions. Requires external [[memory-architectures]] with retrieval and persistence. Addresses context overflow by maintaining the team's long-term memory outside individual agent context windows.
 
@@ -64,9 +69,17 @@ Maintains episodic record; surfaces precedents; prevents re-derivation of previo
 
 Adding agents improves system coverage up to a point, beyond which coordination overhead and human cognitive load cause net performance to decline. A 3-agent architecture may provide better effective coverage than a 6-agent architecture if the operator can maintain SA across 3 but not 6. The location of this inflection point is unknown and likely task-dependent. No published study has characterised this curve. Its empirical determination is a prerequisite for sizing multi-agent deployments. See [[situation-awareness-in-human-ai-teams]] for the cognitive load analysis.
 
+## Role Assignment via Inception Prompting
+
+[[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society|Li et al. (2023)]] demonstrated that roles can be assigned through **inception prompting** — structured system prompts that define each agent's identity, communication protocol, and behavioural constraints. Key elements include explicit role identity statements, role-flipping prohibitions, structured output formatting requirements, and termination tokens. The prompts are symmetric between cooperating agents, which helps maintain protocol stability over extended conversations.
+
+However, prompt-based role assignment has inherent fragility: the four cooperative failure modes documented by Li et al. (role flipping, instruction repetition, flake replies, infinite loops) all represent breakdowns in prompt-enforced role adherence. In safety-critical applications, role enforcement should be architectural (separate model instances, different system prompts, tool access restrictions) rather than relying solely on prompt instructions that the model may violate. See [[multi-agent-coordination-failures]] for the full failure taxonomy.
+
 ## Role Assignment Principles
 
 1. **Model diversity for adversarial roles.** The adversarial agent must be on a different base model to provide genuine independence. See [[epistemic-independence]].
+
+1b. **Validate role assignments empirically, not by intuition.** [[summary-Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration|Liu et al. (2024)]] found that human-intuitive role selection (choosing agents whose role descriptions match the task domain) sometimes performs worse than random selection. An agent labelled "Doctor" may not contribute most effectively to clinical knowledge tasks if another agent's reasoning patterns (e.g., "Programmer") provide more useful structure. In safety-critical deployments, role effectiveness should be measured through performance data, not assumed from role descriptions.
 
 2. **Disagreement is signal, not noise.** Agents with different information reaching different conclusions signals ambiguity in the evidence. Systems designed to suppress disagreement through forced consensus lose the diversity that justifies the architecture.
 

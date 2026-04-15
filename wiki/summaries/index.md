@@ -43,6 +43,9 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]] — MAST taxonomy: 14 failure modes across specification, inter-agent, and task verification
 - [[summary-Hammond_2025_multi-agent-risks-from-advanced-ai]] — Emergent risks from multi-agent interaction: herding, collusion, racing, destabilisation
 
+## Multi-Agent Evaluation
+- [[summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate]] — Diverse role prompts are essential; same-prompt debate equals single-agent; optimal count is 3–4 agents
+
 ## Epistemic Independence and Multi-Agent Debate
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — LLM agents converge to uniform strategies; multi-agent diversity is illusory
 - [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]] — Multi-agent debate improves factuality but gains plateau; shared biases limit independence
@@ -56,6 +59,8 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Sumers_2024_cognitive-architectures-for-language-agents]] — CoALA: modular framework mapping agents along memory, action, and decision dimensions
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Conversational multi-agent framework with customisable agent roles
 - [[summary-Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework]] — SOPs and structured artifacts between agents beat free-form chat; assembly-line coordination
+- [[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society]] — Inception prompting enables autonomous role-playing cooperation; documents four conversational failure modes
+- [[summary-Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration]] — Dynamic agent selection outperforms static teams; human role intuitions are unreliable predictors of contribution
 
 ## Prompting and Reasoning
 - [[summary-Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models]] — Intermediate reasoning steps in prompts unlock emergent reasoning at ~100B+ parameters

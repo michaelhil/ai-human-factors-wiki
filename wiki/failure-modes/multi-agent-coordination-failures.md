@@ -5,6 +5,7 @@ sources:
   - raw/references/Cemri_2025_why-do-multi-agent-llm-systems-fail.pdf
   - raw/references/Riedl_2025_emergent-coordination-in-multi-agent-language-models.pdf
   - raw/references/Gao_2025_single-agent-or-multi-agent-systems-why-not-both.pdf
+  - raw/references/Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society.pdf
 related:
   - "[[multi-agent-taxonomy]]"
   - "[[context-windows]]"
@@ -12,6 +13,7 @@ related:
   - "[[delivery-modes]]"
   - "[[monoculture-collapse]]"
   - "[[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]]"
+  - "[[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society]]"
 tags:
   - multi-agent
   - coordination
@@ -53,6 +55,17 @@ An agent engaged in a sub-thread has a narrower view than an agent attending to 
 
 ### Heartbeat-Delivery Interaction
 A heartbeat-triggered agent enters the room not in response to any message. Standard delivery modes do not cleanly handle this — the agent must either pre-empt the current flow (potentially interrupting important exchanges) or queue (potentially delaying time-sensitive monitoring).
+
+### Conversational Protocol Failures
+
+[[summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society|Li et al. (2023)]] document four failure modes specific to agents coordinating through natural language conversation:
+
+- **Role flipping** — An agent assigned to follow instructions begins issuing them instead, reversing the intended power dynamic. The other agent may comply, producing a conversation that looks functional but has inverted authority. Mitigation requires explicit role-identity enforcement in system prompts.
+- **Instruction repetition** — An agent echoes instructions back without adding substance. The conversation loops without progress but may not trigger timeout conditions because messages are being exchanged.
+- **Flake replies** — Agents produce superficially responsive outputs ("I will do something") without concrete content. The conversation appears to advance but no real work is done. This is a conversational analogue of [[output-vacuity]].
+- **Infinite message loops** — Both agents enter a cycle of pleasantries, gratitude, or goodbyes without recognising the task is complete or stuck. Explicit termination tokens and message count limits are required to break these loops.
+
+These conversational failures are distinct from the coordination failures above: they arise not from concurrent operation or context limitations, but from the inability of language model agents to maintain stable conversational protocols over extended exchanges. They are most prevalent in Pattern 4 (Role-Based Crew) and Pattern 5 (Group Chat) architectures where agents coordinate through free-form dialogue.
 
 ### Infrastructure Failures
 The coordination infrastructure itself (delivery modes, threading, [[governance-gates]]) is software that can fail, producing system-level errors distinct from individual agent errors.
