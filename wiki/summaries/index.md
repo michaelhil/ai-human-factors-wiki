@@ -19,7 +19,8 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]] — Sclar et al. (2024) — Quantifying LLM Sensitivity to Spurious Features in Prompt Design
 
 ## Context Windows
-- [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]] — Liu et al. (2024) — Lost in the Middle: How Language Models Use Long Contexts
+- [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]] — Liu et al. (2024) — Lost in the Middle
+- [[summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks]] — Xiao et al. (2024) — Efficient Streaming LLMs with Attention Sinks
 
 ## Calibration and Confidence
 - [[summary-Kadavath_2022_language-models-mostly-know-what-they-know]] — Kadavath et al. (2022) — Language Models (Mostly) Know What They Know

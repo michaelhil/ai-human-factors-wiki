@@ -11,6 +11,7 @@ related:
   - "[[memory-architectures]]"
   - "[[retrieval-augmented-generation]]"
   - "[[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]]"
+  - "[[summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks]]"
 tags:
   - context-window
   - attention
@@ -58,9 +59,13 @@ This is an architectural property of transformer-based attention: as the number 
 
 ## Attention Sinks
 
-Xiao et al. (2024) discovered that LLMs assign disproportionately high attention scores to the first few tokens in a sequence, regardless of their semantic content. These tokens serve as "attention sinks" that stabilise the attention score distribution. Removing them causes attention patterns to collapse and inference quality to degrade. Their StreamingLLM approach retains these initial tokens plus a sliding window of recent tokens, enabling stable inference over long sequences.
+Xiao et al. (2024) discovered that LLMs assign disproportionately high attention scores to the first few tokens in a sequence, regardless of their semantic content. The effect is dramatic: removing the initial tokens from a Llama-2-13B context causes perplexity to spike from 5.40 to **5,158** — a 955× degradation that renders output incoherent. Reintroducing just **4 initial tokens** alongside a 1,020-token recent window restores perplexity to 5.60.
 
-Any context management scheme must preserve these initial tokens or provide equivalent anchoring.
+**Why it happens:** The softmax function in the [[llm-architecture]] attention mechanism prevents attention values from being truly zero. When the current token has sufficient self-contained information, the model dumps excess attention onto the earliest tokens — which, by the autoregressive nature of training, are visible to all subsequent tokens. The effect is **positional, not semantic**: replacing the first 4 tokens with meaningless linebreak characters achieves comparable restoration.
+
+**StreamingLLM** exploits this by maintaining two KV cache regions: (1) attention sink tokens (first 4) that anchor the computation, and (2) a rolling window of recent tokens. This enables stable inference on sequences of **4 million+ tokens** with up to 22.2× speedup, without retraining.
+
+For safety-critical applications running long monitoring sessions, any context management scheme — truncation, compression, or sliding window — **must preserve the initial tokens** or provide equivalent anchoring. See [[context-management-risks]].
 
 ## Context Discipline
 
