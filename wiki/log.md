@@ -43,3 +43,33 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - safety-and-reliability/opacity-and-explainability.md
 - safety-and-reliability/deployment-local-vs-cloud.md
 - design-patterns/hybrid-decision-pipeline.md
+
+## 2026-04-15 — Created 20 Source Summary Pages
+
+- Private source: no
+- Guidance: none
+
+### Summaries created (20):
+- summaries/summary-vaswani-2017.md — Vaswani et al. (2017), Attention Is All You Need
+- summaries/summary-phuong-2022.md — Phuong & Hutter (2022), Formal Algorithms for Transformers
+- summaries/summary-lewis-2020.md — Lewis et al. (2020), Retrieval-Augmented Generation
+- summaries/summary-bai-2022.md — Bai et al. (2022), Constitutional AI
+- summaries/summary-yao-2023.md — Yao et al. (2023), ReAct
+- summaries/summary-wei-2022.md — Wei et al. (2022), Chain-of-Thought Prompting
+- summaries/summary-sumers-2024.md — Sumers et al. (2024), Cognitive Architectures for Language Agents
+- summaries/summary-huang-2023-self-correct.md — Huang et al. (2023), LLMs Cannot Self-Correct Reasoning Yet
+- summaries/summary-huang-2023-hallucination.md — Huang et al. (2023), Survey on Hallucination in LLMs
+- summaries/summary-ji-2023.md — Ji et al. (2023), Survey of Hallucination in NLG
+- summaries/summary-sharma-2024.md — Sharma et al. (2024), Towards Understanding Sycophancy in LLMs
+- summaries/summary-perez-2023.md — Perez et al. (2023), Discovering LLM Behaviors with Model-Written Evaluations
+- summaries/summary-kadavath-2022.md — Kadavath et al. (2022), Language Models (Mostly) Know What They Know
+- summaries/summary-tian-2023.md — Tian et al. (2023), Just Ask for Calibration
+- summaries/summary-xiong-2024.md — Xiong et al. (2024), Can LLMs Express Their Uncertainty?
+- summaries/summary-guo-2017.md — Guo et al. (2017), On Calibration of Modern Neural Networks
+- summaries/summary-sclar-2024.md — Sclar et al. (2024), Quantifying LLM Sensitivity to Spurious Features
+- summaries/summary-lu-2022.md — Lu et al. (2022), Fantastically Ordered Prompts
+- summaries/summary-zhao-2021.md — Zhao et al. (2021), Calibrate Before Use
+- summaries/summary-mizrahi-2024.md — Mizrahi et al. (2024), State of What Art: Multi-Prompt LLM Evaluation
+
+### Updated:
+- summaries/index.md — populated with all 20 summary entries grouped by topic
