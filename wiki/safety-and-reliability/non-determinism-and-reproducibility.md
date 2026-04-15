@@ -45,7 +45,7 @@ No such protocol has been developed or accepted for safety-critical applications
 
 ## Prompt Sensitivity Compounds the Problem
 
-Small changes in how a question is asked produce large changes in the answer. Sclar et al. (2024) demonstrated that minor formatting changes (spacing, capitalisation, delimiter choice) can cause accuracy to vary by up to 76 percentage points on the same task. Mizrahi et al. (2024) argue that single-prompt evaluation is insufficient and propose multi-prompt evaluation protocols.
+Small changes in how a question is asked produce large changes in the answer. [[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design|Sclar et al. (2024)]] demonstrated that minor formatting changes (spacing, capitalisation, delimiter choice) can cause accuracy to vary by up to 76 percentage points on the same task. Mizrahi et al. (2024) argue that single-prompt evaluation is insufficient and propose multi-prompt evaluation protocols.
 
 This means the "same" AI advisory system with slightly different prompts is not the same system. Testing with one prompt configuration may not predict behaviour with another, even when the semantic content is identical.
 

@@ -39,7 +39,7 @@ Graph-RAG retrieves information by traversing typed relationships rather than by
 
 ## Empirical Effectiveness
 
-Agrawal et al. (2024) survey evidence that KG augmentation is the most effective single intervention for reducing [[hallucination]]:
+[[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms|Agrawal et al. (2024)]] survey evidence that KG augmentation is the most effective single intervention for reducing [[hallucination]]:
 
 - **80%+ improvement** in answer correctness on QA tasks from augmenting with KG facts — more effective than increasing model size
 - **66.8% → 85.7%** accuracy on reasoning tasks (ChatGPT + RoG with KG augmentation)
@@ -49,7 +49,7 @@ The effectiveness ceiling is set by KG quality and coverage. Methods that rely o
 
 ## Three Uses of KGs with LLMs
 
-Agrawal et al. (2024) classify KG-LLM integration into three categories:
+[[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms|Agrawal et al. (2024)]] classify KG-LLM integration into three categories:
 
 1. **Knowledge-Aware Inference** — KG used at inference time, no model change: KG-augmented retrieval (structured graph traversal vs vector similarity), KG-augmented reasoning (model follows graph paths for multi-step reasoning), and KG-controlled generation (the guardrail function below)
 2. **Knowledge-Aware Training** — KG integrated into pre-training or fine-tuning, embedding structured knowledge into weights

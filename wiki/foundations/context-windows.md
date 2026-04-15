@@ -39,7 +39,7 @@ In practice, the usable capacity is less than the raw size. A typical agent invo
 
 ## The Lost-in-the-Middle Effect
 
-LLMs do not use information uniformly across the context window. Liu et al. (2024) demonstrated a distinctive **U-shaped performance curve**: models perform best when relevant information is at the very beginning (primacy bias) or end (recency bias) of the context, and significantly degrade when it is in the middle.
+LLMs do not use information uniformly across the context window. [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts|Liu et al. (2024)]] demonstrated a distinctive **U-shaped performance curve**: models perform best when relevant information is at the very beginning (primacy bias) or end (recency bias) of the context, and significantly degrade when it is in the middle.
 
 **Quantitative impact:** On multi-document question answering with 20 retrieved documents, accuracy drops by **over 20 percentage points** when the answer document moves from the edges to the middle of the context. Most strikingly, performance with the answer in the middle of 20-30 documents can drop **below closed-book performance** — providing the model with documents containing the answer produces worse results than giving it no documents at all, if the answer is in the middle.
 
@@ -59,7 +59,7 @@ This is an architectural property of transformer-based attention: as the number 
 
 ## Attention Sinks
 
-Xiao et al. (2024) discovered that LLMs assign disproportionately high attention scores to the first few tokens in a sequence, regardless of their semantic content. The effect is dramatic: removing the initial tokens from a Llama-2-13B context causes perplexity to spike from 5.40 to **5,158** — a 955× degradation that renders output incoherent. Reintroducing just **4 initial tokens** alongside a 1,020-token recent window restores perplexity to 5.60.
+[[summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks|Xiao et al. (2024)]] discovered that LLMs assign disproportionately high attention scores to the first few tokens in a sequence, regardless of their semantic content. The effect is dramatic: removing the initial tokens from a Llama-2-13B context causes perplexity to spike from 5.40 to **5,158** — a 955× degradation that renders output incoherent. Reintroducing just **4 initial tokens** alongside a 1,020-token recent window restores perplexity to 5.60.
 
 **Why it happens:** The softmax function in the [[llm-architecture]] attention mechanism prevents attention values from being truly zero. When the current token has sufficient self-contained information, the model dumps excess attention onto the earliest tokens — which, by the autoregressive nature of training, are visible to all subsequent tokens. The effect is **positional, not semantic**: replacing the first 4 tokens with meaningless linebreak characters achieves comparable restoration.
 

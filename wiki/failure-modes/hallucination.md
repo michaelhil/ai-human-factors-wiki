@@ -32,7 +32,7 @@ Hallucination refers to LLM output that is fluent, confident, and factually inco
 
 ## Types of Hallucination
 
-Huang et al. (2024) provide the most comprehensive taxonomy, distinguishing two primary categories (see also Ji et al., 2023; Zhang et al., 2023):
+[[summary-Huang_2023_survey-on-hallucination-in-large-language-models|Huang et al. (2024)]] provide the most comprehensive taxonomy, distinguishing two primary categories (see also Ji et al., 2023; Zhang et al., 2023):
 
 ### Factuality Hallucination
 The output contradicts verifiable real-world facts:
@@ -51,7 +51,7 @@ The distinction matters for safety-critical applications: factuality hallucinati
 
 ## Causes: A Three-Source Framework
 
-Huang et al. (2024) map hallucination causes to three stages of the LLM lifecycle:
+[[summary-Huang_2023_survey-on-hallucination-in-large-language-models|Huang et al. (2024)]] map hallucination causes to three stages of the LLM lifecycle:
 
 ### Causes from Data
 - **Misinformation in training corpora**: the model memorises false information present in web-scraped training data, reproducing it as confident fact

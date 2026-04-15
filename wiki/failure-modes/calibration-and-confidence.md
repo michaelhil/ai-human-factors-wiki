@@ -30,11 +30,11 @@ A well-calibrated system is one whose stated confidence matches its actual accur
 
 ## The Calibration Problem
 
-LLMs are partially calibrated. Kadavath et al. (2022) showed that when asked whether they can answer a question correctly, larger models show better calibration than smaller ones. But calibration degrades on harder questions — precisely the questions that matter most in safety-critical use. When the situation is ambiguous, novel, or outside the training distribution, the model's self-assessment becomes less reliable.
+LLMs are partially calibrated. [[summary-Kadavath_2022_language-models-mostly-know-what-they-know|Kadavath et al. (2022)]] showed that when asked whether they can answer a question correctly, larger models show better calibration than smaller ones. But calibration degrades on harder questions — precisely the questions that matter most in safety-critical use. When the situation is ambiguous, novel, or outside the training distribution, the model's self-assessment becomes less reliable.
 
 ## RLHF Makes It Worse
 
-Tian et al. (2023) found that instruction-tuned models are **less calibrated** than their base model counterparts, because the tuning process rewards confident, helpful-sounding responses over hedged or uncertain ones. Kadavath et al. (2022) confirmed this with a specific mechanism: RLHF training collapses probability distributions toward high-reward tokens, distorting the calibration that base models exhibit. The damage is measurable across multiple evaluation formats (Figure 9 in Kadavath et al.).
+Tian et al. (2023) found that instruction-tuned models are **less calibrated** than their base model counterparts, because the tuning process rewards confident, helpful-sounding responses over hedged or uncertain ones. [[summary-Kadavath_2022_language-models-mostly-know-what-they-know|Kadavath et al. (2022)]] confirmed this with a specific mechanism: RLHF training collapses probability distributions toward high-reward tokens, distorting the calibration that base models exhibit. The damage is measurable across multiple evaluation formats (Figure 9 in Kadavath et al.).
 
 However, a simple temperature rescaling (T≈2.5) largely restores the underlying calibration, suggesting that RLHF does not destroy the model's self-knowledge — it distorts the output distribution in a correctable way. For system designers, this means post-hoc temperature tuning can partially recover calibration in RLHF models.
 
@@ -42,7 +42,7 @@ This is a direct consequence of the [[training-and-alignment]] process: RLHF opt
 
 ## The "I Don't Know" Bias
 
-Kadavath et al. (2022) found that models are **systematically biased against "none of the above" responses**. When a multiple-choice option is replaced with "none of the above," both accuracy and calibration degrade significantly. Models avoid selecting this option even when it is correct. This extends beyond multiple-choice: LLMs in general are trained to produce confident, complete responses rather than expressing uncertainty or acknowledging the limits of their knowledge. For safety-critical applications where the correct response is often "I don't know" or "insufficient information," this structural bias toward overconfident answers feeds directly into [[automation-bias]].
+[[summary-Kadavath_2022_language-models-mostly-know-what-they-know|Kadavath et al. (2022)]] found that models are **systematically biased against "none of the above" responses**. When a multiple-choice option is replaced with "none of the above," both accuracy and calibration degrade significantly. Models avoid selecting this option even when it is correct. This extends beyond multiple-choice: LLMs in general are trained to produce confident, complete responses rather than expressing uncertainty or acknowledging the limits of their knowledge. For safety-critical applications where the correct response is often "I don't know" or "insufficient information," this structural bias toward overconfident answers feeds directly into [[automation-bias]].
 
 ## Methods for Eliciting Confidence
 

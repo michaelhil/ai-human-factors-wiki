@@ -43,7 +43,7 @@ One agent, one task queue, self-directed iteration. Known failure modes: unbound
 Tasks flow through agents in a fixed order. Appropriate when task decomposition is well-understood and stable.
 
 ### Pattern 3: Orchestrator-Worker
-A central coordinator decomposes tasks and delegates to specialists. The most common production pattern for complex task automation (Wu et al., 2024).
+A central coordinator decomposes tasks and delegates to specialists. The most common production pattern for complex task automation ([[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation|Wu et al., 2024]]).
 
 ### Pattern 4: Role-Based Crew
 Agents have fixed roles, goals, and personas; a predefined process governs interaction. Works when workflows map to organisational role structures (Hong et al., 2024).

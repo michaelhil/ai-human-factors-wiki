@@ -38,7 +38,7 @@ The critical point: the model's decision to call a tool, its selection of which 
 
 Empirical studies document several failure modes:
 
-**Wrong tool selected.** The model chooses a tool that does not exist (hallucinating a tool name) or selects a tool inappropriate for the current task. In 2023 benchmarks, Patil et al. (2023) found approximately 30% hallucinated API calls. Tool selection accuracy drops as the number of available tools increases (Qin et al., 2024).
+**Wrong tool selected.** The model chooses a tool that does not exist (hallucinating a tool name) or selects a tool inappropriate for the current task. In 2023 benchmarks, [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis|Patil et al. (2023)]] found approximately 30% hallucinated API calls. Tool selection accuracy drops as the number of available tools increases (Qin et al., 2024).
 
 **Correct tool, wrong parameters.** The model selects the right tool but generates incorrect parameter values: type errors (string where number expected), unit errors (Fahrenheit instead of Celsius), range errors (values outside bounds), or hallucinated parameter names.
 
@@ -52,7 +52,7 @@ Empirical studies document several failure modes:
 
 ## Empirical Reliability
 
-Patil et al. (2023) documented API hallucination rates in their Gorilla benchmark across 1,645 real APIs:
+[[summary-Patil_2023_gorilla-llm-connected-with-massive-apis|Patil et al. (2023)]] documented API hallucination rates in their Gorilla benchmark across 1,645 real APIs:
 
 | Model | TorchHub hallucination | HuggingFace hallucination | TensorFlow Hub hallucination |
 |---|---|---|---|
@@ -69,7 +69,7 @@ Zhuang et al. (2023) found only 40–50% accuracy on hard questions requiring mu
 
 ## Retrieval Interaction
 
-A counterintuitive finding from Patil et al. (2023): adding a retriever to provide API documentation sometimes *worsens* tool-calling accuracy. Non-optimal retrievers misguide the model — accuracy dropped 21.5% on TorchHub and 47.6% on HuggingFace with sub-optimal retrieval compared to no retrieval. This connects to the over-retrieval problem in [[retrieval-augmented-generation]]: providing the model with wrong or irrelevant documentation is worse than providing none at all.
+A counterintuitive finding from [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis|Patil et al. (2023)]]: adding a retriever to provide API documentation sometimes *worsens* tool-calling accuracy. Non-optimal retrievers misguide the model — accuracy dropped 21.5% on TorchHub and 47.6% on HuggingFace with sub-optimal retrieval compared to no retrieval. This connects to the over-retrieval problem in [[retrieval-augmented-generation]]: providing the model with wrong or irrelevant documentation is worse than providing none at all.
 
 ## The Compounding Problem
 

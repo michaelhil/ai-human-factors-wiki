@@ -46,7 +46,7 @@ For safety-critical applications, summarisation-based compression means the agen
 
 The simplest alternative: drop the oldest tokens and keep only the most recent window. This avoids hallucination (nothing is generated) but loses all information outside the retained window, including the system prompt and initial instructions if they were at the beginning.
 
-Xiao et al. (2024) found that removing the first few tokens causes attention patterns to collapse due to **attention sinks** — tokens that serve as computational anchors regardless of semantic content. Their StreamingLLM approach retains these initial tokens plus a sliding window of recent tokens.
+[[summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks|Xiao et al. (2024)]] found that removing the first few tokens causes attention patterns to collapse due to **attention sinks** — tokens that serve as computational anchors regardless of semantic content. Their StreamingLLM approach retains these initial tokens plus a sliding window of recent tokens.
 
 ## Compaction vs Summarisation
 

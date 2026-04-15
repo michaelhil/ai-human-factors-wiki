@@ -70,14 +70,14 @@ The hardest condition (Greedy-Greedy, requiring differentiated selfish strategie
 
 ### Multi-Agent Debate: Format vs Independence
 
-Du et al. (2023) demonstrated that multi-agent debate (multiple LLM instances debating over rounds) improves reasoning by +14.8 points (arithmetic) and factuality by +7.8 points (biographies) over single agents. However, all agents were instances of the same model (ChatGPT). The improvement comes from **structured cross-examination format** (catching surface errors) rather than from epistemic independence (providing diverse perspectives).
+[[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate|Du et al. (2023)]] demonstrated that multi-agent debate (multiple LLM instances debating over rounds) improves reasoning by +14.8 points (arithmetic) and factuality by +7.8 points (biographies) over single agents. However, all agents were instances of the same model (ChatGPT). The improvement comes from **structured cross-examination format** (catching surface errors) rather than from epistemic independence (providing diverse perspectives).
 
 The critical test: when ChatGPT and Bard (different models) debated together, performance improved further — joint debate solved 17/20 problems vs ChatGPT alone (14) or Bard alone (11). **Cross-model debate provides benefit beyond what same-model debate achieves**, supporting the case for model diversity.
 
 Subsequent work clarified the limits of same-model debate:
 - Wu et al. (2025) showed that same-model debate **suppresses independent reasoning** under majority pressure
 - Wynn et al. (2025) found that **model diversity is a necessary condition** for productive debate
-- Du et al. (2023) themselves noted that agents are "relatively agreeable" — likely from RLHF training (see [[sycophancy]]) — and that "stubborn" prompts produce better debates
+- [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate|Du et al. (2023)]] themselves noted that agents are "relatively agreeable" — likely from RLHF training (see [[sycophancy]]) — and that "stubborn" prompts produce better debates
 
 ### Theory of Mind Studies
 

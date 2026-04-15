@@ -44,11 +44,11 @@ The base model is trained on curated datasets of instruction-response pairs — 
 
 Human evaluators compare pairs of model outputs and indicate which is better. These preferences train a separate **reward model** that scores outputs on a quality scale. The LLM is then optimised to produce outputs that the reward model scores highly.
 
-RLHF shapes the model toward responses that humans preferred in training: helpful, well-structured, and confident. This is also why instruction-tuned models exhibit [[sycophancy]]: the reward model learns that humans prefer agreeable, confident answers, so the LLM learns to produce them even when disagreement would be more accurate (Sharma et al., 2024).
+RLHF shapes the model toward responses that humans preferred in training: helpful, well-structured, and confident. This is also why instruction-tuned models exhibit [[sycophancy]]: the reward model learns that humans prefer agreeable, confident answers, so the LLM learns to produce them even when disagreement would be more accurate ([[summary-Sharma_2024_towards-understanding-sycophancy-in-language-models|Sharma et al., 2024]]).
 
 ### Constitutional AI and RLAIF
 
-Bai et al. (2022) introduced Constitutional AI (CAI), a two-stage method that replaces human harmlessness labels with AI-generated critiques guided by a written set of principles (the "constitution").
+[[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback|Bai et al. (2022)]] introduced Constitutional AI (CAI), a two-stage method that replaces human harmlessness labels with AI-generated critiques guided by a written set of principles (the "constitution").
 
 **Stage 1 (Supervised Learning):** The model generates responses to harmful prompts, critiques its own responses against constitutional principles, and revises them. The critique-revision cycle can be repeated multiple times. The revised responses fine-tune the model, shifting its distribution away from harmful outputs while maintaining engagement (the model explains why it objects to harmful requests rather than refusing to discuss them).
 
@@ -84,7 +84,7 @@ For verification and validation, fine-tuning is harder to audit than RAG. Each f
 
 The model's training corpus determines its "common sense" about the world. If the corpus underrepresents a class of events (rare failure modes, unusual configurations, low-frequency transients), the model will systematically underweight those events in its reasoning. This is not correctable by prompting — it is embedded in the model's parameters.
 
-Every invocation of the same model shares the same distributional biases. McKenzie et al. (2023) documented "inverse scaling" — tasks where **larger LLMs perform worse** — across 11 tasks identified through a public contest spanning models from 10^18 to 10^23 training FLOPs. They identified four causes:
+Every invocation of the same model shares the same distributional biases. [[summary-McKenzie_2023_inverse-scaling-when-bigger-isnt-better|McKenzie et al. (2023)]] documented "inverse scaling" — tasks where **larger LLMs perform worse** — across 11 tasks identified through a public contest spanning models from 10^18 to 10^23 training FLOPs. They identified four causes:
 
 1. **Strong Prior**: larger models rely more on memorised training patterns, ignoring in-context instructions when they conflict (e.g., refusing to repeat a sentence with an intentional misspelling because the training prior says to write correctly)
 2. **Unwanted Imitation**: larger models better imitate flawed reasoning patterns in training data (e.g., affirming the consequent instead of correctly applying modus tollens)

@@ -29,7 +29,7 @@ A large language model (LLM) is a neural network trained on a large text corpus 
 
 ## The Transformer
 
-The architecture underlying all current LLMs is the transformer (Vaswani et al., 2017). Its defining feature is the **self-attention mechanism**, which computes relationships between every pair of positions in the input sequence. The transformer replaced the recurrent neural networks (RNNs) that previously dominated sequence modelling, offering a critical advantage: self-attention processes all positions simultaneously, enabling the massive GPU parallelisation that made scaling to hundreds of billions of parameters feasible. RNNs process tokens sequentially, creating a fundamental bottleneck that limited model scale.
+The architecture underlying all current LLMs is the transformer ([[summary-Vaswani_2017_attention-is-all-you-need|Vaswani et al., 2017]]). Its defining feature is the **self-attention mechanism**, which computes relationships between every pair of positions in the input sequence. The transformer replaced the recurrent neural networks (RNNs) that previously dominated sequence modelling, offering a critical advantage: self-attention processes all positions simultaneously, enabling the massive GPU parallelisation that made scaling to hundreds of billions of parameters feasible. RNNs process tokens sequentially, creating a fundamental bottleneck that limited model scale.
 
 ## Self-Attention: Query, Key, Value
 
@@ -39,15 +39,15 @@ For each token in the context, the model computes three vectors:
 - A **key** (what this token offers to others)
 - A **value** (the information this token carries)
 
-Attention is computed as: Attention(Q, K, V) = softmax(QK^T / √d_k) · V, where Q, K, and V are matrices of queries, keys, and values. The scaling factor √d_k prevents dot products from growing large enough to push the softmax into regions with extremely small gradients, which would impede training (Vaswani et al., 2017).
+Attention is computed as: Attention(Q, K, V) = softmax(QK^T / √d_k) · V, where Q, K, and V are matrices of queries, keys, and values. The scaling factor √d_k prevents dot products from growing large enough to push the softmax into regions with extremely small gradients, which would impede training ([[summary-Vaswani_2017_attention-is-all-you-need|Vaswani et al., 2017]]).
 
 The result: every token in the context can influence the generation of every subsequent token. There is no built-in partition, wall, or filter that restricts which parts of the context affect which parts of the output. A system prompt at the beginning, a user question in the middle, and a tool result appended at the end all interact through the attention mechanism.
 
-This is not a design choice that can be overridden by careful prompting. It is a mathematical property of the self-attention computation (Phuong and Hutter, 2022). Within a single context, the model processes everything it has been given as one integrated object. It cannot "unsee" information that appears in its context.
+This is not a design choice that can be overridden by careful prompting. It is a mathematical property of the self-attention computation ([[summary-Phuong_2022_formal-algorithms-for-transformers|Phuong and Hutter, 2022]]). Within a single context, the model processes everything it has been given as one integrated object. It cannot "unsee" information that appears in its context.
 
 ## Decoder-Only Architecture
 
-The original transformer (Vaswani et al., 2017) used an encoder-decoder structure for translation tasks. Current frontier LLMs (GPT-4, Claude, Llama, Gemini) are all **decoder-only** transformers (Phuong and Hutter, 2022). The decoder-only variant uses **masked (causal) self-attention**: each token can attend only to tokens at the same or earlier positions in the sequence, never to future tokens. Formally, attention scores for future positions are set to -∞ before the softmax, zeroing out their contribution.
+The original transformer ([[summary-Vaswani_2017_attention-is-all-you-need|Vaswani et al., 2017]]) used an encoder-decoder structure for translation tasks. Current frontier LLMs (GPT-4, Claude, Llama, Gemini) are all **decoder-only** transformers ([[summary-Phuong_2022_formal-algorithms-for-transformers|Phuong and Hutter, 2022]]). The decoder-only variant uses **masked (causal) self-attention**: each token can attend only to tokens at the same or earlier positions in the sequence, never to future tokens. Formally, attention scores for future positions are set to -∞ before the softmax, zeroing out their contribution.
 
 This causal mask is what makes generation **autoregressive** — the model builds output token-by-token, each conditioned on everything before it but nothing after it. It is also why generation is inherently sequential (each token depends on the previous), even though training can be parallelised (all positions are known in advance). This sequential generation property is the fundamental latency constraint discussed in [[inference-and-generation]].
 

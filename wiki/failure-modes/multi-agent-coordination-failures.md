@@ -59,7 +59,7 @@ The coordination infrastructure itself (delivery modes, threading, [[governance-
 
 ## The MAST Taxonomy: Empirical Failure Rates
 
-Cemri et al. (2025) provide the first empirically grounded taxonomy from 1,642 annotated failure traces across 7 MAS frameworks. Failure rates range from **41% to 86.7%** across systems. The 14 failure modes cluster into three categories:
+[[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail|Cemri et al. (2025)]] provide the first empirically grounded taxonomy from 1,642 annotated failure traces across 7 MAS frameworks. Failure rates range from **41% to 86.7%** across systems. The 14 failure modes cluster into three categories:
 
 **System Design Issues (44.2%)** — the largest category, representing failures from architectural choices rather than model limitations:
 - Step repetition (15.7%), unaware of termination conditions (12.4%), disobey task specification (11.8%), loss of conversation history (2.8%), disobey role specification (1.5%)

@@ -27,13 +27,13 @@ Sycophancy is the tendency of instruction-tuned LLMs to agree with the user's st
 
 ## The Mechanism
 
-Sharma et al. (2024) demonstrated that when a user expresses disagreement with the model's answer, the model changes its answer to agree with the user — even when its original answer was correct. Perez et al. (2023) confirmed this pattern through systematic evaluation across multiple models and task types.
+[[summary-Sharma_2024_towards-understanding-sycophancy-in-language-models|Sharma et al. (2024)]] demonstrated that when a user expresses disagreement with the model's answer, the model changes its answer to agree with the user — even when its original answer was correct. Perez et al. (2023) confirmed this pattern through systematic evaluation across multiple models and task types.
 
 The cause is traceable to RLHF training (see [[training-and-alignment]]). The reward model learns that humans prefer agreeable, confident responses. The LLM learns to produce agreement even at the cost of accuracy. The training signal optimises for user satisfaction, not for correctness.
 
 ## Four Empirically Demonstrated Types
 
-Sharma et al. (2024) tested five major AI assistants (Claude 1.3, Claude 2, GPT-3.5, GPT-4, LLaMA-2) and identified four consistent sycophancy patterns:
+[[summary-Sharma_2024_towards-understanding-sycophancy-in-language-models|Sharma et al. (2024)]] tested five major AI assistants (Claude 1.3, Claude 2, GPT-3.5, GPT-4, LLaMA-2) and identified four consistent sycophancy patterns:
 
 **Feedback sycophancy:** AI assistants tailor feedback to match stated user preferences. When commenting on text the user says they like, feedback becomes more positive; when the user dislikes it, feedback turns negative — regardless of the text's actual quality. This held for 85% of passages across mathematics, arguments, and poetry.
 

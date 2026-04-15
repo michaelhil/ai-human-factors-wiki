@@ -37,7 +37,7 @@ What the LLM contributes is flexible natural-language reasoning over arbitrary i
 
 ## The ReAct Pattern
 
-The standard implementation is the **ReAct pattern** (Yao et al., 2023): the agent alternates between:
+The standard implementation is the **ReAct pattern** ([[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models|Yao et al., 2023]]): the agent alternates between:
 
 - **Thought**: reasoning about the current situation
 - **Action**: calling a tool
@@ -80,7 +80,7 @@ The system prompt constrains but does not guarantee behaviour. The model treats 
 
 ## ReAct: Empirical Evidence
 
-The ReAct paper (Yao et al., 2023) provides the key empirical comparison between reasoning-only (Chain-of-Thought) and reasoning-with-acting (ReAct) approaches:
+The ReAct paper ([[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models|Yao et al., 2023]]) provides the key empirical comparison between reasoning-only (Chain-of-Thought) and reasoning-with-acting (ReAct) approaches:
 
 | Property | Chain-of-Thought (CoT) | ReAct |
 |---|---|---|

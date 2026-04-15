@@ -24,7 +24,7 @@ updated: 2026-04-15
 
 # Multi-Agent Functional Roles
 
-A Pattern 9 architecture requires intentional role assignment. The coordination challenges of multi-agent systems are better addressed by agents configured for specific functions than by general-purpose agents. The MAST failure taxonomy (Cemri et al., 2025) identifies absent role specification as a primary failure mode. DyLAN (Liu et al., 2024) found up to 25% task performance improvement from dynamic role assignment.
+A Pattern 9 architecture requires intentional role assignment. The coordination challenges of multi-agent systems are better addressed by agents configured for specific functions than by general-purpose agents. The MAST failure taxonomy ([[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail|Cemri et al., 2025]]) identifies absent role specification as a primary failure mode. DyLAN (Liu et al., 2024) found up to 25% task performance improvement from dynamic role assignment.
 
 ## Core Roles
 
@@ -50,10 +50,10 @@ Dedicated to Level 3 SA: extrapolates current state, flags emerging conditions. 
 Translates between the multi-agent system's internal technical communication and human-readable format. Adapts presentation to the recipient's role and current needs. Different human roles (supervisor, approver, authority holder) need different SA support — the SA Bridge provides differentiated handoffs. See [[situation-awareness-in-human-ai-teams]].
 
 ### Grounding Agent
-Supplies domain knowledge or commonsense facts to prevent error loops. In AutoGen's ALFWorld experiments (Wu et al., 2024), a grounding agent that injected commonsense rules (e.g., "you must find the object before you can examine it") improved success rates by 15% over systems without grounding. The grounding agent addresses the repetitive action loop failure mode in [[multi-agent-coordination-failures]] by breaking chains of errors before they propagate.
+Supplies domain knowledge or commonsense facts to prevent error loops. In AutoGen's ALFWorld experiments ([[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation|Wu et al., 2024]]), a grounding agent that injected commonsense rules (e.g., "you must find the object before you can examine it") improved success rates by 15% over systems without grounding. The grounding agent addresses the repetitive action loop failure mode in [[multi-agent-coordination-failures]] by breaking chains of errors before they propagate.
 
 ### Safeguard Agent
-Checks outputs for safety, correctness, or policy compliance before execution. In AutoGen's OptiGuide coding application (Wu et al., 2024), a safeguard agent that reviewed code before execution boosted unsafe-code detection F1 by 8-35%. This maps directly to the [[governance-gates]] concept — the safeguard agent is an automated governance gate that enforces checks before consequential actions proceed.
+Checks outputs for safety, correctness, or policy compliance before execution. In AutoGen's OptiGuide coding application ([[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation|Wu et al., 2024]]), a safeguard agent that reviewed code before execution boosted unsafe-code detection F1 by 8-35%. This maps directly to the [[governance-gates]] concept — the safeguard agent is an automated governance gate that enforces checks before consequential actions proceed.
 
 ### Memory Keeper
 Maintains episodic record; surfaces precedents; prevents re-derivation of previously established conclusions. Requires external [[memory-architectures]] with retrieval and persistence. Addresses context overflow by maintaining the team's long-term memory outside individual agent context windows.
@@ -70,7 +70,7 @@ Adding agents improves system coverage up to a point, beyond which coordination 
 
 3. **Roles are composable.** A single agent may serve multiple roles (e.g., domain expert + projection agent for a specialised domain). But combining the adversarial role with any consensus-building role defeats the adversarial function.
 
-4. **The MAST taxonomy warns against absent role specification.** Cemri et al. (2025) found that multi-agent systems without explicit role definition produce more coordination failures. Role clarity is a prerequisite for effective multi-agent coordination.
+4. **The MAST taxonomy warns against absent role specification.** [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail|Cemri et al. (2025)]] found that multi-agent systems without explicit role definition produce more coordination failures. Role clarity is a prerequisite for effective multi-agent coordination.
 
 ## Relevance to Safety-Critical Systems
 

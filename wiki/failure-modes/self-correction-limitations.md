@@ -28,7 +28,7 @@ A common assumption about LLM agents is that they can improve their outputs by c
 
 ## The Intrinsic vs Extrinsic Distinction
 
-Huang et al. (2023) found that **intrinsic self-correction** — a single model critiquing its own reasoning with no external feedback signal — does not improve and sometimes degrades performance on reasoning tasks.
+[[summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet|Huang et al. (2023)]] found that **intrinsic self-correction** — a single model critiquing its own reasoning with no external feedback signal — does not improve and sometimes degrades performance on reasoning tasks.
 
 The finding is precise: **extrinsic correction works.** When the model receives external information — the result of executing its code, output from a tool call, data from a sensor, verification against a [[knowledge-graphs]] — that provides evidence about correctness, the model can effectively use this feedback to improve its output.
 
@@ -36,7 +36,7 @@ The finding is precise: **extrinsic correction works.** When the model receives 
 
 ## Quantitative Evidence: Self-Correction Degrades Performance
 
-Huang et al. (2024) provide the definitive empirical demonstration across multiple models and benchmarks:
+[[summary-Huang_2023_survey-on-hallucination-in-large-language-models|Huang et al. (2024)]] provide the definitive empirical demonstration across multiple models and benchmarks:
 
 | Model | Benchmark | Standard | After Self-Correction | Change |
 |---|---|---|---|---|

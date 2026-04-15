@@ -26,7 +26,7 @@ updated: 2026-04-15
 
 # Retrieval-Augmented Generation
 
-Retrieval-Augmented Generation (RAG) is the primary mechanism for grounding LLM output in external knowledge. It augments the model's context with documents retrieved from a knowledge store, reducing reliance on the model's parametric memory and providing access to current, domain-specific information (Lewis et al., 2020).
+Retrieval-Augmented Generation (RAG) is the primary mechanism for grounding LLM output in external knowledge. It augments the model's context with documents retrieved from a knowledge store, reducing reliance on the model's parametric memory and providing access to current, domain-specific information ([[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks|Lewis et al., 2020]]).
 
 ## How It Works
 
@@ -35,11 +35,11 @@ Retrieval-Augmented Generation (RAG) is the primary mechanism for grounding LLM 
 3. **Retrieval**: The most semantically similar document chunks are retrieved
 4. **Generation**: Retrieved chunks are inserted into the model's context, and the model generates its response with this grounding material available
 
-RAG improves factual accuracy by providing the model with relevant, potentially up-to-date information that may not be in its training data. Human evaluators in the original RAG study (Lewis et al., 2020) found RAG generations more factual than parametric-only generation in 42.7% of comparisons, versus only 7.1% the other way — strong evidence that retrieval grounding produces more factual output on average.
+RAG improves factual accuracy by providing the model with relevant, potentially up-to-date information that may not be in its training data. Human evaluators in the original RAG study ([[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks|Lewis et al., 2020]]) found RAG generations more factual than parametric-only generation in 42.7% of comparisons, versus only 7.1% the other way — strong evidence that retrieval grounding produces more factual output on average.
 
 ## Two RAG Formulations
 
-The original RAG paper (Lewis et al., 2020) defined two variants:
+The original RAG paper ([[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks|Lewis et al., 2020]]) defined two variants:
 
 - **RAG-Sequence**: the same retrieved document conditions the entire output sequence. Appropriate when the answer draws from a single coherent source.
 - **RAG-Token**: different retrieved documents can condition different output tokens. Appropriate when the answer must synthesise information from multiple sources.
@@ -48,13 +48,13 @@ In practice, most production RAG systems use a simpler approach: retrieve top-K 
 
 ## Index Hot-Swapping
 
-A key property of RAG for safety-critical applications: the document index can be replaced at test time without retraining the model. Lewis et al. (2020) demonstrated this by swapping Wikipedia indices from different years — the model's factual knowledge updated accordingly, with 70% accuracy on 2016 world leaders using the 2016 index and 68% for 2018 leaders using the 2018 index.
+A key property of RAG for safety-critical applications: the document index can be replaced at test time without retraining the model. [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks|Lewis et al. (2020)]] demonstrated this by swapping Wikipedia indices from different years — the model's factual knowledge updated accordingly, with 70% accuracy on 2016 world leaders using the 2016 index and 68% for 2018 leaders using the 2018 index.
 
 This is the fundamental advantage over fine-tuning (see [[training-and-alignment]]): knowledge currency can be maintained through a document management process rather than requiring opaque weight modifications. For regulated domains, this means knowledge updates follow the same change control process as any other document revision — a far more auditable path than fine-tuning.
 
 ## Documented Failure Modes
 
-Barnett et al. (2024) identified seven failure points in RAG systems:
+[[summary-Barnett_2024_seven-failure-points-in-rag-systems|Barnett et al. (2024)]] identified seven failure points in RAG systems:
 
 **Missing content**: the relevant information is not in the knowledge base at all. No retrieval mechanism can find what does not exist.
 
@@ -70,11 +70,11 @@ Barnett et al. (2024) identified seven failure points in RAG systems:
 
 **Incomplete**: the model uses some but not all of the relevant retrieved information, producing a partial answer.
 
-Additionally, Liu et al. (2024) showed that models underuse information in the middle of long contexts, meaning the ordering of retrieved documents matters. Kandpal et al. (2023) demonstrated that LLMs struggle with long-tail knowledge — precisely the knowledge that RAG is supposed to provide.
+Additionally, [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts|Liu et al. (2024)]] showed that models underuse information in the middle of long contexts, meaning the ordering of retrieved documents matters. Kandpal et al. (2023) demonstrated that LLMs struggle with long-tail knowledge — precisely the knowledge that RAG is supposed to provide.
 
 ## Engineering Lessons
 
-Barnett et al. (2024) derived practical lessons from three deployed RAG systems (research review, education, biomedical Q&A with 15,000 documents):
+[[summary-Barnett_2024_seven-failure-points-in-rag-systems|Barnett et al. (2024)]] derived practical lessons from three deployed RAG systems (research review, education, biomedical Q&A with 15,000 documents):
 
 - **Metadata enrichment helps retrieval**: adding source filename and chunk number to retrieved context improved the reader's extraction accuracy
 - **Open-source embedding models can outperform** commercial options on small, domain-specific text — the choice of embedding model matters for domain coverage

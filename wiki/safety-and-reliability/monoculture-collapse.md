@@ -51,7 +51,7 @@ Quantifying this overlap and its effect on error correlation is an open research
 In a multi-agent system where all agents share a base model:
 
 - **Consensus looks reliable but isn't.** All agents agree not because the evidence supports agreement but because they share the same distributional biases. The consensus carries no more weight than a single assessment.
-- **Adversarial agents fail to challenge.** An agent assigned to challenge consensus but running on the same model tends toward the same conclusions despite its role assignment (Cemri et al., 2025).
+- **Adversarial agents fail to challenge.** An agent assigned to challenge consensus but running on the same model tends toward the same conclusions despite its role assignment ([[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail|Cemri et al., 2025]]).
 - **Blind spots are systematic.** If the training data underrepresents a class of failure modes, every agent will underweight those modes regardless of role assignment. The team has no diversity where it matters most.
 - **"Independent" verification is illusion.** Two agents checking each other's work on the same model provide the appearance of redundancy without the substance.
 

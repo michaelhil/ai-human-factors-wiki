@@ -28,7 +28,7 @@ Small changes in how a question is asked produce large changes in the answer. Th
 
 ## The Evidence
 
-### Format Sensitivity (Sclar et al., 2024)
+### Format Sensitivity ([[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design|Sclar et al., 2024]])
 
 The most systematic study of prompt formatting sensitivity tested semantically equivalent prompt formats across 53 tasks with multiple models. Key findings:
 
