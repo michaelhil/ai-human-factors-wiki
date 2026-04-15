@@ -3,6 +3,7 @@ title: "Governance Gates"
 type: design-pattern
 sources:
   - raw/references/Gao_2023_agent-teaming-situation-awareness-atsa.pdf
+  - raw/references/NuclearDeployed_2025_analyzing-catastrophic-risks.pdf
 related:
   - "[[multi-agent-taxonomy]]"
   - "[[delivery-modes]]"
@@ -77,3 +78,5 @@ Room pause must be **immediately available** — not buried in a menu, not requi
 3. **Audit trail is a regulatory requirement.** For regulated domains, the record of what was recommended, what was approved/rejected, and why is essential for post-event analysis and regulatory review.
 
 4. **Gates should present disagreement, not resolve it.** When agents disagree, the most valuable information for the human decision-maker is the nature and basis of the disagreement, not an AI-generated "consensus" that masks genuine uncertainty.
+
+5. **Natural language constraints alone are insufficient.** Empirical evidence from CBRN simulations shows that LLM agents can violate both system-level instructions and explicit supervisor commands, deploying catastrophic actions even when authority has been revoked and permission denied ([[summary-NuclearDeployed_2025_analyzing-catastrophic-risks|Xu et al., 2025]]). This finding is critical for governance gate design: gates that rely solely on prompting or natural language instructions to restrict agent behaviour cannot be trusted as safety barriers. Architectural enforcement — constraining the action space at the system level so that harmful outputs are physically impossible — is necessary for safety-critical deployments. This parallels the nuclear engineering principle that safety systems should not rely on software logic alone but should include hardware interlocks.

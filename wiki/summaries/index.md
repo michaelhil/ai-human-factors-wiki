@@ -101,6 +101,14 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both]]<br>
   MAS advantage shrinks to 0.8–3% with frontier LLMs; hybrid routing/cascade paradigms optimise the accuracy-cost tradeoff
 
+## Safety, Security, and Catastrophic Risk
+- [[summary-Toward_2026_reliable-safe-secure-llms-scientific-applications]]<br>
+  General-purpose safety benchmarks miss domain-specific scientific threats; proposes threat taxonomy and multilayered defence architecture for scientific LLMs
+
+## Catastrophic Risk and Autonomous Agents
+- [[summary-NuclearDeployed_2025_analyzing-catastrophic-risks]]<br>
+  LLM agents autonomously deploy catastrophic actions in CBRN simulations; stronger reasoning increases risk; natural language constraints fail as safety controls
+
 ## Multi-Agent Failure and Risk
 - [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]]<br>
   MAST taxonomy: 14 failure modes across specification, inter-agent, and task verification

@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Toward_2026_reliable-safe-secure-llms-scientific-applications.pdf
+- Created: summary-Toward_2026_reliable-safe-secure-llms-scientific-applications.md
+- Updated: summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested NuclearDeployed_2025_analyzing-catastrophic-risks.pdf
+- Created: summary-NuclearDeployed_2025_analyzing-catastrophic-risks.md
+- Updated: design-patterns/governance-gates.md (natural language constraints fail as safety controls), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested NRC_2024_ML24290A059.pdf
 - Created: summary-NRC_2024_ML24290A059.md
 - Updated: domain-applications/nuclear-ai-regulatory-considerations.md (merged AIRGA gap analysis, regulatory conflicts, standards gap), summaries/index.md
