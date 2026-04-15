@@ -14,6 +14,7 @@ related:
   - "[[knowledge-graphs]]"
   - "[[automation-bias]]"
   - "[[llm-architecture]]"
+  - "[[summary-huang-2023-hallucination]]"
 tags:
   - hallucination
   - reliability
@@ -31,26 +32,41 @@ Hallucination refers to LLM output that is fluent, confident, and factually inco
 
 ## Types of Hallucination
 
-The term covers several distinct failure modes (Huang et al., 2023; Ji et al., 2023; Zhang et al., 2023):
+Huang et al. (2024) provide the most comprehensive taxonomy, distinguishing two primary categories (see also Ji et al., 2023; Zhang et al., 2023):
 
-**Factual hallucination**: the model states something that contradicts established facts. It might assert that a system uses a component it does not, or cite a regulatory document that does not exist.
+### Factuality Hallucination
+The output contradicts verifiable real-world facts:
 
-**Logical hallucination**: the model performs invalid reasoning steps. It might conclude that a parameter is within limits when the numbers in its own output show otherwise, or draw conclusions that do not follow from its premises.
+- **Factual contradiction**: the model states something provably wrong — either an *entity error* (naming the wrong entity, e.g., attributing an invention to the wrong person) or a *relation error* (asserting the wrong relationship between entities)
+- **Factual fabrication**: the model generates claims that cannot be verified (*unverifiability hallucination* — citing nonexistent documents, inventing data points) or states subjective claims as if universally accepted (*overclaim hallucination*)
 
-**Entity hallucination**: the model confuses similar entities. It might mix up two systems with similar names, or attribute a property of one instrument to a different instrument.
+### Faithfulness Hallucination
+The output is unfaithful to the user's instructions or provided context:
 
-**Fabrication**: the model invents data points, references, events, or details. It might cite a nonexistent publication, invent a numerical value for a parameter it was not given, or describe an event that did not occur.
+- **Instruction inconsistency**: the output deviates from the user's directive (e.g., performing a different task than requested)
+- **Context inconsistency**: the output contradicts information explicitly provided in context — particularly relevant for [[retrieval-augmented-generation]], where the model may contradict the very documents it was given
+- **Logical inconsistency**: internal contradictions within the output's own reasoning chain (e.g., calculating a value correctly in one step, then using a different value in the next)
 
-## Structural Causes
+The distinction matters for safety-critical applications: factuality hallucination creates *wrong information* that could mislead decisions, while faithfulness hallucination means the system *ignores its own context or instructions* — a different failure mode requiring different detection strategies.
 
-These failures have structural causes rooted in [[llm-architecture]]. LLMs predict the next token based on statistical patterns learned during training. The model has no internal mechanism for checking whether its output is true. It generates tokens that are probable given the context, which often aligns with truth (because truthful text was prevalent in training data) but sometimes does not.
+## Causes: A Three-Source Framework
 
-Hallucination is more likely when:
+Huang et al. (2024) map hallucination causes to three stages of the LLM lifecycle:
 
-- The query involves topics underrepresented in training data
-- Precise numerical reasoning is required (which token prediction handles poorly)
-- Long-form generation is involved, where each token's small probability of error compounds across hundreds or thousands of tokens
-- The model lacks access to relevant grounding documents
+### Causes from Data
+- **Misinformation in training corpora**: the model memorises false information present in web-scraped training data, reproducing it as confident fact
+- **Knowledge boundary**: long-tail knowledge is underrepresented (see Kandpal et al., 2023 in [[output-vacuity]]); knowledge becomes outdated because training data has a cutoff; copyright restrictions create gaps
+- **Inferior alignment data**: SFT on new factual knowledge actually *encourages* fabrication — models learn to generate beyond their knowledge boundary rather than refusing, because the training data rewards completion over refusal
+
+### Causes from Training
+- **Pre-training**: exposure bias and attention dilution across long sequences create structural vulnerability to errors that compound token by token (the "snowball effect")
+- **SFT**: models trained to always produce complete, helpful responses learn to fabricate when they lack knowledge. The inability to refuse is a trained behaviour, not an architectural limitation
+- **RLHF**: the preference model rewards confident, agreeable responses, creating [[sycophancy]] and systematic overconfidence. See [[calibration-and-confidence]]
+
+### Causes from Inference
+- **Decoding strategy**: higher temperature increases hallucination risk by sampling lower-probability tokens from the distribution tail. See [[inference-and-generation]]
+- **Over-confidence**: each token is conditioned on previous tokens, including potentially hallucinated ones, creating a compounding error where early mistakes propagate through the entire generation
+- **Reasoning failure**: including the "Reversal Curse" (the model can answer "A is B" but fails on "B is A"), demonstrating that LLM knowledge is directional, not symmetric
 
 ## The Confidence-Without-Correctness Problem
 

@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Huang_2023_survey-on-hallucination-in-large-language-models.pdf
+- Created: summaries/summary-huang-2023-hallucination.md
+- Updated: failure-modes/hallucination.md (replaced types section with refined taxonomy — factuality vs faithfulness; added three-source causal framework from data/training/inference)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Yao_2023_react-synergizing-reasoning-and-acting-in-language-models.pdf
 - Created: summaries/summary-yao-2023.md
 - Updated: agent-architectures/perceive-reason-act-loop.md (added ReAct empirical comparison, hallucination rates, interpretability advantage)
