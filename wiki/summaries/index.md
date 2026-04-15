@@ -21,6 +21,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Calibration and Confidence
 - [[summary-kadavath-2022]] — Kadavath et al. (2022) — Language Models (Mostly) Know What They Know
 
+## Tool Calling
+- [[summary-patil-2023]] — Patil et al. (2023) — Gorilla: LLM Connected with Massive APIs
+
 ## Agent Architectures and Reasoning
 - [[summary-yao-2023]] — Yao et al. (2023) — ReAct: Synergizing Reasoning and Acting
 

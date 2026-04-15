@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Patil_2023_gorilla-llm-connected-with-massive-apis.pdf
+- Created: summaries/summary-patil-2023.md
+- Updated: agent-architectures/tool-calling.md (added per-model hallucination rate table, RLHF finding, retrieval interaction section)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts.pdf
 - Created: summaries/summary-liu-2024-lost-in-middle.md
 - Updated: foundations/context-windows.md (added U-shaped curve quantitative data, below-closed-book finding, architecture comparison, extended context finding)

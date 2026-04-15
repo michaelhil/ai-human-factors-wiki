@@ -12,6 +12,7 @@ related:
   - "[[hallucination]]"
   - "[[model-context-protocol]]"
   - "[[llm-architecture]]"
+  - "[[summary-patil-2023]]"
 tags:
   - tool-calling
   - function-calling
@@ -51,9 +52,24 @@ Empirical studies document several failure modes:
 
 ## Empirical Reliability
 
-The Berkeley Function Calling Leaderboard V4 (Patil et al., 2025) found that frontier models achieve approximately 70% on holistic agentic evaluation — substantial improvement on simple function calls, but with persistent 30–40% failure rates on multi-turn agentic tasks requiring dynamic decision-making.
+Patil et al. (2023) documented API hallucination rates in their Gorilla benchmark across 1,645 real APIs:
 
-In 2023, Zhuang et al. (2023) found only 40–50% accuracy on hard questions requiring multi-step tool use. The improvement since then is real but the remaining failure rates on complex, multi-step tasks remain significant.
+| Model | TorchHub hallucination | HuggingFace hallucination | TensorFlow Hub hallucination |
+|---|---|---|---|
+| GPT-4 (2023) | 36.6% | 43.1% | 78.7% |
+| GPT-3.5 (2023) | 18.8% | 35.7% | 47.9% |
+| Claude (2023) | 66.0% | 72.7% | 88.5% |
+| LLaMA (2023) | 93.1% | 71.7% | 83.8% |
+
+Hallucination types include inventing nonexistent API endpoints, fabricating repository names, and generating syntactically valid but semantically wrong calls. Notably, RLHF-tuned models (GPT-3.5) showed *fewer* hallucination errors than base or instruction-tuned models, suggesting alignment training helps tool-calling reliability.
+
+The Berkeley Function Calling Leaderboard V4 (Patil et al., 2025) showed substantial improvement by 2025: approximately 70% on holistic agentic evaluation for frontier models — but persistent 30–40% failure rates on multi-turn agentic tasks requiring dynamic decision-making.
+
+Zhuang et al. (2023) found only 40–50% accuracy on hard questions requiring multi-step tool use. The trajectory shows improvement on simple calls but persistent vulnerability on complex, multi-step, or safety-critical tasks.
+
+## Retrieval Interaction
+
+A counterintuitive finding from Patil et al. (2023): adding a retriever to provide API documentation sometimes *worsens* tool-calling accuracy. Non-optimal retrievers misguide the model — accuracy dropped 21.5% on TorchHub and 47.6% on HuggingFace with sub-optimal retrieval compared to no retrieval. This connects to the over-retrieval problem in [[retrieval-augmented-generation]]: providing the model with wrong or irrelevant documentation is worse than providing none at all.
 
 ## The Compounding Problem
 
