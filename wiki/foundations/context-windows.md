@@ -12,6 +12,7 @@ related:
   - "[[retrieval-augmented-generation]]"
   - "[[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]]"
   - "[[summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks]]"
+  - "[[summary-Du_2025_context-length-alone-hurts]]"
 tags:
   - context-window
   - attention

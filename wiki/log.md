@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Du_2025_context-length-alone-hurts.pdf
+- Created: summary-Du_2025_context-length-alone-hurts.md
+- Updated: context-windows.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation.pdf
 - Created: summary-Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation.md
 - Updated: prompt-sensitivity.md (added summary links for Zhao and Mizrahi), summaries/index.md

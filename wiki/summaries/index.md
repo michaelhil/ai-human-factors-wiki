@@ -50,6 +50,8 @@ One summary per source document. Each summary captures the key arguments, findin
   Single-prompt benchmarking is unreliable; model rankings change with paraphrased instructions across 6.5M evaluations
 
 ## Context Windows
+- [[summary-Du_2025_context-length-alone-hurts]]<br>
+  Context length alone degrades reasoning even with perfect retrieval and zero distraction; longer input ≠ better performance
 - [[summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts]]<br>
   Models favour information at start and end of context; middle content is degraded
 - [[summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks]]<br>
