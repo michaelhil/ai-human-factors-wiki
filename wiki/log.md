@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Gao_2023_agent-teaming-situation-awareness-atsa.pdf
+- Created: summaries/summary-Gao_2023_agent-teaming-situation-awareness-atsa.md
+- Updated: human-ai-interaction/situation-awareness-in-human-ai-teams.md (expanded ATSA section with transactive SA, perceptual cycles, bidirectional failure)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge.pdf
 - Created: summaries/summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge.md
 - Updated: failure-modes/hallucination.md (added causal evidence for knowledge boundary: 25%→55% with document count, scaling infeasibility)

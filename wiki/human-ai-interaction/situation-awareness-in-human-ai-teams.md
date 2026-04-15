@@ -5,6 +5,7 @@ sources:
   - raw/references/Gao_2023_agent-teaming-situation-awareness-atsa.pdf
 related:
   - "[[multi-agent-taxonomy]]"
+  - "[[summary-Gao_2023_agent-teaming-situation-awareness-atsa]]"
   - "[[context-windows]]"
   - "[[multi-agent-coordination-failures]]"
   - "[[governance-gates]]"
@@ -48,7 +49,16 @@ Applied to multi-agent LLM systems, DSA provides a direct mapping:
 
 ## The ATSA Framework
 
-Gao et al. (2023) formalise Agent Teaming Situation Awareness: in a human-AI system, AI agents are not merely SA objects (things the human monitors) but **SA subjects** (entities that maintain their own SA). The framework introduces bidirectional SA interaction: humans maintain SA about AI teammates; AI agents maintain SA about humans, the environment, and each other.
+[[summary-Gao_2023_agent-teaming-situation-awareness-atsa|Gao et al. (2023)]] formalise Agent Teaming Situation Awareness (ATSA): AI agents are not merely SA objects (things the human monitors) but **SA subjects** (entities that maintain their own SA). This is the core innovation — prior frameworks treated AI as something humans maintain awareness *about*, not as entities that *have* awareness.
+
+ATSA introduces three team-level components:
+- **Teaming understanding**: shared mental models between human and AI
+- **Teaming control**: coordination mechanisms (see [[governance-gates]], [[delivery-modes]])
+- **Transactive SA**: the SA exchanged between team members — **compatible** (not identical) knowledge that enables coordination
+
+Both human and AI follow **perceptual cycles** (perception→comprehension→projection→action) corresponding to Endsley's three SA levels. For AI agents: perception = tool results in context, comprehension = LLM inference, projection = forward reasoning, action = tool calls. This parallels [[perceive-reason-act-loop]].
+
+The bidirectional nature means **both directions can fail**: the human can lose SA about AI state, AND the AI can have inadequate SA about the human's needs.
 
 ## Human Roles and SA Requirements
 

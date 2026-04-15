@@ -36,6 +36,9 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — Sreedhar & Chilton (2024) — Single vs Multi-Agent Strategic Reasoning
 - [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]] — Du et al. (2023) — Improving Factuality through Multiagent Debate
 
+## Situation Awareness
+- [[summary-Gao_2023_agent-teaming-situation-awareness-atsa]] — Gao et al. (2023) — Agent Teaming Situation Awareness (ATSA)
+
 ## Multi-Agent Frameworks
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Wu et al. (2024) — AutoGen: Multi-Agent Conversation Framework
 
