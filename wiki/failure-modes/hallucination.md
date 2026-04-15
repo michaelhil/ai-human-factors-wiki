@@ -55,7 +55,7 @@ The distinction matters for safety-critical applications: factuality hallucinati
 
 ### Causes from Data
 - **Misinformation in training corpora**: the model memorises false information present in web-scraped training data, reproducing it as confident fact
-- **Knowledge boundary**: long-tail knowledge is underrepresented (see Kandpal et al., 2023 in [[output-vacuity]]); knowledge becomes outdated because training data has a cutoff; copyright restrictions create gaps
+- **Knowledge boundary**: [[summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge|Kandpal et al. (2023)]] established a **causal** relationship between training data frequency and accuracy — BLOOM-176B accuracy jumps from 25% to 55% as relevant pre-training documents increase from 10¹ to 10⁴. Rare, specialised knowledge is systematically underrepresented. Knowledge also becomes outdated (training cutoff) and copyright restrictions create gaps
 - **Inferior alignment data**: SFT on new factual knowledge actually *encourages* fabrication — models learn to generate beyond their knowledge boundary rather than refusing, because the training data rewards completion over refusal
 
 ### Causes from Training

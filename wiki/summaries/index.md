@@ -12,8 +12,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Sycophancy
 - [[summary-Sharma_2024_towards-understanding-sycophancy-in-language-models]] — Sharma et al. (2024) — Towards Understanding Sycophancy in Language Models
 
-## Hallucination
+## Hallucination and Knowledge Boundaries
 - [[summary-Huang_2023_survey-on-hallucination-in-large-language-models]] — Huang et al. (2024) — Survey on Hallucination in LLMs
+- [[summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge]] — Kandpal et al. (2023) — LLMs Struggle to Learn Long-Tail Knowledge
 
 ## Prompt Sensitivity
 - [[summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design]] — Sclar et al. (2024) — Quantifying LLM Sensitivity to Spurious Features in Prompt Design
