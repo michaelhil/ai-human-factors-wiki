@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Patil_2025_berkeley-function-calling-leaderboard.pdf
+- Created: summary-Patil_2025_berkeley-function-calling-leaderboard.md
+- Updated: tool-calling.md (added BFCL summary link), summaries/index.md (added entry + fixed br tags for line breaks)
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Qin_2024_toolllm-facilitating-large-language-models-to-master-real-world-apis.pdf
+- Created: summary-Qin_2024_toolllm-facilitating-large-language-models-to-master-real-world-apis.md
+- Updated: tool-calling.md (added DFSDT reasoning strategy, multi-tool composition), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Zhai_2025_agent-evolver-towards-efficient-self-evolving-agent-system.pdf
 - Created: summary-Zhai_2025_agent-evolver-towards-efficient-self-evolving-agent-system.md
 - Updated: summaries/index.md

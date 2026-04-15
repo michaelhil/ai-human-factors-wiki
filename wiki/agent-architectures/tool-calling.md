@@ -13,6 +13,8 @@ related:
   - "[[model-context-protocol]]"
   - "[[llm-architecture]]"
   - "[[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]]"
+  - "[[summary-Qin_2024_toolllm-facilitating-large-language-models-to-master-real-world-apis]]"
+  - "[[summary-Patil_2025_berkeley-function-calling-leaderboard]]"
 tags:
   - tool-calling
   - function-calling
@@ -70,6 +72,12 @@ Zhuang et al. (2023) found only 40–50% accuracy on hard questions requiring mu
 ## Retrieval Interaction
 
 A counterintuitive finding from [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis|Patil et al. (2023)]]: adding a retriever to provide API documentation sometimes *worsens* tool-calling accuracy. Non-optimal retrievers misguide the model — accuracy dropped 21.5% on TorchHub and 47.6% on HuggingFace with sub-optimal retrieval compared to no retrieval. This connects to the over-retrieval problem in [[retrieval-augmented-generation]]: providing the model with wrong or irrelevant documentation is worse than providing none at all.
+
+## Reasoning Strategies for Error Recovery
+
+The standard CoT and ReACT reasoning strategies commit to a single reasoning path: one mistake in tool selection or parameter generation cascades through all subsequent steps with no recovery mechanism. [[summary-Qin_2024_toolllm-facilitating-large-language-models-to-master-real-world-apis|Qin et al. (2024)]] address this with **DFSDT (Depth-First Search-based Decision Tree)**, which models the reasoning process as a decision tree where the model can proceed along a promising path, abandon a failing path, or expand to explore new branches. This enables **backtracking** — when a tool call returns an error or unhelpful result, the agent can retrace to a decision point and try an alternative approach rather than propagating the error forward. DFSDT significantly outperforms ReACT across all models, with the largest gains on complex multi-tool instructions where error recovery is most critical.
+
+The same work demonstrates that **multi-tool composition** — orchestrating multiple APIs across different services to fulfil a single instruction — is the norm in real-world tool use, not the exception. Their ToolBench dataset spans 16,464 real APIs across 49 categories. Training on diverse multi-tool scenarios produces models (ToolLLaMA) that generalize to entirely unseen APIs and out-of-distribution benchmarks, suggesting that tool-use capability is more about training methodology than model scale.
 
 ## The Compounding Problem
 

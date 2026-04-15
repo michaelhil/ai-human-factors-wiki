@@ -126,12 +126,12 @@ Read the existing page. Read the new source material for this topic. **Rewrite t
 3. If the source introduces a new topic area, add a new section
 4. If a new page doesn't fit any existing index section, ask the user whether to create a new section or place it under the closest existing one
 5. If `wiki/glossary.md` exists, add any new terms
-6. If `wiki/summaries/index.md` exists, add the new summary with a **one-line bottom-line** — NOT the paper title. The format uses a **line break** so the bottom-line appears below the source link:
+6. If `wiki/summaries/index.md` exists, add the new summary with a **one-line bottom-line** — NOT the paper title. The format uses a `<br>` tag to force a line break so the bottom-line renders below the source link:
    ```
-   - [[summary-Author_Year_title]]
+   - [[summary-Author_Year_title]]<br>
      Key takeaway in one sentence
    ```
-   The bottom-line (indented with 2 spaces on the next line) should capture the finding that would help a reader decide whether to click through (e.g., "Intrinsic self-correction degrades performance; only external feedback helps"), not repeat the title which is already encoded in the wikilink filename.
+   The `<br>` at the end of the wikilink line forces a visible line break in the rendered output. The bottom-line (indented with 2 spaces on the next line) should capture the finding that would help a reader decide whether to click through (e.g., "Intrinsic self-correction degrades performance; only external feedback helps"), not repeat the title which is already encoded in the wikilink filename.
 7. If `mkdocs.yml` exists, regenerate its `nav:` section from the directory structure
 
 ### Step 9: Lint
