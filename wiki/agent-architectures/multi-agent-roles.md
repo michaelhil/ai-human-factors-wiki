@@ -6,8 +6,10 @@ sources:
   - raw/references/Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration.pdf
   - raw/references/Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society.pdf
   - raw/references/Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate.pdf
+  - raw/references/Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework.pdf
 related:
   - "[[multi-agent-taxonomy]]"
+  - "[[summary-Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework]]"
   - "[[epistemic-independence]]"
   - "[[situation-awareness-in-human-ai-teams]]"
   - "[[governance-gates]]"

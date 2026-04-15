@@ -6,6 +6,18 @@
 - Private source: no
 - Guidance: none
 
+## 2026-04-15 — Ingested Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate.pdf
+- Created: summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate.md
+- Updated: epistemic-independence.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework.pdf
+- Created: summary-Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework.md
+- Updated: multi-agent-roles.md (added source and summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data.pdf
 - Created: summary-Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data.md
 - Updated: monoculture-collapse.md (added model collapse mechanism and source), summaries/index.md

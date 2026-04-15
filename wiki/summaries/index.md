@@ -43,6 +43,7 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Epistemic Independence and Multi-Agent Debate
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — LLM agents converge to uniform strategies; multi-agent diversity is illusory
 - [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]] — Multi-agent debate improves factuality but gains plateau; shared biases limit independence
+- [[summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate]] — Debate success bounded by strongest reasoner; model diversity beats structural parameters
 
 ## Situation Awareness
 - [[summary-Gao_2023_agent-teaming-situation-awareness-atsa]] — ATSA framework extends situation awareness theory to human-AI agent teams
@@ -50,6 +51,7 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Agent Frameworks and Cognitive Architectures
 - [[summary-Sumers_2024_cognitive-architectures-for-language-agents]] — CoALA: modular framework mapping agents along memory, action, and decision dimensions
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Conversational multi-agent framework with customisable agent roles
+- [[summary-Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework]] — SOPs and structured artifacts between agents beat free-form chat; assembly-line coordination
 
 ## Prompting and Reasoning
 - [[summary-Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models]] — Intermediate reasoning steps in prompts unlock emergent reasoning at ~100B+ parameters

@@ -16,6 +16,7 @@ related:
   - "[[sycophancy]]"
   - "[[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]]"
   - "[[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]]"
+  - "[[summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate]]"
 tags:
   - epistemic-independence
   - safety
