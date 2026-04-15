@@ -27,6 +27,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]] — Patil et al. (2023) — Gorilla: LLM Connected with Massive APIs
 
+## Multi-Agent Frameworks
+- [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Wu et al. (2024) — AutoGen: Multi-Agent Conversation Framework
+
 ## Agent Architectures and Reasoning
 - [[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models]] — Yao et al. (2023) — ReAct: Synergizing Reasoning and Acting
 

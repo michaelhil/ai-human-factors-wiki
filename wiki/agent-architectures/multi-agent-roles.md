@@ -49,6 +49,12 @@ Dedicated to Level 3 SA: extrapolates current state, flags emerging conditions. 
 ### SA Bridge
 Translates between the multi-agent system's internal technical communication and human-readable format. Adapts presentation to the recipient's role and current needs. Different human roles (supervisor, approver, authority holder) need different SA support — the SA Bridge provides differentiated handoffs. See [[situation-awareness-in-human-ai-teams]].
 
+### Grounding Agent
+Supplies domain knowledge or commonsense facts to prevent error loops. In AutoGen's ALFWorld experiments (Wu et al., 2024), a grounding agent that injected commonsense rules (e.g., "you must find the object before you can examine it") improved success rates by 15% over systems without grounding. The grounding agent addresses the repetitive action loop failure mode in [[multi-agent-coordination-failures]] by breaking chains of errors before they propagate.
+
+### Safeguard Agent
+Checks outputs for safety, correctness, or policy compliance before execution. In AutoGen's OptiGuide coding application (Wu et al., 2024), a safeguard agent that reviewed code before execution boosted unsafe-code detection F1 by 8-35%. This maps directly to the [[governance-gates]] concept — the safeguard agent is an automated governance gate that enforces checks before consequential actions proceed.
+
 ### Memory Keeper
 Maintains episodic record; surfaces precedents; prevents re-derivation of previously established conclusions. Requires external [[memory-architectures]] with retrieval and persistence. Addresses context overflow by maintaining the team's long-term memory outside individual agent context windows.
 
