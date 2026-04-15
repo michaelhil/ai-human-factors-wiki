@@ -13,6 +13,7 @@ related:
   - "[[hybrid-decision-pipeline]]"
   - "[[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]]"
   - "[[summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization]]"
+  - "[[summary-Peng_2024_graph-retrieval-augmented-generation-survey]]"
 tags:
   - knowledge-graph
   - guardrail
@@ -58,15 +59,27 @@ The effectiveness ceiling is set by KG quality and coverage. Methods that rely o
 
 The trend since 2022: inference-time methods have overtaken training-time methods because retraining frontier models is impractical. Inference-time KG augmentation is also more auditable — the KG queries are logged, the facts are inspectable.
 
+## GraphRAG: Systematic Integration of Graphs and LLMs
+
+[[summary-Peng_2024_graph-retrieval-augmented-generation-survey|Peng et al. (2024)]] formalise Graph Retrieval-Augmented Generation (GraphRAG) as a three-stage framework, each introducing distinct design choices and failure modes:
+
+1. **Graph-Based Indexing**: constructing or selecting a graph database and building indices (graph-structural, text-based, vector-based, or hybrid). The graph source can be an existing open KG (Wikidata, domain-specific ontologies) or a self-constructed graph built from documents via entity extraction and relation mapping. For domains without pre-existing formal KGs, self-construction is the primary path but introduces extraction quality as a bottleneck.
+
+2. **Graph-Guided Retrieval**: extracting relevant graph elements (nodes, triplets, paths, or subgraphs) in response to queries. Retrieval granularity creates a trade-off: finer granularity (individual entities) is fast but may miss relational context; coarser granularity (subgraphs) captures full context but is computationally expensive and may exceed context windows. Retrieval paradigms range from single-pass (faster, suitable for time-critical applications) to iterative (more accurate but higher latency).
+
+3. **Graph-Enhanced Generation**: converting retrieved graph data into LM-compatible formats and generating output. Graph data must be serialised as natural language, adjacency tables, code-like formats, or syntax trees — each with different trade-offs in verbosity, structural preservation, and model compatibility.
+
 ## Advantages Over Vector-Based RAG
 
-Two advantages are particularly relevant:
+Traditional text-based [[retrieval-augmented-generation]] has three limitations that GraphRAG addresses ([[summary-Peng_2024_graph-retrieval-augmented-generation-survey|Peng et al., 2024]]): (1) it neglects relationships between entities that cannot be captured by embedding similarity, (2) concatenating retrieved text passages produces redundant context contributing to the "lost in the middle" problem, and (3) text RAG retrieves from local document subsets, failing to synthesise global information.
+
+Two specific advantages are most relevant for safety-critical applications:
 
 1. **Relational structure preservation**: the connection between a safety function, its implementing system, and its regulatory limits is explicit in the graph, not implicit in embedding proximity. Graph traversal follows defined relationships; vector similarity may find related-seeming but structurally unrelated content.
 
 2. **Constraint checking**: beyond retrieval, a KG can verify whether the model's claims are consistent with known domain structure. Assertions that contradict verified knowledge can be flagged or blocked before reaching the user.
 
-Edge et al. (2024) demonstrate that graph-structured retrieval outperforms vector-only RAG for tasks requiring relational reasoning.
+[[summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization|Edge et al. (2024)]] demonstrate that graph-structured retrieval outperforms vector-only RAG for tasks requiring relational reasoning.
 
 ## The Guardrail Function
 

@@ -15,6 +15,8 @@ One summary per source document. Each summary captures the key arguments, findin
   Pivotal tokens persist across generation steps; evicting the rest compresses KV cache 5x without accuracy loss
 - [[summary-Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models]]<br>
   4-bit quantised finetuning matches 16-bit performance; enables 65B models on a single GPU
+- [[summary-Frantar_2023_gptq-accurate-post-training-quantization]]<br>
+  Second-order post-training quantization to 3–4 bits with negligible accuracy loss; 175B model fits one GPU
 
 ## Self-Correction, Refinement, and Self-Reflection
 - [[summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach]]<br>
@@ -180,3 +182,5 @@ One summary per source document. Each summary captures the key arguments, findin
   GraphRAG: graph + community summaries enable corpus-wide sensemaking that vector RAG cannot
 - [[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]]<br>
   Structured KG constraints reduce entity and relation hallucination in grounded generation
+- [[summary-Peng_2024_graph-retrieval-augmented-generation-survey]]<br>
+  First comprehensive GraphRAG taxonomy: indexing, retrieval, and generation over graph-structured knowledge

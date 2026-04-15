@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Peng_2024_graph-retrieval-augmented-generation-survey.pdf
+- Created: summary-Peng_2024_graph-retrieval-augmented-generation-survey.md
+- Updated: knowledge-graphs.md (added GraphRAG framework section), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Frantar_2023_gptq-accurate-post-training-quantization.pdf
+- Created: summary-Frantar_2023_gptq-accurate-post-training-quantization.md
+- Updated: inference-and-generation.md (rewrote quantisation section to integrate both GPTQ and QLoRA), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models.pdf
 - Created: summary-Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models.md
 - Updated: inference-and-generation.md (expanded quantisation section), summaries/index.md
