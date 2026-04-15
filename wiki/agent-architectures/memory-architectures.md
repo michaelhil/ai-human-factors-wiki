@@ -9,6 +9,7 @@ related:
   - "[[perceive-reason-act-loop]]"
   - "[[context-management-risks]]"
   - "[[retrieval-augmented-generation]]"
+  - "[[summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior]]"
 tags:
   - memory
   - architecture
@@ -30,9 +31,15 @@ An LLM agent's memory determines what it knows beyond its current [[context-wind
 The content of the current context window — the agent's working memory. It is volatile (lost when the context is cleared), limited in size, and the only memory the model processes directly. Everything the agent "knows" at a given moment must be in this window or retrievable into it.
 
 ### Episodic Memory
-Stores the history of past interactions: prior conversations, tool calls and results, events the agent has observed. At each invocation, relevant episodes are retrieved (typically by semantic search or recency) and injected into context. This gives the agent continuity across sessions, at the cost of context window space for the retrieved history.
+Stores the history of past interactions: prior conversations, tool calls and results, events the agent has observed. At each invocation, relevant episodes are retrieved and injected into context. This gives the agent continuity across sessions, at the cost of context window space for the retrieved history.
 
-Park et al. (2023) demonstrated episodic memory in their generative agents work, where agents maintained timestamped memories of events and interactions, retrieving relevant memories based on recency, importance, and relevance to the current situation.
+The most influential episodic memory design is the **memory stream** from [[summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior|Park et al. (2023)]]. Each agent maintains a chronologically ordered list of natural language observations. Retrieval uses **three-factor scoring**:
+
+1. **Recency**: exponential decay — recent memories score higher
+2. **Importance**: LLM-assigned significance score (1-10) — life-changing events outrank mundane observations
+3. **Relevance**: cosine similarity between current situation and memory embeddings
+
+This multi-factor approach outperforms pure semantic search (which misses temporal context) or pure recency (which misses important old memories). The architecture also introduces **reflection** — periodic synthesis of memories into higher-level abstractions ("what have I learned?") that are added back to the memory stream. Reflection is a form of structured memory compression that preserves meaning, offering an alternative to the lossy compression strategies in [[context-management-risks]].
 
 ### Semantic Memory
 Stores distilled factual knowledge: entities, relationships, domain-specific facts. This is the domain of vector stores and [[knowledge-graphs]]. Semantic memory provides knowledge that was not in the model's training data or that needs to be more current or more accurate than what training provides.

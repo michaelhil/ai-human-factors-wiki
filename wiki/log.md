@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Park_2023_generative-agents-interactive-simulacra-of-human-behavior.pdf
+- Created: summaries/summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior.md
+- Updated: agent-architectures/memory-architectures.md (added memory stream three-factor retrieval, reflection mechanism)
+- Private source: no
+- Guidance: PDF too large for reader; used training knowledge + proprietary report citations
+
 ## 2026-04-15 — Ingested Gao_2023_agent-teaming-situation-awareness-atsa.pdf
 - Created: summaries/summary-Gao_2023_agent-teaming-situation-awareness-atsa.md
 - Updated: human-ai-interaction/situation-awareness-in-human-ai-teams.md (expanded ATSA section with transactive SA, perceptual cycles, bidirectional failure)

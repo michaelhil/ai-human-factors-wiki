@@ -44,6 +44,7 @@ One summary per source document. Each summary captures the key arguments, findin
 
 ## Agent Architectures and Reasoning
 - [[summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models]] — Yao et al. (2023) — ReAct: Synergizing Reasoning and Acting
+- [[summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior]] — Park et al. (2023) — Generative Agents: Interactive Simulacra of Human Behavior
 
 ## Training and Scaling
 - [[summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback]] — Bai et al. (2022) — Constitutional AI
