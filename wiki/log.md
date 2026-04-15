@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference.pdf
+- Created: summary-Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference.md
+- Updated: inference-and-generation.md (added source), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Du_2025_context-length-alone-hurts.pdf
 - Created: summary-Du_2025_context-length-alone-hurts.md
 - Updated: context-windows.md (added summary link), summaries/index.md

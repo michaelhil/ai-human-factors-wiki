@@ -161,6 +161,10 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Perez_2023_discovering-language-model-behaviors-with-model-written-evaluations]]<br>
   RLHF amplifies sycophancy and self-preservation; LMs can auto-generate safety evaluations
 
+## Inference Efficiency
+- [[summary-Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference]]<br>
+  Up to 20x prompt compression with 1.5-point performance loss; perplexity-guided token removal reduces latency and may improve quality
+
 ## Retrieval and Knowledge Grounding
 - [[summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks]]<br>
   Retrieve-then-generate architecture reduces hallucination by grounding in external documents

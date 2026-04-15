@@ -7,6 +7,7 @@ sources:
   - raw/references/Frantar_2023_gptq-accurate-post-training-quantization.pdf
   - raw/references/Kwon_2023_paged-attention-for-llm-serving.pdf
   - raw/references/Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models.pdf
+  - raw/references/Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference.pdf
 related:
   - "[[llm-architecture]]"
   - "[[non-determinism-and-reproducibility]]"
