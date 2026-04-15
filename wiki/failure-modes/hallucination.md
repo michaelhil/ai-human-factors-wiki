@@ -7,7 +7,6 @@ sources:
   - raw/references/Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms.pdf
   - raw/references/Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques.pdf
   - raw/references/Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection.pdf
-  - raw/references/Dokas_2025_from-hallucinations-to-hazards.pdf
 related:
   - "[[calibration-and-confidence]]"
   - "[[retrieval-augmented-generation]]"

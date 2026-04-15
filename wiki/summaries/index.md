@@ -53,6 +53,8 @@ One summary per source document. Each summary captures the key arguments, findin
   Attention sinks at initial tokens enable stable streaming beyond the training window
 
 ## Calibration and Confidence
+- [[summary-Guo_2017_on-calibration-of-modern-neural-networks]]<br>
+  Modern networks are systematically overconfident; temperature scaling (one parameter) reduces ECE from 12.67% to 0.96%
 - [[summary-Kadavath_2022_language-models-mostly-know-what-they-know]]<br>
   Larger models show partial self-knowledge; RLHF distorts but doesn't destroy calibration
 - [[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores]]<br>

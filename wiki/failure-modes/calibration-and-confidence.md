@@ -15,6 +15,7 @@ related:
   - "[[summary-Kadavath_2022_language-models-mostly-know-what-they-know]]"
   - "[[summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores]]"
   - "[[summary-Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation]]"
+  - "[[summary-Guo_2017_on-calibration-of-modern-neural-networks]]"
 tags:
   - calibration
   - confidence

@@ -1,5 +1,12 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Guo_2017_on-calibration-of-modern-neural-networks.pdf
+- Created: summary-Guo_2017_on-calibration-of-modern-neural-networks.md
+- Updated: calibration-and-confidence.md (added summary link), summaries/index.md
+- Private source: no
+- Guidance: none
+- Note: Dokas_2025_from-hallucinations-to-hazards.pdf is a corrupted download (HTML not PDF); skipped; removed stale source reference from hallucination.md
+
 ## 2026-04-15 — Ingested Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms.pdf
 - Created: summary-Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms.md
 - Updated: hallucination.md (added summary link), summaries/index.md
