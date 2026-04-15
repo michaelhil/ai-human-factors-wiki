@@ -114,4 +114,81 @@ nav:
     - Nuclear AI Regulatory Considerations: domain-applications/nuclear-ai-regulatory-considerations.md
   - Summaries:
     - summaries/index.md
+    - Abdali 2025: summaries/summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach.md
+    - Agrawal 2024: summaries/summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms.md
+    - Bai 2022: summaries/summary-Bai_2022_constitutional-ai-harmlessness-from-ai-feedback.md
+    - Barnett 2024: summaries/summary-Barnett_2024_seven-failure-points-in-rag-systems.md
+    - Cemri 2025: summaries/summary-Cemri_2025_why-do-multi-agent-llm-systems-fail.md
+    - Chan 2024: summaries/summary-Chan_2024_chateval-better-llm-based-evaluators-through-multi-agent-debate.md
+    - Dettmers 2024: summaries/summary-Dettmers_2024_qlora-efficient-finetuning-of-quantized-language-models.md
+    - Du 2023: summaries/summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate.md
+    - Du 2025: summaries/summary-Du_2025_context-length-alone-hurts.md
+    - Edge 2024: summaries/summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization.md
+    - Frantar 2023: summaries/summary-Frantar_2023_gptq-accurate-post-training-quantization.md
+    - Gao 2023: summaries/summary-Gao_2023_agent-teaming-situation-awareness-atsa.md
+    - Gao 2025: summaries/summary-Gao_2025_single-agent-or-multi-agent-systems-why-not-both.md
+    - Guo 2017: summaries/summary-Guo_2017_on-calibration-of-modern-neural-networks.md
+    - Guo 2024: summaries/summary-Guo_2024_large-language-model-based-multi-agents-survey-of-progress-and-challenges.md
+    - Hammond 2025: summaries/summary-Hammond_2025_multi-agent-risks-from-advanced-ai.md
+    - Hong 2024: summaries/summary-Hong_2024_metagpt-meta-programming-for-multi-agent-collaborative-framework.md
+    - Huang 2023 (Self-Correction): summaries/summary-Huang_2023_large-language-models-cannot-self-correct-reasoning-yet.md
+    - Huang 2023 (Hallucination Survey): summaries/summary-Huang_2023_survey-on-hallucination-in-large-language-models.md
+    - Ji 2023: summaries/summary-Ji_2023_survey-of-hallucination-in-natural-language-generation.md
+    - Jiang 2023: summaries/summary-Jiang_2023_llmlingua-compressing-prompts-for-accelerated-inference.md
+    - Kadavath 2022: summaries/summary-Kadavath_2022_language-models-mostly-know-what-they-know.md
+    - Kandpal 2023: summaries/summary-Kandpal_2023_large-language-models-struggle-to-learn-long-tail-knowledge.md
+    - Kommers 2026: summaries/summary-Kommers_2026_why-slop-matters.md
+    - Kosinski 2024: summaries/summary-Kosinski_2024_evaluating-large-language-models-in-theory-of-mind-tasks.md
+    - Kwon 2023: summaries/summary-Kwon_2023_paged-attention-for-llm-serving.md
+    - Lewis 2020: summaries/summary-Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks.md
+    - Li 2023: summaries/summary-Li_2023_camel-communicative-agents-for-mind-exploration-of-large-language-model-society.md
+    - Liu 2023: summaries/summary-Liu_2023_scissorhands-kv-cache-compression.md
+    - Liu 2024 (DyLAN): summaries/summary-Liu_2024_dylan-dynamic-llm-powered-agent-network-for-task-oriented-collaboration.md
+    - Liu 2024 (Lost in the Middle): summaries/summary-Liu_2024_lost-in-the-middle-how-language-models-use-long-contexts.md
+    - Lu 2022: summaries/summary-Lu_2022_fantastically-ordered-prompts-and-where-to-find-them.md
+    - Madaan 2023: summaries/summary-Madaan_2023_self-refine-iterative-refinement-with-self-feedback.md
+    - Manakul 2023: summaries/summary-Manakul_2023_selfcheckgpt-zero-resource-hallucination-detection.md
+    - Masterman 2024: summaries/summary-Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling.md
+    - McKenzie 2023: summaries/summary-McKenzie_2023_inverse-scaling-when-bigger-isnt-better.md
+    - Mizrahi 2024: summaries/summary-Mizrahi_2024_state-of-what-art-call-for-multi-prompt-llm-evaluation.md
+    - NRC 2024 (Trilateral Principles): summaries/summary-NRC_2024_ML24241A252.md
+    - NRC 2024 (AIRGA Gap Analysis): summaries/summary-NRC_2024_ML24290A059.md
+    - NuclearDeployed 2025: summaries/summary-NuclearDeployed_2025_analyzing-catastrophic-risks.md
+    - Park 2023: summaries/summary-Park_2023_generative-agents-interactive-simulacra-of-human-behavior.md
+    - Patil 2023: summaries/summary-Patil_2023_gorilla-llm-connected-with-massive-apis.md
+    - Patil 2025: summaries/summary-Patil_2025_berkeley-function-calling-leaderboard.md
+    - Peng 2024: summaries/summary-Peng_2024_graph-retrieval-augmented-generation-survey.md
+    - Perez 2023: summaries/summary-Perez_2023_discovering-language-model-behaviors-with-model-written-evaluations.md
+    - Phuong 2022: summaries/summary-Phuong_2022_formal-algorithms-for-transformers.md
+    - Qin 2024: summaries/summary-Qin_2024_toolllm-facilitating-large-language-models-to-master-real-world-apis.md
+    - Reid 2025: summaries/summary-Reid_2025_risk-analysis-techniques-for-governed-llm-based-multi-agent-systems.md
+    - Riedl 2025: summaries/summary-Riedl_2025_emergent-coordination-in-multi-agent-language-models.md
+    - Sclar 2024: summaries/summary-Sclar_2024_quantifying-language-models-sensitivity-to-spurious-features-in-prompt-design.md
+    - Shaib 2025: summaries/summary-Shaib_2025_measuring-ai-slop-in-text.md
+    - Shanahan 2023: summaries/summary-Shanahan_2023_role-play-with-large-language-models.md
+    - Sharma 2024: summaries/summary-Sharma_2024_towards-understanding-sycophancy-in-language-models.md
+    - Shinn 2023: summaries/summary-Shinn_2023_reflexion-language-agents-with-verbal-reinforcement-learning.md
+    - Shumailov 2024: summaries/summary-Shumailov_2024_ai-models-collapse-when-trained-on-recursively-generated-data.md
+    - Sreedhar 2024: summaries/summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms.md
+    - Sumers 2024: summaries/summary-Sumers_2024_cognitive-architectures-for-language-agents.md
+    - Tian 2023: summaries/summary-Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores.md
+    - Tonmoy 2024: summaries/summary-Tonmoy_2024_comprehensive-survey-of-hallucination-mitigation-techniques.md
+    - Toward 2026: summaries/summary-Toward_2026_reliable-safe-secure-llms-scientific-applications.md
+    - Ullman 2023: summaries/summary-Ullman_2023_large-language-models-fail-on-trivial-alterations-to-theory-of-mind-tasks.md
+    - Vaswani 2017: summaries/summary-Vaswani_2017_attention-is-all-you-need.md
+    - Wei 2022: summaries/summary-Wei_2022_chain-of-thought-prompting-elicits-reasoning-in-large-language-models.md
+    - Wu 2024: summaries/summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation.md
+    - Wu 2025: summaries/summary-Wu_2025_can-llm-agents-really-debate-controlled-study-of-multi-agent-debate.md
+    - Wynn 2025: summaries/summary-Wynn_2025_talk-isnt-always-cheap-understanding-failure-modes-in-multi-agent-debate.md
+    - Xi 2023: summaries/summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey.md
+    - Xiao 2024: summaries/summary-Xiao_2024_efficient-streaming-language-models-with-attention-sinks.md
+    - Xiong 2024: summaries/summary-Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation.md
+    - Xu 2024: summaries/summary-Xu_2024_context-graph.md
+    - Yang 2024: summaries/summary-Yang_2024_dawn-of-large-multimodal-models.md
+    - Yao 2023: summaries/summary-Yao_2023_react-synergizing-reasoning-and-acting-in-language-models.md
+    - Zhai 2025: summaries/summary-Zhai_2025_agent-evolver-towards-efficient-self-evolving-agent-system.md
+    - Zhang 2023: summaries/summary-Zhang_2023_sirens-song-in-the-ai-ocean-survey-on-hallucination-in-llms.md
+    - Zhao 2021: summaries/summary-Zhao_2021_calibrate-before-use-improving-few-shot-performance-of-language-models.md
+    - Zhou 2025: summaries/summary-Zhou_2025_labsafety-bench-benchmarking-llms-on-safety-issues-in-scientific-labs.md
+    - Zhuang 2024: summaries/summary-Zhuang_2024_toolqa.md
   - Glossary: glossary.md
