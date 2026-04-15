@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Du_2023_improving-factuality-and-reasoning-through-multiagent-debate.pdf
+- Created: summaries/summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate.md
+- Updated: safety-and-reliability/epistemic-independence.md (added debate format-vs-independence analysis, cross-model debate finding, sycophancy connection)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Cemri_2025_why-do-multi-agent-llm-systems-fail.pdf
 - Created: summaries/summary-Cemri_2025_why-do-multi-agent-llm-systems-fail.md
 - Updated: failure-modes/multi-agent-coordination-failures.md (added MAST taxonomy with 14 failure modes, 3 categories, empirical rates from 1642 traces, +9.4% design-fix finding)

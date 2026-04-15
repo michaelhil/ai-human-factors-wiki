@@ -15,6 +15,7 @@ related:
   - "[[training-and-alignment]]"
   - "[[sycophancy]]"
   - "[[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]]"
+  - "[[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]]"
 tags:
   - epistemic-independence
   - safety
@@ -67,11 +68,20 @@ The difference is statistically significant (χ² = 13.091, p < .001). The error
 
 The hardest condition (Greedy-Greedy, requiring differentiated selfish strategies) showed the largest gap: multi-agent achieved 80% vs single-LLM only 10%. The value of architectural independence is greatest precisely when differentiated strategies matter most.
 
-### Theory of Mind and Debate Studies
+### Multi-Agent Debate: Format vs Independence
+
+Du et al. (2023) demonstrated that multi-agent debate (multiple LLM instances debating over rounds) improves reasoning by +14.8 points (arithmetic) and factuality by +7.8 points (biographies) over single agents. However, all agents were instances of the same model (ChatGPT). The improvement comes from **structured cross-examination format** (catching surface errors) rather than from epistemic independence (providing diverse perspectives).
+
+The critical test: when ChatGPT and Bard (different models) debated together, performance improved further — joint debate solved 17/20 problems vs ChatGPT alone (14) or Bard alone (11). **Cross-model debate provides benefit beyond what same-model debate achieves**, supporting the case for model diversity.
+
+Subsequent work clarified the limits of same-model debate:
+- Wu et al. (2025) showed that same-model debate **suppresses independent reasoning** under majority pressure
+- Wynn et al. (2025) found that **model diversity is a necessary condition** for productive debate
+- Du et al. (2023) themselves noted that agents are "relatively agreeable" — likely from RLHF training (see [[sycophancy]]) — and that "stubborn" prompts produce better debates
+
+### Theory of Mind Studies
 
 Studies on LLM theory of mind (Kosinski, 2024; Ullman, 2023) show that the ability to track another entity's belief state separately from one's own is fragile, degrading under minor perturbations.
-
-Controlled debate studies find that same-model debate suppresses independent reasoning under majority pressure (Wu et al., 2025). Model diversity is a necessary condition for productive debate (Wynn et al., 2025). The factuality improvements from multi-agent debate documented by Du et al. (2023) come from structured format, not from independence between debaters.
 
 **Empirical limitation.** No published study has compared single-agent simulation and concurrent operation on safety-critical monitoring tasks with operational data. The architectural argument is strong; empirical confirmation of its magnitude in safety-critical domains is pending.
 

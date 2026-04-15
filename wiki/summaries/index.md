@@ -30,8 +30,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Multi-Agent Failure Taxonomy
 - [[summary-Cemri_2025_why-do-multi-agent-llm-systems-fail]] — Cemri et al. (2025) — Why Do Multi-Agent LLM Systems Fail? (MAST)
 
-## Epistemic Independence
+## Epistemic Independence and Multi-Agent Debate
 - [[summary-Sreedhar_2024_simulating-human-strategic-behavior-comparing-single-and-multi-agent-llms]] — Sreedhar & Chilton (2024) — Single vs Multi-Agent Strategic Reasoning
+- [[summary-Du_2023_improving-factuality-and-reasoning-through-multiagent-debate]] — Du et al. (2023) — Improving Factuality through Multiagent Debate
 
 ## Multi-Agent Frameworks
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Wu et al. (2024) — AutoGen: Multi-Agent Conversation Framework
