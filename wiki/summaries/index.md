@@ -64,6 +64,9 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Situation Awareness
 - [[summary-Gao_2023_agent-teaming-situation-awareness-atsa]] — ATSA framework extends situation awareness theory to human-AI agent teams
 
+## Agent Surveys
+- [[summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey]] — Brain-Perception-Action framework; cooperative vs adversarial interaction; four agent properties (autonomy, reactivity, pro-activeness, social ability)
+
 ## Agent Frameworks and Cognitive Architectures
 - [[summary-Sumers_2024_cognitive-architectures-for-language-agents]] — CoALA: modular framework mapping agents along memory, action, and decision dimensions
 - [[summary-Wu_2024_autogen-enabling-next-gen-llm-applications-via-multi-agent-conversation]] — Conversational multi-agent framework with customisable agent roles

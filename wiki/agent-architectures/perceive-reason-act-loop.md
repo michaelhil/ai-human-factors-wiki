@@ -4,8 +4,10 @@ type: architecture
 sources:
   - raw/references/Yao_2023_react-synergizing-reasoning-and-acting-in-language-models.pdf
   - raw/references/Sumers_2024_cognitive-architectures-for-language-agents.pdf
+  - raw/references/Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey.pdf
 related:
   - "[[llm-architecture]]"
+  - "[[summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey]]"
   - "[[tool-calling]]"
   - "[[memory-architectures]]"
   - "[[context-windows]]"

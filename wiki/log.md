@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey.pdf
+- Created: summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey.md
+- Updated: perceive-reason-act-loop.md (added Brain-Perception-Action source), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach.pdf
 - Created: summary-Abdali_2025_self-reflecting-large-language-models-hegelian-dialectical-approach.md
 - Updated: self-correction-limitations.md (added dialectical self-reflection as structured extrinsic correction), summaries/index.md
