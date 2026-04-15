@@ -24,7 +24,7 @@ updated: 2026-04-15
 
 # Output Vacuity and Central-Tendency Bias
 
-A failure mode distinct from [[hallucination]] that deserves separate treatment because it evades detection mechanisms that catch factual errors. Where hallucination produces confident claims that are wrong, output vacuity produces confident prose that is technically unobjectionable but operationally empty. The term "slop" has entered common usage to describe this class of AI-generated content: material that exhibits superficial competence without underlying substance (Kommers et al., 2025; Shaib et al., 2025).
+A failure mode distinct from [[hallucination]] that deserves separate treatment because it evades detection mechanisms that catch factual errors. Where hallucination produces confident claims that are wrong, output vacuity produces confident prose that is technically unobjectionable but operationally empty. The term "slop" has entered common usage to describe this class of AI-generated content. [[summary-Kommers_2026_why-slop-matters|Kommers et al. (2026)]] characterise slop through three prototypical properties: *superficial competence* (a veneer of quality belied by lack of substance), *asymmetric effort* (near-zero generation cost), and *mass producibility* (designed for digital-scale distribution). These properties explain why slop proliferates in professional settings and why it is particularly insidious: when generating a plausible-sounding assessment costs almost nothing, the incentive to evaluate whether it actually says anything diminishes.
 
 ## The Mechanism
 
@@ -55,12 +55,23 @@ The indirect harm emerges over time through a **cry-wolf dynamic**: operators wh
 
 This disengagement pathway is distinct from automation bias (where operators over-trust specific wrong recommendations). Slop-induced disengagement involves ceasing to evaluate recommendations at all.
 
+## Measuring Slop
+
+[[summary-Shaib_2025_measuring-ai-slop-in-text|Shaib et al. (2025)]] develop a formal taxonomy for measuring slop across three themes: *information utility* (density and relevance), *information quality* (factuality and bias), and *style quality* (structure, coherence, and tone). Their key findings are sobering for automated quality assurance:
+
+- Standard text metrics fail to capture slop — three of the five most predictive features (relevance, coherence, tone) lack adequate automatic measurements
+- LLMs cannot reliably self-identify slop — GPT-5, DeepSeek-V3, and o3-mini achieve near-zero agreement with human annotators, under-predicting slop by a factor of 4–10x
+- Slop features vary by domain — factuality and structure dominate in QA tasks, while style and utility issues dominate in news articles
+
+This domain-dependence means that slop detection for safety-critical advisory output requires domain-specific evaluation criteria, not generic quality metrics.
+
 ## Mitigation
 
 - **Structured output templates** that require specific parameter values, specific procedure steps, and specific time frames
 - **Novelty filters** that suppress AI output unless it adds information beyond what qualified displays already show
-- **Specificity metrics** that measure whether the model discriminates between hypotheses or retreats to generic enumeration
+- **Specificity metrics** that measure whether the model discriminates between hypotheses or retreats to generic enumeration — aligned with the information utility theme (density and relevance) in the slop taxonomy
 - **Operator training** that includes exposure to slop as a recognisable failure pattern, with the heuristic: if the AI assessment would apply equally well to three different conditions, it is not adding value
+- **Human-in-the-loop evaluation** rather than LLM-as-judge for quality assessment, given demonstrated LLM blind spots for slop detection
 
 ## Relevance to Safety-Critical Systems
 

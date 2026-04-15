@@ -1,5 +1,17 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Shaib_2025_measuring-ai-slop-in-text.pdf
+- Created: summary-Shaib_2025_measuring-ai-slop-in-text.md
+- Updated: output-vacuity.md (added measurement taxonomy and detection findings), summaries/index.md
+- Private source: no
+- Guidance: none
+
+## 2026-04-15 — Ingested Kommers_2026_why-slop-matters.pdf
+- Created: summary-Kommers_2026_why-slop-matters.md
+- Updated: output-vacuity.md (added inline citation and three-property characterisation), summaries/index.md (new Output Quality and Slop section)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Xu_2024_context-graph.pdf
 - Created: summary-Xu_2024_context-graph.md
 - Updated: knowledge-graphs.md (enriched Context Graphs section with quadruple structure and CGR³), summaries/index.md

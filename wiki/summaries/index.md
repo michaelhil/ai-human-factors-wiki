@@ -77,6 +77,12 @@ One summary per source document. Each summary captures the key arguments, findin
 - [[summary-Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation]]<br>
   Systematic framework: multi-sample consistency beats single-pass confidence for uncertainty
 
+## Output Quality and Slop
+- [[summary-Kommers_2026_why-slop-matters]]<br>
+  AI slop is characterised by superficial competence, asymmetric effort, and mass producibility — not mere pollution but a structural phenomenon
+- [[summary-Shaib_2025_measuring-ai-slop-in-text]]<br>
+  Formal slop taxonomy across three themes; standard metrics and LLMs both fail to reliably detect slop in text
+
 ## Tool Calling
 - [[summary-Patil_2023_gorilla-llm-connected-with-massive-apis]]<br>
   Fine-tuned model for API calling; demonstrates hallucinated parameter problem
