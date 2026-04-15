@@ -184,3 +184,5 @@ One summary per source document. Each summary captures the key arguments, findin
   Structured KG constraints reduce entity and relation hallucination in grounded generation
 - [[summary-Peng_2024_graph-retrieval-augmented-generation-survey]]<br>
   First comprehensive GraphRAG taxonomy: indexing, retrieval, and generation over graph-structured knowledge
+- [[summary-Xu_2024_context-graph]]<br>
+  Quadruples (entity, relation, entity, context) add temporal, provenance, and confidence metadata that triples lose

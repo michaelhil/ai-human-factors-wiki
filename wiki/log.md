@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Xu_2024_context-graph.pdf
+- Created: summary-Xu_2024_context-graph.md
+- Updated: knowledge-graphs.md (enriched Context Graphs section with quadruple structure and CGR³), summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Peng_2024_graph-retrieval-augmented-generation-survey.pdf
 - Created: summary-Peng_2024_graph-retrieval-augmented-generation-survey.md
 - Updated: knowledge-graphs.md (added GraphRAG framework section), summaries/index.md

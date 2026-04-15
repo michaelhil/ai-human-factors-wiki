@@ -14,6 +14,7 @@ related:
   - "[[summary-Agrawal_2024_can-knowledge-graphs-reduce-hallucinations-in-llms]]"
   - "[[summary-Edge_2024_from-local-to-global-graph-rag-query-focused-summarization]]"
   - "[[summary-Peng_2024_graph-retrieval-augmented-generation-survey]]"
+  - "[[summary-Xu_2024_context-graph]]"
 tags:
   - knowledge-graph
   - guardrail
@@ -100,9 +101,11 @@ The guardrail is itself a component requiring validation and maintenance. It red
 
 ## Context Graphs
 
-Xu et al. (2024) extend the triple structure with **quadruples**: (head entity, relation, tail entity, relation-context). The context field carries temporal validity (when does this fact expire?), provenance (where did it come from?), confidence (how certain is it?), and event metadata.
+[[summary-Xu_2024_context-graph|Xu et al. (2024)]] identify four concrete problems caused by triple-only KG representations: contradictory triples when context distinguishes meaning, temporal ambiguity when the same relationship held at different times, invalid rule learning from context-insensitive patterns, and inability to answer questions requiring quantitative or temporal reasoning.
 
-The distinction: a standard KG captures static domain semantics (what is true about the domain), while a context graph captures dynamic operational state (what the system currently believes, when it came to believe it, and how confident it is). In operational settings where data currency matters, context graphs allow agents to query for the most current, most confident information.
+To address these, they extend the triple to a **quadruple**: (head entity, relation, tail entity, relation-context). Context is categorised into **entity contexts** (attributes, types, descriptions, aliases) and **relation contexts** (temporal validity, geographic scope, provenance, confidence levels, quantitative data, event-specific details). This preserves the structural clarity of typed relationships while adding the metadata needed for nuanced reasoning.
+
+The distinction: a standard KG captures static domain semantics (what is true about the domain), while a context graph captures dynamic operational state (what the system currently believes, when it came to believe it, and how confident it is). In operational settings where data currency matters, context graphs allow agents to query for the most current, most confident information. Their CGR³ paradigm demonstrates that LLMs can effectively leverage this contextual metadata through iterative retrieve-rank-reason cycles, disambiguating entities and relationships that are indistinguishable in triple-only representations.
 
 ## Engineered vs Emergent Knowledge Structures
 
