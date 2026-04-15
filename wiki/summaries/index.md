@@ -95,6 +95,8 @@ One summary per source document. Each summary captures the key arguments, findin
 ## Agent Surveys
 - [[summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey]]
   Brain-Perception-Action framework; cooperative vs adversarial interaction; four agent properties (autonomy, reactivity, pro-activeness, social ability)
+- [[summary-Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling]]
+  Vertical vs horizontal multi-agent taxonomy; designated leaders cut coordination overhead ~10%; five cross-cutting design principles
 
 ## Agent Frameworks and Cognitive Architectures
 - [[summary-Sumers_2024_cognitive-architectures-for-language-agents]]

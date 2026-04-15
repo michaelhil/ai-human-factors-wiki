@@ -1,5 +1,11 @@
 # Wiki Change Log
 
+## 2026-04-15 — Ingested Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling.pdf
+- Created: summary-Masterman_2024_landscape-of-emerging-ai-agent-architectures-for-reasoning-planning-and-tool-calling.md
+- Updated: summaries/index.md
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey.pdf
 - Created: summary-Xi_2023_rise-and-potential-of-large-language-model-based-agents-survey.md
 - Updated: perceive-reason-act-loop.md (added Brain-Perception-Action source), summaries/index.md
