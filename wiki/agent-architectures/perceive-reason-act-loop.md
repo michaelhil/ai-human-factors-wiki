@@ -9,6 +9,7 @@ related:
   - "[[tool-calling]]"
   - "[[memory-architectures]]"
   - "[[context-windows]]"
+  - "[[summary-yao-2023]]"
 tags:
   - agent
   - react
@@ -76,6 +77,22 @@ The key transitions: **tool use** (the agent can act on the world), **persistenc
 The **system prompt** (sometimes called the "soul" in practitioner terminology) defines the agent's identity: its role, expertise domain, constraints, communication style, and behavioural boundaries. In persistent agent systems, the system prompt is maintained across sessions, giving the agent a consistent identity.
 
 The system prompt constrains but does not guarantee behaviour. The model treats it as part of its context, weighted by the attention mechanism alongside everything else. A strong user prompt, a retrieved document with conflicting instructions, or an adversarial injection can override system prompt instructions. The system prompt is an instruction to the model, not a hard constraint on its computation — this is a structural property of the [[llm-architecture]], not an implementation gap.
+
+## ReAct: Empirical Evidence
+
+The ReAct paper (Yao et al., 2023) provides the key empirical comparison between reasoning-only (Chain-of-Thought) and reasoning-with-acting (ReAct) approaches:
+
+| Property | Chain-of-Thought (CoT) | ReAct |
+|---|---|---|
+| [[hallucination]] rate | 56% of failures | 14% of failures |
+| Reasoning error rate | 16% of failures | 47% of failures |
+| Grounding | Internal knowledge only | External observations via tools |
+
+The critical finding: **CoT's dominant failure is hallucination** because reasoning from internal knowledge alone is ungrounded. ReAct reduces hallucination by 4x by anchoring reasoning in retrieved evidence. However, ReAct introduces its own failure mode — reasoning errors where the agent gets stuck in repetitive action loops or fails to recover from uninformative search results.
+
+The best-performing approach combines both: ReAct + CoT self-consistency, where the agent uses internal reasoning when confident and falls back to retrieval when not. This supports the [[hybrid-decision-pipeline]] concept of matching the right reasoning approach to the task.
+
+**Interpretability advantage:** ReAct traces are human-readable — each thought explains the decision to take an action, and each observation shows what was found. This provides a structured rationale that supports auditability, even though the model's internal computation remains opaque. See [[opacity-and-explainability]].
 
 ## What LLMs Do Well in Agent Roles
 

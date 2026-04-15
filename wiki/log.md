@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Yao_2023_react-synergizing-reasoning-and-acting-in-language-models.pdf
+- Created: summaries/summary-yao-2023.md
+- Updated: agent-architectures/perceive-reason-act-loop.md (added ReAct empirical comparison, hallucination rates, interpretability advantage)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Bai_2022_constitutional-ai-harmlessness-from-ai-feedback.pdf
 - Created: summaries/summary-bai-2022.md
 - Updated: foundations/training-and-alignment.md (expanded CAI section with two-stage mechanism, RLAIF detail, Pareto improvement, explicit-principles property)
