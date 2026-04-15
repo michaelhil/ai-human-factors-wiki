@@ -10,6 +10,7 @@ related:
   - "[[calibration-and-confidence]]"
   - "[[sycophancy]]"
   - "[[inference-and-generation]]"
+  - "[[summary-bai-2022]]"
 tags:
   - training
   - alignment
@@ -47,7 +48,15 @@ RLHF shapes the model toward responses that humans preferred in training: helpfu
 
 ### Constitutional AI and RLAIF
 
-Bai et al. (2022) introduced Constitutional AI, which replaces human preference labellers with AI-generated critiques. The model's outputs are evaluated against a written set of principles (the "constitution"), and a second model generates preference labels based on whether outputs adhere to those principles. This allows alignment to scale beyond human evaluator throughput and makes alignment criteria explicit. Reinforcement Learning from AI Feedback (RLAIF) generalises this approach.
+Bai et al. (2022) introduced Constitutional AI (CAI), a two-stage method that replaces human harmlessness labels with AI-generated critiques guided by a written set of principles (the "constitution").
+
+**Stage 1 (Supervised Learning):** The model generates responses to harmful prompts, critiques its own responses against constitutional principles, and revises them. The critique-revision cycle can be repeated multiple times. The revised responses fine-tune the model, shifting its distribution away from harmful outputs while maintaining engagement (the model explains why it objects to harmful requests rather than refusing to discuss them).
+
+**Stage 2 (RLAIF):** The SL-trained model generates response pairs, and a separate model evaluates which better adheres to the constitution. These AI-generated preference labels replace the tens of thousands of human labels that standard RLHF requires. The resulting preference model provides the reward signal for reinforcement learning.
+
+CAI achieves a **Pareto improvement** over standard RLHF: models trained with CAI are less harmful at a given level of helpfulness. Standard RLHF faces a tension — models trained for helpfulness become more harmful, while those trained for harmlessness become evasive. CAI breaks this trade-off.
+
+For safety-critical applications, the most important property of CAI is that the alignment criteria are **explicit, inspectable documents** — approximately 16 natural language principles that can be read, audited, and version-controlled. In standard RLHF, the criteria are implicit in thousands of human preference labels that cannot be collectively summarised. CAI makes one layer of the alignment process transparent, connecting to the [[opacity-and-explainability]] concerns. Reinforcement Learning from AI Feedback (RLAIF) generalises the AI-feedback approach beyond Constitutional AI's specific principles.
 
 ### Direct Preference Optimisation (DPO)
 

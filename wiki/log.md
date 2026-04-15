@@ -79,6 +79,12 @@ Pages remaining from Report 1 (to be created in follow-up sessions):
 - Fixed 3 dead wikilinks in glossary
 - Audited all 33 content pages: no orphans, no missing source paths, build clean
 
+## 2026-04-15 — Ingested Bai_2022_constitutional-ai-harmlessness-from-ai-feedback.pdf
+- Created: summaries/summary-bai-2022.md
+- Updated: foundations/training-and-alignment.md (expanded CAI section with two-stage mechanism, RLAIF detail, Pareto improvement, explicit-principles property)
+- Private source: no
+- Guidance: none
+
 ## 2026-04-15 — Ingested Lewis_2020_retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks.pdf
 - Created: summaries/summary-lewis-2020.md
 - Updated: design-patterns/retrieval-augmented-generation.md (added RAG-Sequence/Token distinction, index hot-swapping, factuality evidence)
