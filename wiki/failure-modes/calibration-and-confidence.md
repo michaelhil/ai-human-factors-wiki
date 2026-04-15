@@ -1,0 +1,73 @@
+---
+title: "Calibration and Confidence"
+type: failure-mode
+sources:
+  - raw/references/Kadavath_2022_language-models-mostly-know-what-they-know.pdf
+  - raw/references/Tian_2023_just-ask-for-calibration-strategies-for-eliciting-calibrated-confidence-scores.pdf
+  - raw/references/Xiong_2024_can-llms-express-their-uncertainty-empirical-evaluation-of-confidence-elicitation.pdf
+  - raw/references/Guo_2017_on-calibration-of-modern-neural-networks.pdf
+  - raw/references/Zhao_2021_calibrate-before-use-improving-few-shot-performance-of-language-models.pdf
+related:
+  - "[[hallucination]]"
+  - "[[training-and-alignment]]"
+  - "[[sycophancy]]"
+  - "[[automation-bias]]"
+tags:
+  - calibration
+  - confidence
+  - reliability
+  - failure-mode
+  - trust
+confidence: high
+created: 2026-04-15
+updated: 2026-04-15
+---
+
+# Calibration and Confidence
+
+A well-calibrated system is one whose stated confidence matches its actual accuracy: when it says it is 80% confident, it is correct 80% of the time. Calibration matters for safety-critical advisory because an operator's trust in an AI assessment should reflect the assessment's actual reliability.
+
+## The Calibration Problem
+
+LLMs are partially calibrated. Kadavath et al. (2022) showed that when asked whether they can answer a question correctly, larger models show better calibration than smaller ones. But calibration degrades on harder questions — precisely the questions that matter most in safety-critical use. When the situation is ambiguous, novel, or outside the training distribution, the model's self-assessment becomes less reliable.
+
+## RLHF Makes It Worse
+
+Tian et al. (2023) found that instruction-tuned models are **less calibrated** than their base model counterparts, because the tuning process rewards confident, helpful-sounding responses over hedged or uncertain ones. The model learns that confident answers receive more positive feedback and adjusts accordingly, regardless of whether the confidence is warranted.
+
+This is a direct consequence of the [[training-and-alignment]] process: RLHF optimises for responses that humans rate highly, and humans tend to rate confident responses higher than uncertain ones.
+
+## Methods for Eliciting Confidence
+
+Xiong et al. (2024) evaluated methods for extracting confidence from LLMs:
+
+- **Verbalised confidence** (the model stating "I am 85% confident") — often overconfident. The model's verbal self-assessment is a generated output subject to the same biases as any other output.
+- **Consistency-based estimation** (run the same query multiple times and measure agreement) — better calibrated but expensive, requiring multiple inference passes.
+- **Logit-based probability** (accessing the model's internal probability distribution over tokens) — better calibrated than verbal self-assessment, but requires access to model internals that may not be available through standard APIs.
+
+## Design Implications
+
+Confidence indicators on AI advisory displays should be treated with caution. If the model's confidence output is not well calibrated, displaying it may give operators a false sense of knowing how reliable the assessment is — which is worse than providing no confidence information at all.
+
+Post-hoc calibration techniques (Guo et al., 2017; Zhao et al., 2021) can partially address this, but they require a calibration dataset representative of the operational domain. For most specialised industrial domains, such calibration datasets do not exist.
+
+## The Miscalibration Chain
+
+Poor calibration creates a chain of effects:
+
+1. The model produces confident output regardless of actual accuracy
+2. Operators cannot distinguish reliable from unreliable assessments
+3. Trust calibration becomes impossible — operators either trust everything or trust nothing
+4. Over-time, this drives either [[automation-bias]] (trusting all AI output) or disengagement (ignoring all AI output)
+
+Both outcomes defeat the purpose of the advisory system.
+
+## Relevance to Safety-Critical Systems
+
+1. **Confidence displays require empirical validation.** Displaying AI confidence to operators is potentially harmful if the confidence is not calibrated against the actual operational domain.
+
+2. **Harder questions are worse calibrated.** The model is most overconfident precisely when the situation is most uncertain — during novel events, ambiguous conditions, and edge cases.
+
+3. **Cross-domain examples.** In aviation, an overconfident weather assessment could lead to inadequate fuel reserves. In medical diagnostics, overconfident differential diagnosis could delay necessary testing. In oil and gas, overconfident wellbore stability assessment could mask developing hazards.
+
+4. **Design mitigation.** Use consistency-based confidence where feasible (multiple inference passes). Display confidence as a range rather than a point value. Train operators to treat AI confidence as an estimate, not a measurement. Combine AI confidence with independent data quality indicators.

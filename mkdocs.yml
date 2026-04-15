@@ -1,0 +1,93 @@
+site_name: "AI for Human Factors and Safety"
+site_description: "A technical primer on AI systems for Human Factors and Safety specialists"
+site_url: ""
+docs_dir: wiki
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - roamlinks
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - def_list
+  - footnotes
+
+extra:
+  wiki_version: "0.1.0"
+  feedback_worker_url: ""
+
+nav:
+  - Home: index.md
+  - Foundations:
+    - foundations/index.md
+    - LLM Architecture: foundations/llm-architecture.md
+    - Context Windows: foundations/context-windows.md
+    - Training and Alignment: foundations/training-and-alignment.md
+  - Agent Architectures:
+    - agent-architectures/index.md
+    - Tool Calling: agent-architectures/tool-calling.md
+  - Failure Modes:
+    - failure-modes/index.md
+    - Hallucination: failure-modes/hallucination.md
+    - Calibration and Confidence: failure-modes/calibration-and-confidence.md
+    - Sycophancy: failure-modes/sycophancy.md
+    - Output Vacuity: failure-modes/output-vacuity.md
+  - Safety & Reliability:
+    - safety-and-reliability/index.md
+    - Non-Determinism: safety-and-reliability/non-determinism-and-reproducibility.md
+    - Degradation Characteristics: safety-and-reliability/degradation-characteristics.md
+  - Human-AI Interaction:
+    - human-ai-interaction/index.md
+  - Design Patterns:
+    - design-patterns/index.md
+    - RAG: design-patterns/retrieval-augmented-generation.md
+    - Knowledge Graphs: design-patterns/knowledge-graphs.md
+  - Evaluation & Testing:
+    - evaluation-and-testing/index.md
+  - Domain Applications:
+    - domain-applications/index.md
+  - Reference:
+    - Glossary: glossary.md
+    - Summaries: summaries/index.md

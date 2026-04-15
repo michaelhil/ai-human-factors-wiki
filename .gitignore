@@ -1,0 +1,9 @@
+raw/private/
+raw/references/
+site/
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.env
+.vercel/
